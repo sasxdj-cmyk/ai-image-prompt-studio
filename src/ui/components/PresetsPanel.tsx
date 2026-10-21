@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import type { Preset } from '../../state/persistence';
+import { parsePresetImport, serializePresets } from '../../state/preset-io';
 import { useApp } from '../../state/AppProvider';
 import { useT } from '../useT';
 
@@ -27,11 +28,7 @@ export function PresetsPanel() {
   };
 
   const exportPresets = () => {
-    const payload = JSON.stringify(
-      { kind: 'preset-export', version: 1, presets: state.presets },
-      null,
-      2,
-    );
+    const payload = serializePresets(state.presets);
     try {
       const blob = new Blob([payload], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
@@ -48,16 +45,15 @@ export function PresetsPanel() {
 
   const importPresets = (file: File) => {
     void file.text().then((text) => {
-      try {
-        const parsed = JSON.parse(text) as { kind?: string; presets?: Preset[] };
-        if (parsed.kind !== 'preset-export' || !Array.isArray(parsed.presets)) throw new Error('invalid');
-        dispatch({ type: 'import-presets', presets: parsed.presets });
-        dispatch({ type: 'toast', message: 'presets.imported' });
-        setImportError(null);
-      } catch {
-        setImportError(t('presets.importFail'));
+      const result = parsePresetImport(text);
+      if (!result.presets) {
+        setImportError(result.error ?? t('presets.importFail'));
         dispatch({ type: 'toast', message: 'presets.importFail', kind: 'error' });
+        return;
       }
+      dispatch({ type: 'import-presets', presets: result.presets });
+      dispatch({ type: 'toast', message: 'presets.imported' });
+      setImportError(null);
     });
   };
 

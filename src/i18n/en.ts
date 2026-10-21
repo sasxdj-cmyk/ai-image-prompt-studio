@@ -72,6 +72,7 @@ export const en = {
   'prompt.copyFail': 'Copy failed. Select the text and copy it manually.',
   'prompt.fragments': 'Contributions',
   'prompt.noFragments': 'No contribution yet.',
+  'prompt.examples': 'Examples',
 
   'warnings.title': 'Checks',
   'warnings.none': 'No conflicts or redundancies detected.',

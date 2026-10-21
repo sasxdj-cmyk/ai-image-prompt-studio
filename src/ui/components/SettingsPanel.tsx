@@ -188,6 +188,20 @@ export function SettingsPanel() {
                 </span>
               </dd>
             </dl>
+
+            {profile.examples && profile.examples.length > 0 && (
+              <>
+                <h4 className="profile-subtitle">{t('prompt.examples')}</h4>
+                <ul className="profile-examples">
+                  {profile.examples.map((example) => (
+                    <li key={example.prompt}>
+                      <code>{example.prompt}</code>
+                      {example.note && <span className="muted">{example.note[locale]}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </div>
 

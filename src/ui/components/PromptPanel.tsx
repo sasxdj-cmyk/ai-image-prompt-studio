@@ -1,13 +1,29 @@
 import { useMemo } from 'react';
+import { buildPrompt } from '../../engine/prompt';
+import { getGeneralProfile, getProfile } from '../../models/profiles';
 import { useApp } from '../../state/AppProvider';
 import { useActions } from '../useActions';
 import { useT } from '../useT';
 
 /** Prompt preview, negative prompt and the global actions. */
 export function PromptPanel() {
-  const { state, dispatch, stale, copyPrompt, copyBoth } = useApp();
+  const { state, dispatch, catalog, stale, copyPrompt, copyBoth } = useApp();
   const t = useT();
   const { generate, regenerate, random, clearAll, selectionCount } = useActions();
+
+  const fragments = useMemo(() => {
+    const activeProfile = getProfile(state.preferences.profileId) ?? getGeneralProfile();
+    return buildPrompt({
+      catalog,
+      selections: state.selections,
+      profile: activeProfile,
+      promptLocale: state.preferences.promptLocale,
+    }).fragments;
+  }, [catalog, state.selections, state.preferences.profileId, state.preferences.promptLocale]);
+
+  const categoryTitle = (categoryId: string) =>
+    catalog.categories.find((category) => category.id === categoryId)?.name[state.preferences.uiLocale] ??
+    categoryId;
 
   const stats = useMemo(() => {
     const text = state.prompt.trim();
@@ -89,6 +105,22 @@ export function PromptPanel() {
           onChange={(event) => dispatch({ type: 'set-negative', negative: event.target.value })}
         />
       </div>
+
+      <details className="contributions">
+        <summary>{t('prompt.fragments')}</summary>
+        {fragments.length === 0 ? (
+          <p className="empty">{t('prompt.noFragments')}</p>
+        ) : (
+          <ol className="fragment-list">
+            {fragments.map((fragment) => (
+              <li key={fragment.entryId}>
+                <span className="fragment-category">{categoryTitle(fragment.categoryId)}</span>
+                <span className="fragment-text">{fragment.text}</span>
+              </li>
+            ))}
+          </ol>
+        )}
+      </details>
     </section>
   );
 }

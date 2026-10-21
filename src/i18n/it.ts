@@ -74,6 +74,7 @@ export const it: Dictionary = {
   'prompt.copyFail': 'Copia non riuscita. Seleziona il testo e copialo a mano.',
   'prompt.fragments': 'Contributi',
   'prompt.noFragments': 'Ancora nessun contributo.',
+  'prompt.examples': 'Esempi',
 
   'warnings.title': 'Controlli',
   'warnings.none': 'Nessun conflitto o ridondanza rilevata.',
