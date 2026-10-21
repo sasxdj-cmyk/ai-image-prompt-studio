@@ -1,0 +1,649 @@
+{
+  "categories": [
+    {
+      "id": "subject.presentation",
+      "entries": [
+        {
+          "id": "subject.presentation.editorial-model",
+          "label": { "en": "Editorial model", "it": "Modello editoriale" },
+          "prompt": { "en": "fashion editorial model", "it": "modello editoriale di moda" },
+          "tags": ["fashion", "editorial"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.street-cast",
+          "label": { "en": "Street cast", "it": "Casting di strada" },
+          "prompt": { "en": "street-style model", "it": "modello street style" },
+          "tags": ["streetwear", "casting"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.studio-sitter",
+          "label": { "en": "Studio sitter", "it": "Modello in studio" },
+          "prompt": { "en": "studio portrait sitter", "it": "soggetto di ritratto in studio" },
+          "tags": ["portrait", "studio"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.campaign",
+          "label": { "en": "Campaign model", "it": "Modello per campagna" },
+          "prompt": { "en": "advertising campaign model", "it": "modello per campagna pubblicitaria" },
+          "tags": ["advertising"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.runway",
+          "label": { "en": "Runway model", "it": "Modello di passerella" },
+          "prompt": { "en": "runway model", "it": "modello di passerella" },
+          "tags": ["runway", "fashion"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.beauty",
+          "label": { "en": "Beauty subject", "it": "Soggetto beauty" },
+          "prompt": { "en": "beauty close-up subject", "it": "soggetto in primo piano beauty" },
+          "tags": ["beauty"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.fitness",
+          "label": { "en": "Fitness model", "it": "Modello fitness" },
+          "prompt": { "en": "fitness model", "it": "modello fitness" },
+          "tags": ["fitness", "sport"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.documentary",
+          "label": { "en": "Documentary subject", "it": "Soggetto documentaristico" },
+          "prompt": { "en": "documentary portrait subject", "it": "soggetto di ritratto documentaristico" },
+          "tags": ["documentary"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.passerby",
+          "label": { "en": "Passer-by", "it": "Passante" },
+          "prompt": { "en": "anonymous passer-by", "it": "passante anonimo" },
+          "tags": ["street", "candid"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.presentation.lifestyle",
+          "label": { "en": "Lifestyle subject", "it": "Soggetto lifestyle" },
+          "prompt": { "en": "lifestyle model", "it": "modello lifestyle" },
+          "tags": ["lifestyle"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "subject.count",
+      "entries": [
+        {
+          "id": "subject.count.single",
+          "label": { "en": "One subject", "it": "Un soggetto" },
+          "prompt": { "en": "a single subject", "it": "un unico soggetto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.count.couple",
+          "label": { "en": "Two subjects", "it": "Due soggetti" },
+          "prompt": { "en": "two subjects", "it": "due soggetti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.count.trio",
+          "label": { "en": "Three subjects", "it": "Tre soggetti" },
+          "prompt": { "en": "three subjects", "it": "tre soggetti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.count.group",
+          "label": { "en": "Group", "it": "Gruppo" },
+          "prompt": { "en": "a group of subjects", "it": "un gruppo di soggetti" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "subject.age",
+      "entries": [
+        {
+          "id": "subject.age.early-twenties",
+          "label": { "en": "Early twenties", "it": "Primi venticinque anni" },
+          "prompt": { "en": "in their early twenties", "it": "sui venticinque anni" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.age.mid-twenties",
+          "label": { "en": "Mid twenties", "it": "Venticinque-ventotto anni" },
+          "prompt": { "en": "in their mid twenties", "it": "sui venticinque-ventotto anni" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.age.early-thirties",
+          "label": { "en": "Early thirties", "it": "Primi trent'anni" },
+          "prompt": { "en": "in their early thirties", "it": "sui trent'anni" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.age.mid-thirties",
+          "label": { "en": "Mid thirties", "it": "Trentacinque-trentanove anni" },
+          "prompt": { "en": "in their mid thirties", "it": "sui trentacinque-trentanove anni" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.age.forties",
+          "label": { "en": "Forties", "it": "Quarant'anni" },
+          "prompt": { "en": "in their forties", "it": "sui quaranta anni" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.age.fifties",
+          "label": { "en": "Fifties", "it": "Cinquanta anni" },
+          "prompt": { "en": "in their fifties", "it": "sui cinquanta anni" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.age.sixty-plus",
+          "label": { "en": "Sixty and over", "it": "Sessant'anni e oltre" },
+          "prompt": { "en": "in their sixties or older", "it": "sui sessant'anni o più" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.age.young-adult",
+          "label": { "en": "Young adult", "it": "Giovane adulto" },
+          "prompt": { "en": "a young adult", "it": "un giovane adulto" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "subject.role",
+      "entries": [
+        {
+          "id": "subject.role.model",
+          "label": { "en": "Fashion model", "it": "Modello di moda" },
+          "prompt": { "en": "a fashion model", "it": "un modello di moda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.business",
+          "label": { "en": "Business professional", "it": "Professionista d'azienda" },
+          "prompt": { "en": "a business professional", "it": "un professionista d'azienda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.creative",
+          "label": { "en": "Creative professional", "it": "Creativo" },
+          "prompt": { "en": "a creative professional", "it": "un professionista creativo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.athlete",
+          "label": { "en": "Athlete", "it": "Atleta" },
+          "prompt": { "en": "an athlete", "it": "un atleta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.musician",
+          "label": { "en": "Musician", "it": "Musicista" },
+          "prompt": { "en": "a musician", "it": "un musicista" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.chef",
+          "label": { "en": "Chef", "it": "Chef" },
+          "prompt": { "en": "a chef", "it": "uno chef" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.artisan",
+          "label": { "en": "Artisan / maker", "it": "Artigiano" },
+          "prompt": { "en": "a craftsperson", "it": "un artigiano" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.student",
+          "label": { "en": "Student", "it": "Studente" },
+          "prompt": { "en": "a student", "it": "uno studente" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.performer",
+          "label": { "en": "Performer", "it": "Performer" },
+          "prompt": { "en": "a performer", "it": "un performer" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.traveller",
+          "label": { "en": "Traveller", "it": "Viaggiatore" },
+          "prompt": { "en": "a traveller", "it": "un viaggiatore" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.outdoor",
+          "label": { "en": "Outdoor enthusiast", "it": "Appassionato di attività all'aperto" },
+          "prompt": { "en": "an outdoor enthusiast", "it": "un appassionato di attività all'aperto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.office",
+          "label": { "en": "Office worker", "it": "Impiegato" },
+          "prompt": { "en": "an office worker", "it": "un impiegato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.parent",
+          "label": { "en": "Parent", "it": "Genitore" },
+          "prompt": { "en": "a parent", "it": "un genitore" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.role.streetwear-brand",
+          "label": { "en": "Streetwear personality", "it": "Personalità streetwear" },
+          "prompt": { "en": "a streetwear personality", "it": "una personalità streetwear" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "subject.look",
+      "entries": [
+        {
+          "id": "subject.look.editorial",
+          "label": { "en": "Fashion editorial", "it": "Editoriale di moda" },
+          "prompt": { "en": "fashion editorial", "it": "editoriale di moda" },
+          "tags": ["fashion"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.streetwear",
+          "label": { "en": "Streetwear", "it": "Streetwear" },
+          "prompt": { "en": "streetwear", "it": "streetwear" },
+          "tags": ["streetwear"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.sportswear",
+          "label": { "en": "Sportswear", "it": "Sportswear" },
+          "prompt": { "en": "sportswear", "it": "sportswear" },
+          "tags": ["sport"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.athleisure",
+          "label": { "en": "Athleisure", "it": "Activewear" },
+          "prompt": { "en": "athleisure", "it": "activewear" },
+          "tags": ["sport", "leisure"],
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.minimal",
+          "label": { "en": "Minimal", "it": "Minimale" },
+          "prompt": { "en": "minimalist", "it": "minimalista" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.maximal",
+          "label": { "en": "Maximalist", "it": "Massimalista" },
+          "prompt": { "en": "maximalist", "it": "massimalista" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.quiet-luxury",
+          "label": { "en": "Quiet luxury", "it": "Quiet luxury" },
+          "prompt": { "en": "quiet luxury", "it": "quiet luxury" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.heritage",
+          "label": { "en": "Heritage / old money", "it": "Heritage / old money" },
+          "prompt": { "en": "heritage menswear styling", "it": "stile heritage da uomo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.business",
+          "label": { "en": "Corporate", "it": "Corporate" },
+          "prompt": { "en": "corporate", "it": "corporate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.evening",
+          "label": { "en": "Evening glamour", "it": "Glamour da sera" },
+          "prompt": { "en": "evening glamour", "it": "glamour da sera" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.bohemian",
+          "label": { "en": "Bohemian", "it": "Bohemien" },
+          "prompt": { "en": "bohemian", "it": "bohemien" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.alternative",
+          "label": { "en": "Alternative / punk", "it": "Alternativo / punk" },
+          "prompt": { "en": "alternative punk", "it": "punk alternativo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.vintage",
+          "label": { "en": "Vintage / retro", "it": "Vintage / retrò" },
+          "prompt": { "en": "vintage-inspired", "it": "ispirato al vintage" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.workwear",
+          "label": { "en": "Workwear / utility", "it": "Workwear / utility" },
+          "prompt": { "en": "workwear", "it": "workwear" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.dark-academia",
+          "label": { "en": "Dark academia", "it": "Dark academia" },
+          "prompt": { "en": "dark academia", "it": "dark academia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.resort",
+          "label": { "en": "Resort", "it": "Resort" },
+          "prompt": { "en": "resort wear", "it": "resort wear" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.preppy",
+          "label": { "en": "Preppy", "it": "Preppy" },
+          "prompt": { "en": "preppy", "it": "preppy" },
+          "status": "evergreen"
+        },
+        {
+          "id": "subject.look.sport-lifestyle",
+          "label": { "en": "Sport lifestyle", "it": "Sport lifestyle" },
+          "prompt": { "en": "sport lifestyle", "it": "sport lifestyle" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "body.build",
+      "entries": [
+        {
+          "id": "body.build.slim",
+          "label": { "en": "Slim", "it": "Snella" },
+          "prompt": { "en": "a slim build", "it": "corporatura snella" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.lean",
+          "label": { "en": "Lean", "it": "Asciutta" },
+          "prompt": { "en": "a lean build", "it": "corporatura asciutta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.athletic",
+          "label": { "en": "Athletic", "it": "Atletica" },
+          "prompt": { "en": "an athletic build", "it": "corporatura atletica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.average",
+          "label": { "en": "Average", "it": "Media" },
+          "prompt": { "en": "an average build", "it": "corporatura media" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.muscular",
+          "label": { "en": "Muscular", "it": "Muscolosa" },
+          "prompt": { "en": "a muscular build", "it": "corporatura muscolosa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.stocky",
+          "label": { "en": "Stocky", "it": "Robusta" },
+          "prompt": { "en": "a stocky build", "it": "corporatura robusta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.curvy",
+          "label": { "en": "Curvy", "it": "Curva" },
+          "prompt": { "en": "a curvy build", "it": "corporatura curvy" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.plus-size",
+          "label": { "en": "Plus size", "it": "Taglie comode" },
+          "prompt": { "en": "a plus-size figure", "it": "figura di taglia comoda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.petite",
+          "label": { "en": "Petite", "it": "Minuta" },
+          "prompt": { "en": "a petite build", "it": "corporatura minuta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.broad",
+          "label": { "en": "Broad", "it": "Ampia" },
+          "prompt": { "en": "a broad build", "it": "corporatura ampia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.build.soft",
+          "label": { "en": "Soft and rounded", "it": "Morbida e tondeggiante" },
+          "prompt": { "en": "a soft rounded build", "it": "corporatura morbida e tondeggiante" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "body.height",
+      "entries": [
+        {
+          "id": "body.height.petite",
+          "label": { "en": "Petite height", "it": "Altezza minuta" },
+          "prompt": { "en": "petite height", "it": "altezza minuta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.height.short",
+          "label": { "en": "Short", "it": "Bassa" },
+          "prompt": { "en": "short stature", "it": "statura bassa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.height.average",
+          "label": { "en": "Average height", "it": "Altezza media" },
+          "prompt": { "en": "average height", "it": "altezza media" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.height.tall",
+          "label": { "en": "Tall", "it": "Alta" },
+          "prompt": { "en": "tall stature", "it": "statura alta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.height.very-tall",
+          "label": { "en": "Very tall", "it": "Molto alta" },
+          "prompt": { "en": "very tall stature", "it": "statura molto alta" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "body.proportions",
+      "entries": [
+        {
+          "id": "body.proportions.balanced",
+          "label": { "en": "Balanced", "it": "Equilibrate" },
+          "prompt": { "en": "balanced proportions", "it": "proporzioni equilibrate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.proportions.long-limbed",
+          "label": { "en": "Long limbs", "it": "Arti lunghi" },
+          "prompt": { "en": "long-limbed proportions", "it": "proporzioni con arti lunghi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.proportions.short-limbed",
+          "label": { "en": "Short limbs", "it": "Arti brevi" },
+          "prompt": { "en": "short-limbed proportions", "it": "proporzioni con arti brevi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.proportions.long-torso",
+          "label": { "en": "Long torso", "it": "Torso lungo" },
+          "prompt": { "en": "a long torso", "it": "torso lungo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.proportions.compact",
+          "label": { "en": "Compact", "it": "Compatte" },
+          "prompt": { "en": "compact proportions", "it": "proporzioni compatte" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.proportions.long-neck",
+          "label": { "en": "Long neck", "it": "Collo lungo" },
+          "prompt": { "en": "a long neck", "it": "collo lungo" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "body.shoulders",
+      "entries": [
+        {
+          "id": "body.shoulders.narrow",
+          "label": { "en": "Narrow shoulders", "it": "Spalle strette" },
+          "prompt": { "en": "narrow shoulders", "it": "spalle strette" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.shoulders.square",
+          "label": { "en": "Square shoulders", "it": "Spalle squadrate" },
+          "prompt": { "en": "square shoulders", "it": "spalle squadrate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.shoulders.broad",
+          "label": { "en": "Broad shoulders", "it": "Spalle larghe" },
+          "prompt": { "en": "broad shoulders", "it": "spalle larghe" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.shoulders.sloped",
+          "label": { "en": "Sloped shoulders", "it": "Spalle inclinate" },
+          "prompt": { "en": "sloped shoulders", "it": "spalle inclinate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.shoulders.rounded",
+          "label": { "en": "Rounded shoulders", "it": "Spalle arrotondate" },
+          "prompt": { "en": "rounded shoulders", "it": "spalle arrotondate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.shoulders.straight-posture",
+          "label": { "en": "Upright posture", "it": "Postura eretta" },
+          "prompt": { "en": "an upright posture", "it": "una postura eretta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.shoulders.relaxed-posture",
+          "label": { "en": "Relaxed posture", "it": "Postura rilassata" },
+          "prompt": { "en": "a relaxed posture", "it": "una postura rilassata" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "body.musculature",
+      "entries": [
+        {
+          "id": "body.musculature.undefined",
+          "label": { "en": "Soft, undefined", "it": "Morbida, non definita" },
+          "prompt": { "en": "soft undefined muscle tone", "it": "tono muscolare morbido e non definito" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.musculature.light",
+          "label": { "en": "Lightly defined", "it": "Leggermente definita" },
+          "prompt": { "en": "lightly defined muscle tone", "it": "tono muscolare leggermente definito" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.musculature.visible",
+          "label": { "en": "Visibly defined", "it": "Evidentemente definita" },
+          "prompt": { "en": "visibly defined muscle tone", "it": "tono muscolare nettamente definito" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.musculature.strong",
+          "label": { "en": "Strongly muscular", "it": "Molto muscolosa" },
+          "prompt": { "en": "a strongly muscular build", "it": "una corporatura molto muscolosa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.musculature.lean-cut",
+          "label": { "en": "Lean and cut", "it": "Asciutta e definita" },
+          "prompt": { "en": "a lean, defined physique", "it": "una fisico asciutto e definito" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "body.silhouette",
+      "entries": [
+        {
+          "id": "body.silhouette.androgynous",
+          "label": { "en": "Androgynous", "it": "Androgina" },
+          "prompt": { "en": "an androgynous silhouette", "it": "una silhouette androgina" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.silhouette.hourglass",
+          "label": { "en": "Hourglass", "it": "Clessidrica" },
+          "prompt": { "en": "an hourglass silhouette", "it": "una silhouette clessidrica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.silhouette.rectangular",
+          "label": { "en": "Rectangular", "it": "Rettangolare" },
+          "prompt": { "en": "a rectangular silhouette", "it": "una silhouette rettangolare" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.silhouette.inverted-triangle",
+          "label": { "en": "Inverted triangle", "it": "Triangolo invertito" },
+          "prompt": { "en": "an inverted triangle silhouette", "it": "una silhouette a triangolo invertito" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.silhouette.pear",
+          "label": { "en": "Pear shaped", "it": "A pera" },
+          "prompt": { "en": "a pear-shaped silhouette", "it": "una silhouette a pera" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.silhouette.boyish",
+          "label": { "en": "Boyish", "it": "Garzone" },
+          "prompt": { "en": "a boyish silhouette", "it": "una silhouette garzone" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.silhouette.feminine",
+          "label": { "en": "Feminine", "it": "Femminile" },
+          "prompt": { "en": "a feminine silhouette", "it": "una silhouette femminile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "body.silhouette.powerful",
+          "label": { "en": "Powerful", "it": "Potente" },
+          "prompt": { "en": "a powerful, grounded silhouette", "it": "una silhouette possente e salda" },
+          "status": "evergreen"
+        }
+      ]
+    }
+  ]
+}

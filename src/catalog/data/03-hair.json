@@ -1,0 +1,430 @@
+{
+  "categories": [
+    {
+      "id": "styling.hair.length",
+      "entries": [
+        {
+          "id": "styling.hair.length.pixie",
+          "label": { "en": "Pixie", "it": "Pixie" },
+          "prompt": { "en": "a short pixie cut", "it": "un taglio pixie corto" },
+          "tags": ["short"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.length.bob",
+          "label": { "en": "Bob", "it": "Bob" },
+          "prompt": { "en": "a chin-length bob", "it": "un bob fino al mento" },
+          "tags": ["short"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.length.short",
+          "label": { "en": "Short", "it": "Corta" },
+          "prompt": { "en": "short hair", "it": "capelli corti" },
+          "tags": ["short"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.length.shoulder",
+          "label": { "en": "Shoulder length", "it": "Lunghezza spalla" },
+          "prompt": { "en": "shoulder-length hair", "it": "capelli alla lunghezza delle spalle" },
+          "tags": ["medium"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.length.mid-back",
+          "label": { "en": "Mid-back", "it": "Mezza schiena" },
+          "prompt": { "en": "mid-back length hair", "it": "capelli a metà schiena" },
+          "tags": ["long"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.length.waist",
+          "label": { "en": "Waist length", "it": "Lunghezza vita" },
+          "prompt": { "en": "waist-length hair", "it": "capelli alla lunghezza della vita" },
+          "tags": ["long"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.length.floor",
+          "label": { "en": "Floor length", "it": "Lunghezza pavimento" },
+          "prompt": { "en": "floor-length hair", "it": "capelli fino al pavimento" },
+          "tags": ["long"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "styling.hair.cut",
+      "entries": [
+        {
+          "id": "styling.hair.cut.blunt",
+          "label": { "en": "Blunt", "it": "Taglio a capello" },
+          "prompt": { "en": "a blunt cut", "it": "un taglio a capello" },
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.cut.layered",
+          "label": { "en": "Layered", "it": "Scalati" },
+          "prompt": { "en": "a layered cut", "it": "un taglio scalato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.cut.shag",
+          "label": { "en": "Shag", "it": "Shag" },
+          "prompt": { "en": "a shaggy cut", "it": "un taglio shaggy" },
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.cut.fringe-cut",
+          "label": { "en": "Fringe cut", "it": "Con frangia" },
+          "prompt": { "en": "a fringe cut", "it": "un taglio con frangia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.cut.curtain",
+          "label": { "en": "Curtain bangs cut", "it": "Con frangia a tenda" },
+          "prompt": { "en": "a curtain-bang cut", "it": "un taglio con frangia a tenda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.cut.wavy-cut",
+          "label": { "en": "Wavy cut", "it": "Taglio ondulato" },
+          "prompt": { "en": "a soft wavy cut", "it": "un taglio morbido e ondulato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.cut.textured",
+          "label": { "en": "Textured / choppy", "it": "Testurizzato" },
+          "prompt": { "en": "a textured choppy cut", "it": "un taglio testurizzato a schegge" },
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.cut.tapered",
+          "label": { "en": "Tapered", "it": "Sfumato" },
+          "prompt": { "en": "a tapered cut", "it": "un taglio sfumato" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "styling.hair.style",
+      "entries": [
+        {
+          "id": "styling.hair.style.down",
+          "label": { "en": "Worn down", "it": "Sciolti" },
+          "prompt": { "en": "hair worn down", "it": "capelli sciolti" },
+          "tags": ["down"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.style.tied-back",
+          "label": { "en": "Tied back", "it": "Raccolti" },
+          "prompt": { "en": "hair tied back", "it": "capelli raccolti" },
+          "tags": ["up"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.style.low-bun",
+          "label": { "en": "Low bun", "it": "Chignon basso" },
+          "prompt": { "en": "a low bun", "it": "uno chignon basso" },
+          "tags": ["up"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.style.high-ponytail",
+          "label": { "en": "High ponytail", "it": "Coda di cavallo alta" },
+          "prompt": { "en": "a high ponytail", "it": "una coda di cavallo alta" },
+          "tags": ["up"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.style.braid",
+          "label": { "en": "Braided", "it": "Intrecciati" },
+          "prompt": { "en": "braided hair", "it": "capelli intrecciati" },
+          "tags": ["up"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.style.updo",
+          "label": { "en": "Elegant updo", "it": "Acconciatura elegante" },
+          "prompt": { "en": "an elegant updo", "it": "un'acconciatura elegante" },
+          "tags": ["up"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.style.top-knot",
+          "label": { "en": "Top knot", "it": "Top knot" },
+          "prompt": { "en": "a top knot", "it": "un top knot" },
+          "tags": ["up"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.style.bob-styled",
+          "label": { "en": "Sleek and styled", "it": "Liscia e acconciata" },
+          "prompt": { "en": "sleek styled hair", "it": "capelli lisci e acconciati" },
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.style.under-cap",
+          "label": { "en": "Tucked under a cap", "it": "Sotto un cappello" },
+          "prompt": { "en": "hair tucked under a cap", "it": "capelli infilati sotto un cappellino" },
+          "tags": ["down"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "styling.hair.texture",
+      "entries": [
+        {
+          "id": "styling.hair.texture.straight",
+          "label": { "en": "Straight", "it": "Lisci" },
+          "prompt": { "en": "straight hair", "it": "capelli lisci" },
+          "tags": ["straight"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.texture.wavy",
+          "label": { "en": "Wavy", "it": "Ondulati" },
+          "prompt": { "en": "wavy hair", "it": "capelli ondulati" },
+          "tags": ["wavy"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.texture.loose-waves",
+          "label": { "en": "Loose waves", "it": "Onde morbide" },
+          "prompt": { "en": "loose beach waves", "it": "onde morbide da spiaggia" },
+          "tags": ["wavy"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.texture.curly",
+          "label": { "en": "Curly", "it": "Ricci" },
+          "prompt": { "en": "curly hair", "it": "capelli ricci" },
+          "tags": ["curly"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.texture.tight-curls",
+          "label": { "en": "Tight curls", "it": "Ricci a spazzola" },
+          "prompt": { "en": "tight coiled curls", "it": "ricci a spazzola" },
+          "tags": ["curly"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.texture.coily",
+          "label": { "en": "Coily", "it": "Afro" },
+          "prompt": { "en": "coily textured hair", "it": "capelli a texture afro" },
+          "tags": ["curly"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.texture.crimped",
+          "label": { "en": "Crimped", "it": "Crespi" },
+          "prompt": { "en": "crimped hair", "it": "capelli crespi" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "styling.hair.color",
+      "entries": [
+        {
+          "id": "styling.hair.color.black",
+          "label": { "en": "Black", "it": "Neri" },
+          "prompt": { "en": "black hair", "it": "capelli neri" },
+          "tags": ["black"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.dark-brown",
+          "label": { "en": "Dark brown", "it": "Castani scuri" },
+          "prompt": { "en": "dark brown hair", "it": "capelli castani scuri" },
+          "tags": ["brown"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.chestnut",
+          "label": { "en": "Chestnut", "it": "Castani" },
+          "prompt": { "en": "chestnut brown hair", "it": "capelli castani" },
+          "tags": ["brown"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.light-brown",
+          "label": { "en": "Light brown", "it": "Castani chiari" },
+          "prompt": { "en": "light brown hair", "it": "capelli castani chiari" },
+          "tags": ["brown"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.blonde",
+          "label": { "en": "Blonde", "it": "Biondi" },
+          "prompt": { "en": "blonde hair", "it": "capelli biondi" },
+          "tags": ["blonde"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.platinum",
+          "label": { "en": "Platinum", "it": "Platinati" },
+          "prompt": { "en": "platinum blonde hair", "it": "capelli biondo platino" },
+          "tags": ["blonde"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.grey",
+          "label": { "en": "Grey / silver", "it": "Grigi / argentati" },
+          "prompt": { "en": "silver grey hair", "it": "capelli grigi argentati" },
+          "tags": ["grey"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.red",
+          "label": { "en": "Red", "it": "Rossi" },
+          "prompt": { "en": "red hair", "it": "capelli rossi" },
+          "tags": ["red"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.copper",
+          "label": { "en": "Copper", "it": "Rame" },
+          "prompt": { "en": "copper red hair", "it": "capelli rosso rame" },
+          "tags": ["red"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.auburn",
+          "label": { "en": "Auburn", "it": "Ranno" },
+          "prompt": { "en": "auburn hair", "it": "capelli ranno" },
+          "tags": ["red"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.blonde-highlights",
+          "label": { "en": "Blonde highlights", "it": "Mèche bionde" },
+          "prompt": { "en": "blonde balayage highlights", "it": "mèche bionde" },
+          "tags": ["blonde", "highlight"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.fashion-pastel",
+          "label": { "en": "Pastel fashion colour", "it": "Colore moda pastello" },
+          "prompt": { "en": "pastel coloured hair", "it": "capelli colorati pastello" },
+          "tags": ["fashion"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.color.vivid",
+          "label": { "en": "Vivid fashion colour", "it": "Colore moda vivace" },
+          "prompt": { "en": "vivid coloured hair", "it": "capelli colorati vivaci" },
+          "tags": ["fashion"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "styling.hair.detail",
+      "entries": [
+        {
+          "id": "styling.hair.detail.middle-part",
+          "label": { "en": "Middle parting", "it": "Riga centrale" },
+          "prompt": { "en": "a middle parting", "it": "una riga centrale" },
+          "tags": ["parting"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.side-part",
+          "label": { "en": "Side parting", "it": "Riga laterale" },
+          "prompt": { "en": "a deep side parting", "it": "una riga laterale profonda" },
+          "tags": ["parting"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.off-centre-part",
+          "label": { "en": "Off-centre parting", "it": "Riga fuori centro" },
+          "prompt": { "en": "an off-centre parting", "it": "una riga fuori centro" },
+          "tags": ["parting"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.bangs",
+          "label": { "en": "Full bangs", "it": "Frangia piena" },
+          "prompt": { "en": "full bangs", "it": "frangia piena" },
+          "tags": ["fringe"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.soft-fringe",
+          "label": { "en": "Wispy fringe", "it": "Frangia leggera" },
+          "prompt": { "en": "a wispy fringe", "it": "una frangia leggera e scompigliata" },
+          "tags": ["fringe"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.volume",
+          "label": { "en": "Volume", "it": "Volume" },
+          "prompt": { "en": "voluminous hair", "it": "capelli voluminosi" },
+          "tags": ["volume"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.flat",
+          "label": { "en": "Flat / sleek", "it": "Lisci e piatti" },
+          "prompt": { "en": "flat sleek hair", "it": "capelli lisci e piatti" },
+          "tags": ["volume"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.tousled",
+          "label": { "en": "Tousled", "it": "Scompigliati" },
+          "prompt": { "en": "tousled hair", "it": "capelli scompigliati" },
+          "tags": ["texture"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.glossy",
+          "label": { "en": "Glossy finish", "it": "Finitura lucida" },
+          "prompt": { "en": "glossy hair", "it": "capelli lucidi" },
+          "tags": ["finish"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.matte",
+          "label": { "en": "Matte finish", "it": "Finitura opaca" },
+          "prompt": { "en": "matte hair texture", "it": "capelli dalla texture opaca" },
+          "tags": ["finish"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.stubble",
+          "label": { "en": "Stubble", "it": "Barba incolta" },
+          "prompt": { "en": "light facial stubble", "it": "una leggera barba incolta" },
+          "tags": ["grooming"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.beard",
+          "label": { "en": "Full beard", "it": "Barba piena" },
+          "prompt": { "en": "a full beard", "it": "una barba piena" },
+          "tags": ["grooming"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.moustache",
+          "label": { "en": "Moustache", "it": "Baffi" },
+          "prompt": { "en": "a groomed moustache", "it": "baffi curati" },
+          "tags": ["grooming"],
+          "status": "evergreen"
+        },
+        {
+          "id": "styling.hair.detail.clean-shaven",
+          "label": { "en": "Clean shaven", "it": "Senza barba" },
+          "prompt": { "en": "a clean-shaven face", "it": "un viso senza barba" },
+          "tags": ["grooming"],
+          "status": "evergreen"
+        }
+      ]
+    }
+  ]
+}

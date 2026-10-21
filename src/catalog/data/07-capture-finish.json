@@ -1,0 +1,796 @@
+{
+  "categories": [
+    {
+      "id": "capture.type",
+      "entries": [
+        {
+          "id": "capture.type.portrait",
+          "label": { "en": "Portrait", "it": "Ritratto" },
+          "prompt": { "en": "portrait photography", "it": "fotografia di ritratto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.fashion-editorial",
+          "label": { "en": "Fashion editorial", "it": "Editoriale di moda" },
+          "prompt": { "en": "fashion editorial photography", "it": "fotografia editoriale di moda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.beauty",
+          "label": { "en": "Beauty photography", "it": "Fotografia beauty" },
+          "prompt": { "en": "beauty photography", "it": "fotografia beauty" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.street",
+          "label": { "en": "Street photography", "it": "Fotografia di strada" },
+          "prompt": { "en": "street photography", "it": "fotografia di strada" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.advertising",
+          "label": { "en": "Advertising", "it": "Pubblicitaria" },
+          "prompt": { "en": "advertising photography", "it": "fotografia pubblicitaria" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.lifestyle",
+          "label": { "en": "Lifestyle", "it": "Lifestyle" },
+          "prompt": { "en": "lifestyle photography", "it": "fotografia lifestyle" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.sport",
+          "label": { "en": "Sports photography", "it": "Fotografia sportiva" },
+          "prompt": { "en": "sports photography", "it": "fotografia sportiva" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.product",
+          "label": { "en": "Product photography", "it": "Fotografia di prodotto" },
+          "prompt": { "en": "product photography", "it": "fotografia di prodotto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.documentary",
+          "label": { "en": "Documentary", "it": "Documentaristica" },
+          "prompt": { "en": "documentary photography", "it": "fotografia documentaristica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.cinematic",
+          "label": { "en": "Cinematic still", "it": "Still cinematografico" },
+          "prompt": { "en": "a cinematic film still", "it": "un fotogramma cinematografico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.lookbook",
+          "label": { "en": "Lookbook", "it": "Lookbook" },
+          "prompt": { "en": "a lookbook photograph", "it": "una foto da lookbook" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.type.catalogue",
+          "label": { "en": "E-commerce catalogue", "it": "Catalogo e-commerce" },
+          "prompt": { "en": "a clean e-commerce catalogue photograph", "it": "una foto da catalogo e-commerce pulita" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.framing",
+      "entries": [
+        {
+          "id": "capture.framing.extreme-close-up",
+          "label": { "en": "Extreme close-up", "it": "Primo piano ravvicinato" },
+          "prompt": { "en": "an extreme close-up", "it": "un primo piano ravvicinatissimo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.framing.close-up",
+          "label": { "en": "Close-up", "it": "Primo piano" },
+          "prompt": { "en": "a close-up", "it": "un primo piano" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.framing.medium-close-up",
+          "label": { "en": "Medium close-up", "it": "Mezzo primo piano" },
+          "prompt": { "en": "a medium close-up", "it": "un mezzo primo piano" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.framing.bust",
+          "label": { "en": "Bust shot", "it": "Mezzo busto" },
+          "prompt": { "en": "a bust shot", "it": "un mezzo busto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.framing.medium-shot",
+          "label": { "en": "Medium shot", "it": "Piano medio" },
+          "prompt": { "en": "a medium shot", "it": "un piano medio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.framing.three-quarter-length",
+          "label": { "en": "Three-quarter length", "it": "Piano americano" },
+          "prompt": { "en": "a three-quarter length shot", "it": "un piano americano" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.framing.full-body",
+          "label": { "en": "Full body", "it": "Piano intero" },
+          "prompt": { "en": "a full-body shot", "it": "un piano intero" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.framing.wide",
+          "label": { "en": "Wide shot", "it": "Piano largo" },
+          "prompt": { "en": "a wide shot", "it": "un piano largo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.framing.detail",
+          "label": { "en": "Detail shot", "it": "Dettaglio" },
+          "prompt": { "en": "a detail shot of a specific element", "it": "un dettaglio di un elemento specifico" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.angle",
+      "entries": [
+        {
+          "id": "capture.angle.eye-level",
+          "label": { "en": "Eye level", "it": "All'altezza degli occhi" },
+          "prompt": { "en": "shot at eye level", "it": "scatto all'altezza degli occhi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.angle.low-angle",
+          "label": { "en": "Low angle", "it": "Controfiglio" },
+          "prompt": { "en": "a low camera angle", "it": "un angolo di presa in basso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.angle.high-angle",
+          "label": { "en": "High angle", "it": "Dall'alto" },
+          "prompt": { "en": "a high camera angle looking down", "it": "un angolo di presa dall'alto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.angle.dutch",
+          "label": { "en": "Dutch angle", "it": "Inclinato" },
+          "prompt": { "en": "a tilted dutch angle", "it": "un'inquadratura inclinata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.angle.overhead",
+          "label": { "en": "Overhead", "it": "Dall'alto in perpendicolare" },
+          "prompt": { "en": "shot from directly overhead", "it": "scatto diretto dall'alto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.angle.birds-eye",
+          "label": { "en": "Bird's eye", "it": "Dall'alto in perpendicolare" },
+          "prompt": { "en": "a bird's eye view", "it": "una vista dall'alto" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.lens",
+      "entries": [
+        {
+          "id": "capture.lens.ultra-wide",
+          "label": { "en": "Ultra wide (14-24mm)", "it": "Grandangolo (14-24mm)" },
+          "prompt": { "en": "shot on a 20mm ultra wide lens", "it": "scatto con grandangolo da 20mm" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lens.wide",
+          "label": { "en": "Wide (28-35mm)", "it": "Obiettivo standard (28-35mm)" },
+          "prompt": { "en": "shot on a 35mm lens", "it": "scatto con obiettivo da 35mm" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lens.normal",
+          "label": { "en": "Normal (50mm)", "it": "Focale normale (50mm)" },
+          "prompt": { "en": "shot on a 50mm lens", "it": "scatto con obiettivo da 50mm" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lens.portrait-85",
+          "label": { "en": "Portrait (85mm)", "it": "Ritrattistico (85mm)" },
+          "prompt": { "en": "shot on an 85mm portrait lens", "it": "scatto con obiettivo ritrattistico da 85mm" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lens.telephoto",
+          "label": { "en": "Telephoto (135mm+)", "it": "Teleobiettivo (135mm+)" },
+          "prompt": { "en": "shot on a 135mm telephoto lens", "it": "scatto con teleobiettivo da 135mm" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lens.macro",
+          "label": { "en": "Macro", "it": "Macro" },
+          "prompt": { "en": "shot with a macro lens", "it": "scatto con obiettivo macro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lens.tilt-shift",
+          "label": { "en": "Tilt-shift", "it": "Tilt-shift" },
+          "prompt": { "en": "a tilt-shift perspective", "it": "una prospettiva tilt-shift" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lens.anamorphic",
+          "label": { "en": "Anamorphic", "it": "Anamorfico" },
+          "prompt": { "en": "anamorphic widescreen flare", "it": "flare anamorfico widescreen" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.dof",
+      "entries": [
+        {
+          "id": "capture.dof.shallow",
+          "label": { "en": "Shallow depth of field", "it": "Profondità di campo ridotta" },
+          "prompt": { "en": "a shallow depth of field", "it": "una profondità di campo ridotta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.dof.deep",
+          "label": { "en": "Deep focus", "it": "Messa a fuoco estesa" },
+          "prompt": { "en": "deep focus with everything sharp", "it": "messa a fuoco estesa con tutto nitido" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.dof.focus-on-eyes",
+          "label": { "en": "Focus on the eyes", "it": "Focus sugli occhi" },
+          "prompt": { "en": "focused sharply on the eyes", "it": "messa a fuoco netta sugli occhi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.dof.focus-on-subject",
+          "label": { "en": "Focus on the subject", "it": "Focus sul soggetto" },
+          "prompt": { "en": "the subject in sharp focus", "it": "il soggetto nitidamente a fuoco" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.dof.bokeh",
+          "label": { "en": "Bokeh", "it": "Bokeh" },
+          "prompt": { "en": "creamy bokeh in the background", "it": "bokeh morbido sullo sfondo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.dof.foreground-blur",
+          "label": { "en": "Blurred foreground", "it": "Primo piano sfocato" },
+          "prompt": { "en": "an out-of-focus foreground element", "it": "un elemento in primo piano sfocato" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.motion",
+      "entries": [
+        {
+          "id": "capture.motion.frozen",
+          "label": { "en": "Frozen motion", "it": "Moto congelato" },
+          "prompt": { "en": "motion frozen by a fast shutter", "it": "movimento congelato da un otturatore veloce" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.motion.blur",
+          "label": { "en": "Motion blur", "it": "Mosso" },
+          "prompt": { "en": "visible motion blur", "it": "mosso visibile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.motion.panning",
+          "label": { "en": "Panning", "it": "Panning" },
+          "prompt": { "en": "a panning shot with a streaked background", "it": "uno scatto in panning con sfondo mosso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.motion.still",
+          "label": { "en": "Perfectly still", "it": "Perfettamente fermo" },
+          "prompt": { "en": "a completely still subject", "it": "un soggetto perfettamente fermo" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.rendition",
+      "entries": [
+        {
+          "id": "capture.rendition.analog",
+          "label": { "en": "Analog film", "it": "Pellicola analogica" },
+          "prompt": { "en": "shot on 35mm film", "it": "scattato su pellicola 35mm" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.medium-format",
+          "label": { "en": "Medium format", "it": "Formato medio" },
+          "prompt": { "en": "medium format digital quality", "it": "resa di un formato medio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.grain",
+          "label": { "en": "Visible grain", "it": "Grana visibile" },
+          "prompt": { "en": "fine film grain", "it": "grana fotografica fine" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.no-grain",
+          "label": { "en": "Clean and sharp", "it": "Pulito e nitido" },
+          "prompt": { "en": "clean, grain-free rendering", "it": "resa pulita e senza grana" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.high-contrast",
+          "label": { "en": "High contrast", "it": "Contrasto elevato" },
+          "prompt": { "en": "high contrast rendering", "it": "resa ad alto contrasto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.soft-contrast",
+          "label": { "en": "Soft contrast", "it": "Contrasto morbido" },
+          "prompt": { "en": "soft low-contrast rendering", "it": "resa a contrasto morbido" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.warm-grade",
+          "label": { "en": "Warm grade", "it": "Grading caldo" },
+          "prompt": { "en": "a warm colour grade", "it": "una color grading calda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.cool-grade",
+          "label": { "en": "Cool grade", "it": "Grading freddo" },
+          "prompt": { "en": "a cool colour grade", "it": "una color grading fredda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.desaturated",
+          "label": { "en": "Desaturated", "it": "Desaturato" },
+          "prompt": { "en": "a desaturated muted palette", "it": "una palette desaturata e smorzata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.rendition.polaroid",
+          "label": { "en": "Instant film look", "it": "Look istantaneo" },
+          "prompt": { "en": "an instant film look with soft edges", "it": "un look da pellicola istantanea con bordi morbidi" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.aspect",
+      "entries": [
+        {
+          "id": "capture.aspect.1-1",
+          "label": { "en": "1:1 square", "it": "1:1 quadrato" },
+          "prompt": { "en": "a square 1:1 composition", "it": "una composizione quadrata 1:1" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.aspect.4-5",
+          "label": { "en": "4:5 portrait", "it": "4:5 verticale" },
+          "prompt": { "en": "a vertical 4:5 frame", "it": "una verticale 4:5" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.aspect.2-3",
+          "label": { "en": "2:3 portrait", "it": "2:3 verticale" },
+          "prompt": { "en": "a vertical 2:3 frame", "it": "una verticale 2:3" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.aspect.3-2",
+          "label": { "en": "3:2 landscape", "it": "3:2 orizzontale" },
+          "prompt": { "en": "a horizontal 3:2 frame", "it": "un'orizzontale 3:2" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.aspect.16-9",
+          "label": { "en": "16:9 widescreen", "it": "16:9 panoramico" },
+          "prompt": { "en": "a cinematic 16:9 widescreen frame", "it": "un formato panoramico cinematografico 16:9" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.aspect.9-16",
+          "label": { "en": "9:16 vertical", "it": "9:16 verticale" },
+          "prompt": { "en": "a vertical 9:16 frame", "it": "una verticale 9:16" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.composition",
+      "entries": [
+        {
+          "id": "capture.composition.centred",
+          "label": { "en": "Centred", "it": "Centrato" },
+          "prompt": { "en": "a centred symmetrical composition", "it": "una composizione centrata e simmetrica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.composition.rule-of-thirds",
+          "label": { "en": "Rule of thirds", "it": "Terzi" },
+          "prompt": { "en": "composed on the rule of thirds", "it": "composizione sui terzi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.composition.negative-space",
+          "label": { "en": "Negative space", "it": "Spazio negativo" },
+          "prompt": { "en": "generous negative space around the subject", "it": "ampio spazio negativo attorno al soggetto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.composition.leading-lines",
+          "label": { "en": "Leading lines", "it": "Linee di fuga" },
+          "prompt": { "en": "leading lines drawing the eye into the frame", "it": "linee che guidano lo sguardo nell'inquadratura" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.composition.framing-within-frame",
+          "label": { "en": "Frame within frame", "it": "Cornice nella cornice" },
+          "prompt": { "en": "a frame within the frame", "it": "una cornice dentro l'inquadratura" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.composition.foreground-layering",
+          "label": { "en": "Foreground layering", "it": "Piani sovrapposti" },
+          "prompt": { "en": "layered foreground elements", "it": "elementi in primo piano sovrapposti" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.technical",
+      "entries": [
+        {
+          "id": "capture.technical.f1-4",
+          "label": { "en": "Wide aperture (f/1.4-f/4)", "it": "Apertura ampia (f/1.4-f/4)" },
+          "prompt": { "en": "shot at f/2", "it": "scatto a f/2" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.technical.f8-16",
+          "label": { "en": "Narrow aperture (f/8-f/16)", "it": "Apertura ridotta (f/8-f/16)" },
+          "prompt": { "en": "shot at f/11", "it": "scatto a f/11" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.technical.fast-shutter",
+          "label": { "en": "Fast shutter (1/1000s)", "it": "Otturatore veloce (1/1000s)" },
+          "prompt": { "en": "a 1/1000s shutter speed", "it": "un tempo di otturazione di 1/1000s" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.technical.slow-shutter",
+          "label": { "en": "Slow shutter (1/15s)", "it": "Otturatore lento (1/15s)" },
+          "prompt": { "en": "a 1/15s shutter speed", "it": "un tempo di otturazione di 1/15s" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.technical.low-iso",
+          "label": { "en": "Low ISO (100)", "it": "ISO basso (100)" },
+          "prompt": { "en": "shot at ISO 100", "it": "scatto a ISO 100" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.technical.high-iso",
+          "label": { "en": "High ISO (1600+)", "it": "ISO alto (1600+)" },
+          "prompt": { "en": "shot at ISO 3200", "it": "scatto a ISO 3200" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.lighting.type",
+      "entries": [
+        {
+          "id": "capture.lighting.type.natural-window",
+          "label": { "en": "Window light", "it": "Luce da finestra" },
+          "prompt": { "en": "natural window light", "it": "luce naturale da finestra" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.golden-hour",
+          "label": { "en": "Golden hour", "it": "Ora d'oro" },
+          "prompt": { "en": "warm golden hour sunlight", "it": "luce solare calda dell'ora d'oro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.blue-hour",
+          "label": { "en": "Blue hour", "it": "Ora blu" },
+          "prompt": { "en": "the cool blue hour light", "it": "la luce fredda dell'ora blu" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.butterfly",
+          "label": { "en": "Butterfly lighting", "it": "Luce a farfalla" },
+          "prompt": { "en": "butterfly lighting from the front", "it": "illuminazione a farfalla frontale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.rembrandt",
+          "label": { "en": "Rembrandt lighting", "it": "Luce di Rembrandt" },
+          "prompt": { "en": "rembrandt lighting with a cheek shadow", "it": "illuminazione di Rembrandt con ombra sullo zigomo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.split",
+          "label": { "en": "Split lighting", "it": "Luce divisa" },
+          "prompt": { "en": "split lighting across the face", "it": "luce divisa sul viso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.loop",
+          "label": { "en": "Loop lighting", "it": "Luce a loop" },
+          "prompt": { "en": "loop lighting", "it": "illuminazione a loop" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.rim",
+          "label": { "en": "Rim light", "it": "Luce di contorno" },
+          "prompt": { "en": "a rim light separating the subject from the background", "it": "una luce di contorno che separa il soggetto dallo sfondo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.backlight",
+          "label": { "en": "Backlight", "it": "Controluce" },
+          "prompt": { "en": "strong backlight behind the subject", "it": "controluce dietro il soggetto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.side-light",
+          "label": { "en": "Side light", "it": "Luce laterale" },
+          "prompt": { "en": "side lighting across the body", "it": "luce laterale sul corpo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.studio-softbox",
+          "label": { "en": "Softbox", "it": "Softbox" },
+          "prompt": { "en": "a large studio softbox", "it": "una grande softbox da studio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.beauty-dish",
+          "label": { "en": "Beauty dish", "it": "Beauty dish" },
+          "prompt": { "en": "a beauty dish with a soft catchlight", "it": "un beauty dish con un riflesso morbido negli occhi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.umbrella",
+          "label": { "en": "Umbrella light", "it": "Ombrello" },
+          "prompt": { "en": "a shoot-through umbrella light", "it": "una luce a ombrello frontale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.neon",
+          "label": { "en": "Neon", "it": "Neon" },
+          "prompt": { "en": "neon signage lighting", "it": "luce di insegne al neon" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.cinematic",
+          "label": { "en": "Cinematic lighting", "it": "Illuminazione cinematografica" },
+          "prompt": { "en": "cinematic lighting with motivated sources", "it": "illuminazione cinematografica con sorgenti motivate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.type.editorial",
+          "label": { "en": "Editorial lighting", "it": "Illuminazione editoriale" },
+          "prompt": { "en": "clean editorial lighting", "it": "illuminazione editoriale pulita" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.lighting.quality",
+      "entries": [
+        {
+          "id": "capture.lighting.quality.soft",
+          "label": { "en": "Soft", "it": "Morbida" },
+          "prompt": { "en": "soft diffused light", "it": "luce morbida e diffusa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.quality.hard",
+          "label": { "en": "Hard", "it": "Dura" },
+          "prompt": { "en": "hard directional light with defined shadows", "it": "luce dura e direzionale con ombre definite" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.quality.diffused",
+          "label": { "en": "Diffused", "it": "Diffusa" },
+          "prompt": { "en": "heavily diffused light", "it": "luce fortemente diffusa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.quality.overcast",
+          "label": { "en": "Overcast soft", "it": "Morbida da coperto" },
+          "prompt": { "en": "soft overcast daylight", "it": "luce diurna morbida da cielo coperto" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.lighting.color",
+      "entries": [
+        {
+          "id": "capture.lighting.color.warm",
+          "label": { "en": "Warm", "it": "Calda" },
+          "prompt": { "en": "warm tungsten light", "it": "luce calda a tungsteno" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.color.cool",
+          "label": { "en": "Cool", "it": "Fredda" },
+          "prompt": { "en": "cool blue light", "it": "luce fredda e blu" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.color.mixed",
+          "label": { "en": "Mixed temperature", "it": "Temperatura mista" },
+          "prompt": { "en": "mixed colour temperature lighting", "it": "illuminazione a temperatura cromatica mista" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.color.coloured-gel",
+          "label": { "en": "Coloured gel", "it": "Gel colorato" },
+          "prompt": { "en": "coloured gel lighting", "it": "luce con gel colorato" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "capture.lighting.level",
+      "entries": [
+        {
+          "id": "capture.lighting.level.high-key",
+          "label": { "en": "High key", "it": "High key" },
+          "prompt": { "en": "high-key bright lighting", "it": "illuminazione high key luminosa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.level.low-key",
+          "label": { "en": "Low key", "it": "Low key" },
+          "prompt": { "en": "low-key dramatic lighting with deep shadows", "it": "illuminazione low key drammatica con ombre profonde" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.level.moody",
+          "label": { "en": "Moody", "it": "Cupo" },
+          "prompt": { "en": "moody low-key atmosphere", "it": "un'atmosfera cupa e in controluce" },
+          "status": "evergreen"
+        },
+        {
+          "id": "capture.lighting.level.bright-airy",
+          "label": { "en": "Bright and airy", "it": "Luminosa e ariosa" },
+          "prompt": { "en": "bright airy lighting", "it": "illuminazione luminosa e ariosa" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "finish.style",
+      "entries": [
+        {
+          "id": "finish.style.photorealistic",
+          "label": { "en": "Photorealistic", "it": "Fotorealistico" },
+          "prompt": { "en": "photorealistic", "it": "fotorealistico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.commercial",
+          "label": { "en": "Commercial photography", "it": "Fotografia commerciale" },
+          "prompt": { "en": "commercial photography", "it": "fotografia commerciale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.fashion-editorial",
+          "label": { "en": "Fashion editorial", "it": "Editoriale di moda" },
+          "prompt": { "en": "fashion editorial", "it": "editoriale di moda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.beauty-editorial",
+          "label": { "en": "Beauty editorial", "it": "Editoriale beauty" },
+          "prompt": { "en": "beauty editorial", "it": "editoriale beauty" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.cinematic",
+          "label": { "en": "Cinematic", "it": "Cinematografico" },
+          "prompt": { "en": "cinematic", "it": "cinematografico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.documentary",
+          "label": { "en": "Documentary", "it": "Documentaristico" },
+          "prompt": { "en": "documentary realism", "it": "realismo documentaristico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.analog",
+          "label": { "en": "Analog", "it": "Analogico" },
+          "prompt": { "en": "analog film aesthetic", "it": "estetica da pellicola analogica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.vintage",
+          "label": { "en": "Vintage", "it": "Vintage" },
+          "prompt": { "en": "a vintage look", "it": "un look vintage" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.illustration",
+          "label": { "en": "Illustration", "it": "Illustrazione" },
+          "prompt": { "en": "a refined illustration", "it": "un'illustrazione curata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.concept-art",
+          "label": { "en": "Concept art", "it": "Concept art" },
+          "prompt": { "en": "concept art", "it": "concept art" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.editorial-collage",
+          "label": { "en": "Editorial collage", "it": "Collage editoriale" },
+          "prompt": { "en": "an editorial collage layout", "it": "una composizione da collage editoriale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.style.minimalist",
+          "label": { "en": "Minimalist", "it": "Minimalista" },
+          "prompt": { "en": "a minimalist visual language", "it": "un linguaggio visivo minimalista" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "finish.boost",
+      "entries": [
+        {
+          "id": "finish.boost.high-resolution",
+          "label": { "en": "High resolution", "it": "Alta risoluzione" },
+          "prompt": { "en": "high resolution", "it": "alta risoluzione" },
+          "notes": {
+            "en": "Only add it when the target model benefits from it.",
+            "it": "Aggiungilo solo se il modello di destinazione ne beneficia."
+          },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.boost.sharp-focus",
+          "label": { "en": "Sharp focus", "it": "Messa a fuoco nitida" },
+          "prompt": { "en": "razor sharp focus", "it": "messa a fuoco perfettamente nitida" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.boost.fine-detail",
+          "label": { "en": "Fine detail", "it": "Dettaglio fine" },
+          "prompt": { "en": "fine detail", "it": "dettagli fini" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.boost.natural-colour",
+          "label": { "en": "Natural colour", "it": "Colore naturale" },
+          "prompt": { "en": "natural colour rendering", "it": "resa del colore naturale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "finish.boost.trend",
+          "label": { "en": "Trending look", "it": "Look di tendenza" },
+          "prompt": { "en": "a current trending aesthetic", "it": "un'estetica di tendenza" },
+          "status": "evergreen"
+        }
+      ]
+    }
+  ]
+}

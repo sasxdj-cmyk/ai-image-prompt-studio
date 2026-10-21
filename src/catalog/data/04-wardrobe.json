@@ -1,0 +1,1603 @@
+{
+  "categories": [
+    {
+      "id": "wardrobe.look",
+      "entries": [
+        {
+          "id": "wardrobe.look.monochrome",
+          "label": { "en": "Monochrome", "it": "Monocromatico" },
+          "prompt": { "en": "a monochrome outfit", "it": "un outfit monocromatico" },
+          "tags": ["colour"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.tonal",
+          "label": { "en": "Tonal", "it": "Tonal" },
+          "prompt": { "en": "a tonal outfit in shades of one colour", "it": "un outfit tonale in sfumature di un unico colore" },
+          "tags": ["colour"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.neutral-capsule",
+          "label": { "en": "Neutral capsule", "it": "Capsula neutra" },
+          "prompt": { "en": "a neutral capsule wardrobe look", "it": "un look da capsule neutra" },
+          "tags": ["colour"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.colour-blocked",
+          "label": { "en": "Colour blocked", "it": "A blocchi di colore" },
+          "prompt": { "en": "a colour-blocked outfit", "it": "un outfit a blocchi di colore" },
+          "tags": ["colour"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.business-casual",
+          "label": { "en": "Business casual", "it": "Business casual" },
+          "prompt": { "en": "a business casual outfit", "it": "un outfit business casual" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.smart-casual",
+          "label": { "en": "Smart casual", "it": "Smart casual" },
+          "prompt": { "en": "a smart casual outfit", "it": "un outfit smart casual" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.elevated-casual",
+          "label": { "en": "Elevated casual", "it": "Casual elevato" },
+          "prompt": { "en": "an elevated casual outfit", "it": "un outfit casual elevato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.off-duty",
+          "label": { "en": "Off duty", "it": "Time out" },
+          "prompt": { "en": "an off-duty look", "it": "un look da tempo libero" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.layered",
+          "label": { "en": "Layered", "it": "A strati" },
+          "prompt": { "en": "a layered outfit", "it": "un outfit a strati" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.androgynous",
+          "label": { "en": "Androgynous tailoring", "it": "Sartoria androgina" },
+          "prompt": { "en": "an androgynous tailored look", "it": "un look sartoriale androgino" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.resort",
+          "label": { "en": "Resort", "it": "Resort" },
+          "prompt": { "en": "a resort look", "it": "un look da resort" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.formal",
+          "label": { "en": "Formal", "it": "Formale" },
+          "prompt": { "en": "a formal outfit", "it": "un outfit formale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.cocktail",
+          "label": { "en": "Cocktail", "it": "Cocktail" },
+          "prompt": { "en": "a cocktail outfit", "it": "un outfit cocktail" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.workwear",
+          "label": { "en": "Workwear", "it": "Workwear" },
+          "prompt": { "en": "a workwear look", "it": "un look da lavoro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.vintage-inspired",
+          "label": { "en": "Vintage inspired", "it": "Ispirato al vintage" },
+          "prompt": { "en": "a vintage-inspired outfit", "it": "un outfit ispirato al vintage" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.romantic",
+          "label": { "en": "Romantic", "it": "Romantico" },
+          "prompt": { "en": "a romantic outfit", "it": "un outfit romantico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.utilitarian",
+          "label": { "en": "Utilitarian", "it": "Utilitarista" },
+          "prompt": { "en": "a utilitarian outfit", "it": "un outfit utilitarista" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.sport-luxury",
+          "label": { "en": "Sport luxury", "it": "Sport luxury" },
+          "prompt": { "en": "a sport-luxury outfit", "it": "un outfit sport luxury" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.look.sporty-heritage",
+          "label": { "en": "Sporty heritage", "it": "Sporty heritage" },
+          "prompt": { "en": "a sporty heritage look", "it": "un look sporty heritage" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe.garments",
+      "entries": [
+        {
+          "id": "wardrobe.garments.tops.silk-camisole",
+          "group": "tops",
+          "label": { "en": "Silk camisole", "it": "Canotta in seta" },
+          "prompt": { "en": "a silk camisole", "it": "una canotta in seta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tops.ribbed-tank",
+          "group": "tops",
+          "label": { "en": "Ribbed tank top", "it": "Canotta a costine" },
+          "prompt": { "en": "a ribbed tank top", "it": "una canotta a costine" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tops.cropped-top",
+          "group": "tops",
+          "label": { "en": "Cropped top", "it": "Top cropped" },
+          "prompt": { "en": "a cropped top", "it": "un top cropped" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tops.off-shoulder",
+          "group": "tops",
+          "label": { "en": "Off-shoulder top", "it": "Top a spalla scoperta" },
+          "prompt": { "en": "an off-shoulder top", "it": "un top a spalla scoperta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tops.halter",
+          "group": "tops",
+          "label": { "en": "Halter top", "it": "Top halter" },
+          "prompt": { "en": "a halter-neck top", "it": "un top a scollo halter" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tops.turtleneck",
+          "group": "tops",
+          "label": { "en": "Turtleneck", "it": "Gira collo" },
+          "prompt": { "en": "a fine turtleneck", "it": "un gira collo fine" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tops.wrap-top",
+          "group": "tops",
+          "label": { "en": "Wrap top", "it": "Top wrap" },
+          "prompt": { "en": "a wrap top", "it": "un top wrap" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tops.corset",
+          "group": "tops",
+          "label": { "en": "Corset top", "it": "Corsetto" },
+          "prompt": { "en": "a structured corset top", "it": "un corsetto strutturato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tops.sheer-top",
+          "group": "tops",
+          "label": { "en": "Sheer top", "it": "Top trasparente" },
+          "prompt": { "en": "a sheer see-through top", "it": "un top trasparente" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.knitwear.fine-merino",
+          "group": "knitwear",
+          "label": { "en": "Fine-gauge merino crewneck", "it": "Girocollo in merino fine" },
+          "prompt": { "en": "a fine-gauge merino crewneck sweater", "it": "un girocollo in merino a maglia fine" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.knitwear.cable-knit",
+          "group": "knitwear",
+          "label": { "en": "Chunky cable knit", "it": "Maglia a costine spesse" },
+          "prompt": { "en": "a chunky cable-knit sweater", "it": "un maglione a costine spesse" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.knitwear.knit-polo",
+          "group": "knitwear",
+          "label": { "en": "Knit polo", "it": "Polo in maglia" },
+          "prompt": { "en": "a knitted polo sweater", "it": "una polo in maglia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.knitwear.fisherman-jumper",
+          "group": "knitwear",
+          "label": { "en": "Fisherman jumper", "it": "Maglione a maglia grossa" },
+          "prompt": { "en": "a fisherman rib jumper", "it": "un pesciere in maglia a costine" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.knitwear.cashmere-cardigan",
+          "group": "knitwear",
+          "label": { "en": "Cashmere cardigan", "it": "Cardigan in cashmere" },
+          "prompt": { "en": "a soft cashmere cardigan", "it": "un cardigan morbido in cashmere" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.knitwear.cropped-cardigan",
+          "group": "knitwear",
+          "label": { "en": "Cropped cardigan", "it": "Cardigan cropped" },
+          "prompt": { "en": "a cropped cardigan", "it": "un cardigan cropped" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.shirts.poplin-shirt",
+          "group": "shirts",
+          "label": { "en": "White poplin shirt", "it": "Camicia in popeline bianca" },
+          "prompt": { "en": "a crisp white poplin shirt", "it": "una camicia bianca in popeline" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.shirts.oversized-oxford",
+          "group": "shirts",
+          "label": { "en": "Oversized oxford shirt", "it": "Camicia oxford oversize" },
+          "prompt": { "en": "an oversized oxford shirt", "it": "una camicia oxford oversize" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.shirts.striped-shirt",
+          "group": "shirts",
+          "label": { "en": "Striped shirt", "it": "Camicia a righe" },
+          "prompt": { "en": "a striped button-up shirt", "it": "una camicia a righe con bottoni" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.shirts.silk-blouse",
+          "group": "shirts",
+          "label": { "en": "Silk blouse", "it": "Camicino in seta" },
+          "prompt": { "en": "a silk blouse", "it": "un camicino in seta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.shirts.camp-collar",
+          "group": "shirts",
+          "label": { "en": "Camp collar shirt", "it": "Camicia collo aperto" },
+          "prompt": { "en": "a camp-collar shirt", "it": "una camicia con collo camp" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.shirts.sheer-blouse",
+          "group": "shirts",
+          "label": { "en": "Sheer blouse", "it": "Camicino trasparente" },
+          "prompt": { "en": "a sheer chiffon blouse", "it": "un camicino in chiffon trasparente" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.shirts.chambray-shirt",
+          "group": "shirts",
+          "label": { "en": "Chambray shirt", "it": "Camicia in chambray" },
+          "prompt": { "en": "a chambray shirt", "it": "una camicia in chambray" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tees.plain-tee",
+          "group": "tees",
+          "label": { "en": "Plain cotton tee", "it": "T-shirt in cotone semplice" },
+          "prompt": { "en": "a plain white cotton t-shirt", "it": "una T-shirt semplice in cotone bianco" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tees.graphic-tee",
+          "group": "tees",
+          "label": { "en": "Graphic tee", "it": "T-shirt con grafica" },
+          "prompt": { "en": "a graphic print t-shirt", "it": "una T-shirt con stampa grafica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tees.boxy-tee",
+          "group": "tees",
+          "label": { "en": "Boxy cropped tee", "it": "T-shirt boxy cropped" },
+          "prompt": { "en": "a boxy cropped t-shirt", "it": "una T-shirt boxy cropped" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tees.ribbed-tee",
+          "group": "tees",
+          "label": { "en": "Fitted ribbed tee", "it": "T-shirt aderente a costine" },
+          "prompt": { "en": "a fitted ribbed t-shirt", "it": "una T-shirt aderente a costine" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tees.vintage-tee",
+          "group": "tees",
+          "label": { "en": "Faded vintage tee", "it": "T-shirt vintage sbiadita" },
+          "prompt": { "en": "a faded vintage t-shirt", "it": "una T-shirt vintage sbiadita" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sweats.hoodie",
+          "group": "sweats",
+          "label": { "en": "Hoodie", "it": "Felpa con cappuccio" },
+          "prompt": { "en": "a hooded sweatshirt", "it": "una felpa con cappuccio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sweats.crewneck-sweatshirt",
+          "group": "sweats",
+          "label": { "en": "Crewneck sweatshirt", "it": "Felpa girocollo" },
+          "prompt": { "en": "a plain crewneck sweatshirt", "it": "una felpa girocollo semplice" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sweats.quarter-zip",
+          "group": "sweats",
+          "label": { "en": "Quarter-zip sweatshirt", "it": "Felpa con zip corta" },
+          "prompt": { "en": "a quarter-zip sweatshirt", "it": "una felpa con zip corta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sweats.oversized-sweatshirt",
+          "group": "sweats",
+          "label": { "en": "Oversized sweatshirt", "it": "Felpa oversize" },
+          "prompt": { "en": "an oversized sweatshirt", "it": "una felpa oversize" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.trench-coat",
+          "group": "outerwear",
+          "label": { "en": "Trench coat", "it": "Trench" },
+          "prompt": { "en": "a classic trench coat", "it": "un trench classico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.wool-coat",
+          "group": "outerwear",
+          "label": { "en": "Long wool coat", "it": "Cappotto lungo in lana" },
+          "prompt": { "en": "a long wool coat", "it": "un cappotto lungo in lana" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.leather-moto",
+          "group": "outerwear",
+          "label": { "en": "Leather biker jacket", "it": "Giacca di pelle biker" },
+          "prompt": { "en": "a black leather biker jacket", "it": "una giacca biker di pelle nera" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.denim-jacket",
+          "group": "outerwear",
+          "label": { "en": "Denim jacket", "it": "Giacca di jeans" },
+          "prompt": { "en": "a classic denim jacket", "it": "una giacca di jeans classica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.puffer-jacket",
+          "group": "outerwear",
+          "label": { "en": "Puffer jacket", "it": "Giacca imbottita" },
+          "prompt": { "en": "a quilted puffer jacket", "it": "una giacca imbottita trapuntata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.parka",
+          "group": "outerwear",
+          "label": { "en": "Parka", "it": "Parka" },
+          "prompt": { "en": "a hooded parka", "it": "una parka con cappuccio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.bomber-jacket",
+          "group": "outerwear",
+          "label": { "en": "Bomber jacket", "it": "Bomber" },
+          "prompt": { "en": "a satin bomber jacket", "it": "un bomber in raso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.cape",
+          "group": "outerwear",
+          "label": { "en": "Cape", "it": "Mantella" },
+          "prompt": { "en": "a wool cape", "it": "una mantella in lana" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.cropped-jacket",
+          "group": "outerwear",
+          "label": { "en": "Cropped jacket", "it": "Giacca cropped" },
+          "prompt": { "en": "a cropped jacket", "it": "una giacca cropped" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.outerwear.shearling-jacket",
+          "group": "outerwear",
+          "label": { "en": "Shearling jacket", "it": "Giacca in shearling" },
+          "prompt": { "en": "a shearling lined jacket", "it": "una giacca foderata in shearling" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tailoring.suit-jacket",
+          "group": "tailoring",
+          "label": { "en": "Single-breasted suit jacket", "it": "Giacca monopetto" },
+          "prompt": { "en": "a single-breasted suit jacket", "it": "una giacca monopetto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tailoring.double-breasted-blazer",
+          "group": "tailoring",
+          "label": { "en": "Double-breasted blazer", "it": "Blazer doppiopetto" },
+          "prompt": { "en": "a double-breasted blazer", "it": "un blazer doppiopetto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tailoring.structured-blazer",
+          "group": "tailoring",
+          "label": { "en": "Structured blazer", "it": "Blazer strutturato" },
+          "prompt": { "en": "a sharply structured blazer", "it": "un blazer dalla struttura netta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tailoring.tuxedo",
+          "group": "tailoring",
+          "label": { "en": "Tuxedo", "it": "Tuxedo" },
+          "prompt": { "en": "a black tuxedo with satin lapels", "it": "un tuxedo nero con revers in raso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tailoring.waistcoat",
+          "group": "tailoring",
+          "label": { "en": "Waistcoat", "it": "Gilet" },
+          "prompt": { "en": "a buttoned waistcoat", "it": "un gilet abbottonato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.tailoring.three-piece-suit",
+          "group": "tailoring",
+          "label": { "en": "Three-piece suit", "it": "Completo tre pezzi" },
+          "prompt": { "en": "a three-piece suit", "it": "un completo tre pezzi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.dresses.slip-dress",
+          "group": "dresses",
+          "label": { "en": "Slip dress", "it": "Abito slip" },
+          "prompt": { "en": "a bias-cut slip dress", "it": "un abito slip tagliato in sbieco" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.dresses.shirt-dress",
+          "group": "dresses",
+          "label": { "en": "Shirt dress", "it": "Abito camicia" },
+          "prompt": { "en": "a buttoned shirt dress", "it": "un abito camicia abbottonato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.dresses.wrap-dress",
+          "group": "dresses",
+          "label": { "en": "Wrap dress", "it": "Abito wrap" },
+          "prompt": { "en": "a wrap dress with a tied waist", "it": "un abito wrap con vita legata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.dresses.midi-dress",
+          "group": "dresses",
+          "label": { "en": "Midi dress", "it": "Abito midi" },
+          "prompt": { "en": "a fitted midi dress", "it": "un abito midi aderente" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.dresses.knit-dress",
+          "group": "dresses",
+          "label": { "en": "Knit dress", "it": "Abito in maglia" },
+          "prompt": { "en": "a knitted bodycon dress", "it": "un abito aderente in maglia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.dresses.babydoll",
+          "group": "dresses",
+          "label": { "en": "Babydoll dress", "it": "Abito baby doll" },
+          "prompt": { "en": "a short babydoll dress", "it": "un abito baby doll corto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.dresses.tiered-midi",
+          "group": "dresses",
+          "label": { "en": "Tiered midi dress", "it": "Abito midi a strati" },
+          "prompt": { "en": "a tiered midi dress", "it": "un abito midi a strati" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.dresses.jumpsuit",
+          "group": "dresses",
+          "label": { "en": "Jumpsuit", "it": "Tuta" },
+          "prompt": { "en": "a tailored jumpsuit", "it": "una tuta sartoriale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.trousers.wide-leg",
+          "group": "trousers",
+          "label": { "en": "Wide-leg trousers", "it": "Pantaloni a palazzo" },
+          "prompt": { "en": "wide-leg trousers", "it": "pantalone a gamba larga" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.trousers.straight-trousers",
+          "group": "trousers",
+          "label": { "en": "Straight trousers", "it": "Pantaloni dritti" },
+          "prompt": { "en": "straight-leg trousers", "it": "pantalone dritto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.trousers.tapered-trousers",
+          "group": "trousers",
+          "label": { "en": "Tapered trousers", "it": "Pantaloni affusolati" },
+          "prompt": { "en": "tapered trousers", "it": "pantalone affusolato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.trousers.pleated-trousers",
+          "group": "trousers",
+          "label": { "en": "Pleated trousers", "it": "Pantaloni con pince" },
+          "prompt": { "en": "pleated trousers", "it": "pantalone con pince" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.trousers.cargo-trousers",
+          "group": "trousers",
+          "label": { "en": "Cargo trousers", "it": "Pantaloni cargo" },
+          "prompt": { "en": "cargo trousers with side pockets", "it": "pantalone cargo con tasche laterali" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.trousers.paperbag-trousers",
+          "group": "trousers",
+          "label": { "en": "Paperbag trousers", "it": "Pantaloni paperbag" },
+          "prompt": { "en": "paperbag waist trousers", "it": "pantalone con vita paperbag" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.trousers.tailored-trousers",
+          "group": "trousers",
+          "label": { "en": "Tailored trousers", "it": "Pantaloni sartoriali" },
+          "prompt": { "en": "sharp tailored trousers", "it": "pantalone sartoriali dal taglio netto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.trousers.cigarette-trousers",
+          "group": "trousers",
+          "label": { "en": "Cigarette trousers", "it": "Pantaloni cigarette" },
+          "prompt": { "en": "narrow cigarette trousers", "it": "pantalone cigarette stretti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.skirts.pencil-skirt",
+          "group": "skirts",
+          "label": { "en": "Pencil skirt", "it": "Gonna a matita" },
+          "prompt": { "en": "a knee-length pencil skirt", "it": "una gonna a matita fino al ginocchio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.skirts.pleated-midi-skirt",
+          "group": "skirts",
+          "label": { "en": "Pleated midi skirt", "it": "Gonna midi plissettata" },
+          "prompt": { "en": "a pleated midi skirt", "it": "una gonna midi plissettata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.skirts.bias-skirt",
+          "group": "skirts",
+          "label": { "en": "Bias slip skirt", "it": "Gonna slip in sbieco" },
+          "prompt": { "en": "a bias-cut slip skirt", "it": "una gonna slip tagliata in sbieco" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.skirts.tiered-skirt",
+          "group": "skirts",
+          "label": { "en": "Tiered skirt", "it": "Gonna a strati" },
+          "prompt": { "en": "a tiered ruffle skirt", "it": "una gonna a strati con volanti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.skirts.mini-skirt",
+          "group": "skirts",
+          "label": { "en": "Mini skirt", "it": "Gonna mini" },
+          "prompt": { "en": "a short mini skirt", "it": "una gonna mini corta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.denim.raw-denim",
+          "group": "denim",
+          "label": { "en": "Raw denim jeans", "it": "Jeans in denim crudo" },
+          "prompt": { "en": "rigid raw selvedge denim jeans", "it": "jeans in denim crudo rigido con cimosa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.denim.light-wash-jeans",
+          "group": "denim",
+          "label": { "en": "Light-wash jeans", "it": "Jeans chiari" },
+          "prompt": { "en": "light-wash straight jeans", "it": "jeans dritti in wash chiaro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.denim.distressed-jeans",
+          "group": "denim",
+          "label": { "en": "Distressed jeans", "it": "Jeans strappati" },
+          "prompt": { "en": "distressed ripped jeans", "it": "jeans strappati e consumati" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.denim.denim-skirt",
+          "group": "denim",
+          "label": { "en": "Denim skirt", "it": "Gonna di jeans" },
+          "prompt": { "en": "a mid-length denim skirt", "it": "una gonna di jeans a metà gamba" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.denim.denim-overalls",
+          "group": "denim",
+          "label": { "en": "Denim overalls", "it": "Salopette di jeans" },
+          "prompt": { "en": "denim dungaree overalls", "it": "una salopette di jeans" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sportswear.tracksuit",
+          "group": "sportswear",
+          "label": { "en": "Tracksuit", "it": "Completo sportivo" },
+          "prompt": { "en": "a zip-up tracksuit", "it": "un completo sportivo con zip" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sportswear.running-jacket",
+          "group": "sportswear",
+          "label": { "en": "Technical running jacket", "it": "Giacca tecnica da running" },
+          "prompt": { "en": "a lightweight technical running jacket", "it": "una giacca tecnica leggera da running" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sportswear.leggings",
+          "group": "sportswear",
+          "label": { "en": "Performance leggings", "it": "Leggings performance" },
+          "prompt": { "en": "fitted performance leggings", "it": "leggings performance aderenti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sportswear.sports-bra",
+          "group": "sportswear",
+          "label": { "en": "Sports bra", "it": "Top sportivo" },
+          "prompt": { "en": "a technical sports bra", "it": "un top sportivo tecnico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sportswear.performance-tank",
+          "group": "sportswear",
+          "label": { "en": "Performance tank", "it": "Canotta performance" },
+          "prompt": { "en": "a breathable performance tank top", "it": "una canotta performance traspirante" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sportswear.windbreaker",
+          "group": "sportswear",
+          "label": { "en": "Windbreaker", "it": "Windbreaker" },
+          "prompt": { "en": "a lightweight windbreaker", "it": "un windbreaker leggero" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.sportswear.running-shorts",
+          "group": "sportswear",
+          "label": { "en": "Running shorts", "it": "Short da running" },
+          "prompt": { "en": "light running shorts", "it": "short leggeri da running" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.streetwear.ripped-denim-shorts",
+          "group": "streetwear",
+          "label": { "en": "Ripped denim shorts", "it": "Short di jeans strappati" },
+          "prompt": { "en": "ripped denim shorts with a frayed hem", "it": "short di jeans strappati con bordo sfrangiato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.streetwear.cargo-shorts",
+          "group": "streetwear",
+          "label": { "en": "Cargo shorts", "it": "Short cargo" },
+          "prompt": { "en": "baggy cargo shorts", "it": "short cargo larghi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.streetwear.flannel-shirt",
+          "group": "streetwear",
+          "label": { "en": "Flannel shirt worn open", "it": "Camicia di flanella aperta" },
+          "prompt": { "en": "an oversized flannel shirt worn open", "it": "una camicia di flanella oversize indossata aperta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.business.waistcoat-tie",
+          "group": "business",
+          "label": { "en": "Waistcoat and tie", "it": "Gilet e cravatta" },
+          "prompt": { "en": "a waistcoat worn with a silk tie", "it": "un gilet abbinato a una cravatta in seta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.business.pinstripe-trousers",
+          "group": "business",
+          "label": { "en": "Pinstripe trousers", "it": "Pantaloni a pinstripe" },
+          "prompt": { "en": "pinstripe suit trousers", "it": "pantoni a pinstripe" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.business.dress-shirt-tie",
+          "group": "business",
+          "label": { "en": "Dress shirt and tie", "it": "Camicia e cravatta" },
+          "prompt": { "en": "a crisp dress shirt with a slim tie", "it": "una camicia stirata con una cravatta sottile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.eveningwear.satin-gown",
+          "group": "eveningwear",
+          "label": { "en": "Satin evening gown", "it": "Abito da sera in raso" },
+          "prompt": { "en": "a floor-length satin evening gown", "it": "un abito da sera in raso fino al pavimento" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.eveningwear.sequined-gown",
+          "group": "eveningwear",
+          "label": { "en": "Sequined gown", "it": "Abito pailletté" },
+          "prompt": { "en": "a sequined evening gown", "it": "un abito da sera pailletté" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.eveningwear.tuxedo-jumpsuit",
+          "group": "eveningwear",
+          "label": { "en": "Tuxedo-style jumpsuit", "it": "Tuta stile tuxedo" },
+          "prompt": { "en": "a tuxedo-style jumpsuit", "it": "una tuta stile tuxedo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.eveningwear.opera-cloak",
+          "group": "eveningwear",
+          "label": { "en": "Opera cloak", "it": "Cappa da sera" },
+          "prompt": { "en": "a dramatic opera cloak", "it": "una cappa da sera drammatica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.garments.eveningwear.velvet-gown",
+          "group": "eveningwear",
+          "label": { "en": "Velvet gown", "it": "Abito in velluto" },
+          "prompt": { "en": "a deep velvet evening gown", "it": "un abito da sera in velluto intenso" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe.materials",
+      "entries": [
+        {
+          "id": "wardrobe.materials.wool-flannel",
+          "label": { "en": "Wool flannel", "it": "Flanella di lana" },
+          "prompt": { "en": "wool flannel", "it": "flanella di lana" },
+          "tags": ["wool"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.wool-melton",
+          "label": { "en": "Melton wool", "it": "Lana Melton" },
+          "prompt": { "en": "dense melton wool", "it": "lana Melton compatta" },
+          "tags": ["wool"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.wool-gabardine",
+          "label": { "en": "Wool gabardine", "it": "Gabardine di lana" },
+          "prompt": { "en": "wool gabardine", "it": "gabardine di lana" },
+          "tags": ["wool"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.herringbone",
+          "label": { "en": "Herringbone", "it": "Herringbone" },
+          "prompt": { "en": "herringbone wool", "it": "lana herringbone" },
+          "tags": ["wool", "pattern"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.tweed",
+          "label": { "en": "Tweed", "it": "Tweed" },
+          "prompt": { "en": "a tweed jacket", "it": "una giacca in tweed" },
+          "tags": ["wool"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.cashmere",
+          "label": { "en": "Cashmere", "it": "Cashmere" },
+          "prompt": { "en": "soft cashmere", "it": "cashmere morbido" },
+          "tags": ["wool"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.lambswool",
+          "label": { "en": "Lambswool", "it": "Lana d'agnello" },
+          "prompt": { "en": "soft lambswool knit", "it": "morbida maglia in lana d'agnello" },
+          "tags": ["wool"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.cotton-poplin",
+          "label": { "en": "Cotton poplin", "it": "Popeline di cotone" },
+          "prompt": { "en": "crisp cotton poplin", "it": "popeline di cotone croccante" },
+          "tags": ["cotton"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.cotton-jersey",
+          "label": { "en": "Cotton jersey", "it": "Jersey di cotone" },
+          "prompt": { "en": "soft cotton jersey", "it": "jersey di cotone morbido" },
+          "tags": ["cotton"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.oxford",
+          "label": { "en": "Oxford cloth", "it": "Tela oxford" },
+          "prompt": { "en": "woven oxford cloth", "it": "tela oxford intrecciata" },
+          "tags": ["cotton"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.linen",
+          "label": { "en": "Linen", "it": "Lino" },
+          "prompt": { "en": "natural linen", "it": "lino naturale" },
+          "tags": ["linen"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.silk-charmeuse",
+          "label": { "en": "Silk charmeuse", "it": "Seta charmeuse" },
+          "prompt": { "en": "fluid silk charmeuse", "it": "seta charmeuse fluida" },
+          "tags": ["silk"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.silk-satin",
+          "label": { "en": "Silk satin", "it": "Seta raso" },
+          "prompt": { "en": "lustrous silk satin", "it": "seta raso lucida" },
+          "tags": ["silk"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.chiffon",
+          "label": { "en": "Chiffon", "it": "Chiffon" },
+          "prompt": { "en": "lightweight chiffon", "it": "chiffon leggero" },
+          "tags": ["silk", "synthetic"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.organza",
+          "label": { "en": "Organza", "it": "Organza" },
+          "prompt": { "en": "crisp organza", "it": "organza rigida" },
+          "tags": ["synthetic"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.viscose",
+          "label": { "en": "Viscose / lyocell", "it": "Viscosa / lyocell" },
+          "prompt": { "en": "fluid viscose fabric", "it": "tessuto in viscosa fluido" },
+          "tags": ["plant"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.leather-nappa",
+          "label": { "en": "Nappa leather", "it": "Pelle nappa" },
+          "prompt": { "en": "supple nappa leather", "it": "pelle nappa morbida" },
+          "tags": ["leather"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.suede",
+          "label": { "en": "Suede", "it": "Pelle scamosciata" },
+          "prompt": { "en": "brushed suede", "it": "pelle scamosciata spazzolata" },
+          "tags": ["leather"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.patent-leather",
+          "label": { "en": "Patent leather", "it": "Pelle patent" },
+          "prompt": { "en": "glossy patent leather", "it": "pelle patent lucida" },
+          "tags": ["leather"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.shearling",
+          "label": { "en": "Shearling", "it": "Shearling" },
+          "prompt": { "en": "shearling with a woolly fleece", "it": "shearling con pelo di lana" },
+          "tags": ["leather", "wool"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.rigid-denim",
+          "label": { "en": "Rigid denim", "it": "Denim rigido" },
+          "prompt": { "en": "rigid raw denim", "it": "denim crudo rigido" },
+          "tags": ["denim"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.corduroy",
+          "label": { "en": "Corduroy", "it": "Fustagno" },
+          "prompt": { "en": "wide-wale corduroy", "it": "fustagno a coste larghe" },
+          "tags": ["cotton"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.velvet",
+          "label": { "en": "Velvet", "it": "Velluto" },
+          "prompt": { "en": "deep pile velvet", "it": "velluto dalla pelo profondo" },
+          "tags": ["pile"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.boucle",
+          "label": { "en": "Bouclé", "it": "Bouclé" },
+          "prompt": { "en": "textured bouclé", "it": "bouclé dalla texture mossa" },
+          "tags": ["wool"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.seersucker",
+          "label": { "en": "Seersucker", "it": "Seersucker" },
+          "prompt": { "en": "crinkled seersucker", "it": "seersucker increspato" },
+          "tags": ["cotton"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.ripstop-nylon",
+          "label": { "en": "Ripstop nylon", "it": "Nylon ripstop" },
+          "prompt": { "en": "lightweight ripstop nylon", "it": "nylon ripstop leggero" },
+          "tags": ["technical"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.softshell",
+          "label": { "en": "Softshell", "it": "Softshell" },
+          "prompt": { "en": "stretch softshell fabric", "it": "tessuto softshell elastico" },
+          "tags": ["technical"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.membrane",
+          "label": { "en": "Waterproof membrane", "it": "Membrana impermeabile" },
+          "prompt": { "en": "a waterproof breathable membrane", "it": "una membrana impermeabile e traspirante" },
+          "tags": ["technical"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.quilted",
+          "label": { "en": "Quilted", "it": "Trapuntato" },
+          "prompt": { "en": "quilted padding", "it": "imbottitura trapuntata" },
+          "tags": ["technical"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.fleece",
+          "label": { "en": "Fleece", "it": "Pile" },
+          "prompt": { "en": "soft brushed fleece", "it": "pile spazzolato morbido" },
+          "tags": ["synthetic"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.neoprene",
+          "label": { "en": "Neoprene", "it": "Neoprene" },
+          "prompt": { "en": "matte neoprene", "it": "neoprene opaco" },
+          "tags": ["technical"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.mesh",
+          "label": { "en": "Mesh", "it": "Mesh" },
+          "prompt": { "en": "breathable mesh", "it": "mesh traspirante" },
+          "tags": ["technical"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.lace",
+          "label": { "en": "Lace", "it": "Pizzo" },
+          "prompt": { "en": "delicate lace", "it": "pizzo delicato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.jacquard",
+          "label": { "en": "Jacquard", "it": "Jacquard" },
+          "prompt": { "en": "woven jacquard", "it": "jacquard intrecciato" },
+          "tags": ["pattern"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.materials.satin-technical",
+          "label": { "en": "Technical satin", "it": "Raso tecnico" },
+          "prompt": { "en": "a shiny technical satin", "it": "un raso tecnico lucido" },
+          "tags": ["synthetic"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe.colors",
+      "entries": [
+        {
+          "id": "wardrobe.colors.black",
+          "label": { "en": "Black", "it": "Nero" },
+          "prompt": { "en": "black", "it": "nero" },
+          "tags": ["neutral"],
+          "color": "#111111",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.white",
+          "label": { "en": "White", "it": "Bianco" },
+          "prompt": { "en": "white", "it": "bianco" },
+          "tags": ["neutral"],
+          "color": "#f7f7f5",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.ecru",
+          "label": { "en": "Ecru / off-white", "it": "Ecru / avorio" },
+          "prompt": { "en": "off-white ecru", "it": "ecru avorio" },
+          "tags": ["neutral"],
+          "color": "#ece6d8",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.grey",
+          "label": { "en": "Grey", "it": "Grigio" },
+          "prompt": { "en": "grey", "it": "grigio" },
+          "tags": ["neutral"],
+          "color": "#9a9a9a",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.charcoal",
+          "label": { "en": "Charcoal", "it": "Antracite" },
+          "prompt": { "en": "charcoal grey", "it": "grigio antracite" },
+          "tags": ["neutral"],
+          "color": "#3b3f42",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.camel",
+          "label": { "en": "Camel", "it": "Cammello" },
+          "prompt": { "en": "camel beige", "it": "beige cammello" },
+          "tags": ["neutral"],
+          "color": "#c19a6b",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.tan",
+          "label": { "en": "Tan", "it": "Pelle" },
+          "prompt": { "en": "tan", "it": "color pelle" },
+          "tags": ["neutral"],
+          "color": "#d2b48c",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.beige",
+          "label": { "en": "Beige", "it": "Beige" },
+          "prompt": { "en": "beige", "it": "beige" },
+          "tags": ["neutral"],
+          "color": "#e6d7bd",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.brown",
+          "label": { "en": "Brown", "it": "Marrone" },
+          "prompt": { "en": "dark brown", "it": "marrone scuro" },
+          "tags": ["neutral"],
+          "color": "#5b4636",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.navy",
+          "label": { "en": "Navy", "it": "Blu navy" },
+          "prompt": { "en": "navy blue", "it": "blu navy" },
+          "tags": ["cool"],
+          "color": "#1f2a44",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.indigo",
+          "label": { "en": "Indigo", "it": "Indaco" },
+          "prompt": { "en": "indigo", "it": "indaco" },
+          "tags": ["cool"],
+          "color": "#2f3b73",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.denim-blue",
+          "label": { "en": "Denim blue", "it": "Blu denim" },
+          "prompt": { "en": "denim blue", "it": "blu denim" },
+          "tags": ["cool"],
+          "color": "#5b7fa6",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.olive",
+          "label": { "en": "Olive", "it": "Oliva" },
+          "prompt": { "en": "olive green", "it": "verde oliva" },
+          "tags": ["earth"],
+          "color": "#6b705c",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.forest",
+          "label": { "en": "Forest green", "it": "Verde bosco" },
+          "prompt": { "en": "forest green", "it": "verde bosco" },
+          "tags": ["earth"],
+          "color": "#1f3d2b",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.sage",
+          "label": { "en": "Sage", "it": "Salvia" },
+          "prompt": { "en": "sage green", "it": "verde salvia" },
+          "tags": ["earth"],
+          "color": "#9caf88",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.burgundy",
+          "label": { "en": "Burgundy", "it": "Bordeaux" },
+          "prompt": { "en": "burgundy", "it": "bordeaux" },
+          "tags": ["warm"],
+          "color": "#5c1a2a",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.oxblood",
+          "label": { "en": "Oxblood", "it": "Rosso sangue" },
+          "prompt": { "en": "oxblood red", "it": "rosso sangue" },
+          "tags": ["warm"],
+          "color": "#4a121c",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.red",
+          "label": { "en": "Red", "it": "Rosso" },
+          "prompt": { "en": "bright red", "it": "rosso vivo" },
+          "tags": ["warm"],
+          "color": "#cc2222",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.cobalt",
+          "label": { "en": "Cobalt blue", "it": "Blu cobalto" },
+          "prompt": { "en": "cobalt blue", "it": "blu cobalto" },
+          "tags": ["cool"],
+          "color": "#0047ab",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.pink",
+          "label": { "en": "Pink", "it": "Rosa" },
+          "prompt": { "en": "soft pink", "it": "rosa tenue" },
+          "tags": ["warm"],
+          "color": "#e8a0b4",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.coral",
+          "label": { "en": "Coral", "it": "Corallo" },
+          "prompt": { "en": "coral", "it": "corallo" },
+          "tags": ["warm"],
+          "color": "#ff7f50",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.lilac",
+          "label": { "en": "Lilac", "it": "Lilla" },
+          "prompt": { "en": "lilac", "it": "lilla" },
+          "tags": ["cool"],
+          "color": "#c8a2c8",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.butter-yellow",
+          "label": { "en": "Butter yellow", "it": "Giallo burro" },
+          "prompt": { "en": "butter yellow", "it": "giallo burro" },
+          "tags": ["warm"],
+          "color": "#f2d06b",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.mustard",
+          "label": { "en": "Mustard", "it": "Mostarda" },
+          "prompt": { "en": "mustard yellow", "it": "giallo mostarda" },
+          "tags": ["warm"],
+          "color": "#c1a12e",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.orange",
+          "label": { "en": "Orange", "it": "Arancione" },
+          "prompt": { "en": "burnt orange", "it": "arancione bruciato" },
+          "tags": ["warm"],
+          "color": "#d95f1e",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.metallic-gold",
+          "label": { "en": "Metallic gold", "it": "Oro metallico" },
+          "prompt": { "en": "metallic gold", "it": "oro metallico" },
+          "tags": ["metallic"],
+          "color": "#c9a227",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.metallic-silver",
+          "label": { "en": "Metallic silver", "it": "Argento metallico" },
+          "prompt": { "en": "metallic silver", "it": "argento metallico" },
+          "tags": ["metallic"],
+          "color": "#c0c0c0",
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.neutral-tones",
+          "label": { "en": "Neutral tones", "it": "Toni neutri" },
+          "prompt": { "en": "neutral tones", "it": "toni neutri" },
+          "tags": ["colour"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.earth-tones",
+          "label": { "en": "Earth tones", "it": "Toni della terra" },
+          "prompt": { "en": "earth tones", "it": "toni della terra" },
+          "tags": ["colour"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.muted",
+          "label": { "en": "Muted", "it": "Smorzati" },
+          "prompt": { "en": "muted colours", "it": "colori smorzati" },
+          "tags": ["colour"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.colors.saturated",
+          "label": { "en": "Saturated", "it": "Saturati" },
+          "prompt": { "en": "saturated colours", "it": "colori saturi" },
+          "tags": ["colour"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe.patterns",
+      "entries": [
+        {
+          "id": "wardrobe.patterns.solid",
+          "label": { "en": "Solid", "it": "Tinta unita" },
+          "prompt": { "en": "a solid colour", "it": "tinta unita" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.pinstripe",
+          "label": { "en": "Pinstripe", "it": "Pinstripe" },
+          "prompt": { "en": "fine pinstripes", "it": "pinstripe fini" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.chalk-stripe",
+          "label": { "en": "Chalk stripe", "it": "Chalk stripe" },
+          "prompt": { "en": "wide chalk stripes", "it": "chalk stripe larghe" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.houndstooth",
+          "label": { "en": "Houndstooth", "it": "Pied de poule" },
+          "prompt": { "en": "a houndstooth check", "it": "un pied de poule" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.tartan",
+          "label": { "en": "Tartan / plaid", "it": "Tartan / quad" },
+          "prompt": { "en": "a tartan plaid pattern", "it": "un pattern tartan" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.gingham",
+          "label": { "en": "Gingham", "it": "Gingham" },
+          "prompt": { "en": "a gingham check", "it": "una quadrettatura gingham" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.argyle",
+          "label": { "en": "Argyle", "it": "Argyle" },
+          "prompt": { "en": "an argyle pattern", "it": "un pattern argyle" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.paisley",
+          "label": { "en": "Paisley", "it": "Paisley" },
+          "prompt": { "en": "a paisley motif", "it": "un motivo paisley" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.leopard",
+          "label": { "en": "Leopard", "it": "Leopardo" },
+          "prompt": { "en": "a leopard print", "it": "una stampa leopardata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.snake",
+          "label": { "en": "Snakeskin", "it": "Pelle di serpente" },
+          "prompt": { "en": "a snakeskin print", "it": "una stampa pelle di serpente" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.zebra",
+          "label": { "en": "Zebra", "it": "Zebra" },
+          "prompt": { "en": "a zebra print", "it": "una stampa zebra" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.tie-dye",
+          "label": { "en": "Tie-dye", "it": "Tie-dye" },
+          "prompt": { "en": "a tie-dye pattern", "it": "una stampa tie-dye" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.camouflage",
+          "label": { "en": "Camouflage", "it": "Camouflage" },
+          "prompt": { "en": "a camouflage print", "it": "una stampa camouflage" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.floral",
+          "label": { "en": "Floral", "it": "Floreale" },
+          "prompt": { "en": "a delicate floral print", "it": "una stampa floreale delicata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.botanical",
+          "label": { "en": "Botanical print", "it": "Stampa botanica" },
+          "prompt": { "en": "a botanical print", "it": "una stampa botanica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.abstract",
+          "label": { "en": "Abstract print", "it": "Stampa astratta" },
+          "prompt": { "en": "an abstract print", "it": "una stampa astratta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.graphic",
+          "label": { "en": "Graphic print", "it": "Stampa grafica" },
+          "prompt": { "en": "a bold graphic print", "it": "una stampa grafica marcata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.logo",
+          "label": { "en": "Logo", "it": "Logo" },
+          "prompt": { "en": "a visible logo", "it": "un logo ben visibile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.monogram",
+          "label": { "en": "Monogram", "it": "Monogramma" },
+          "prompt": { "en": "a repeating monogram print", "it": "una stampa a monogramma ripetuto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.striped",
+          "label": { "en": "Striped", "it": "A righe" },
+          "prompt": { "en": "a striped pattern", "it": "un pattern a righe" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.colour-block",
+          "label": { "en": "Colour block", "it": "A blocchi di colore" },
+          "prompt": { "en": "a colour-blocked design", "it": "un design a blocchi di colore" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.distressed",
+          "label": { "en": "Distressed", "it": "Distressed" },
+          "prompt": { "en": "a distressed finish", "it": "una finitura distressed" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.acid-wash",
+          "label": { "en": "Acid wash", "it": "Acid wash" },
+          "prompt": { "en": "an acid-wash finish", "it": "una finitura acid-wash" },
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.patterns.patchwork",
+          "label": { "en": "Patchwork", "it": "Patchwork" },
+          "prompt": { "en": "a patchwork of panels", "it": "un patchwork di pannelli" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe.fit",
+      "entries": [
+        {
+          "id": "wardrobe.fit.slim-fit",
+          "label": { "en": "Slim fit", "it": "Slim fit" },
+          "prompt": { "en": "a slim fit", "it": "vestibilità slim" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.tailored-fit",
+          "label": { "en": "Tailored fit", "it": "Vestibilità sartoriale" },
+          "prompt": { "en": "a tailored fit", "it": "vestibilità sartoriale" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.regular-fit",
+          "label": { "en": "Regular fit", "it": "Vestibilità regolare" },
+          "prompt": { "en": "a regular fit", "it": "vestibilità regolare" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.relaxed-fit",
+          "label": { "en": "Relaxed fit", "it": "Vestibilità relaxed" },
+          "prompt": { "en": "a relaxed fit", "it": "vestibilità relaxed" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.oversized",
+          "label": { "en": "Oversized", "it": "Oversize" },
+          "prompt": { "en": "an oversized fit", "it": "vestibilità oversize" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.cropped",
+          "label": { "en": "Cropped", "it": "Cropped" },
+          "prompt": { "en": "a cropped length", "it": "lunghezza cropped" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.drop-shoulder",
+          "label": { "en": "Drop shoulder", "it": "Spalla scesa" },
+          "prompt": { "en": "drop shoulders", "it": "spalle scese" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.boxy",
+          "label": { "en": "Boxy", "it": "Boxy" },
+          "prompt": { "en": "a boxy shape", "it": "una forma boxy" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.high-waisted",
+          "label": { "en": "High waisted", "it": "Vita alta" },
+          "prompt": { "en": "a high waist", "it": "una vita alta" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.mid-rise",
+          "label": { "en": "Mid rise", "it": "Vita media" },
+          "prompt": { "en": "a mid rise", "it": "una vita media" },
+          "tags": ["fit"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.structured-tailoring",
+          "label": { "en": "Structured tailoring", "it": "Sartoria strutturata" },
+          "prompt": { "en": "sharp structured tailoring", "it": "sartoria dalla struttura netta" },
+          "tags": ["tailoring"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.deconstructed",
+          "label": { "en": "Deconstructed", "it": "Decostruita" },
+          "prompt": { "en": "deconstructed tailoring with visible seams", "it": "sartoria decostrutturata con cuciture a vista" },
+          "tags": ["tailoring"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.draped",
+          "label": { "en": "Draped", "it": "Drappeggiata" },
+          "prompt": { "en": "soft draped fabric", "it": "tessuto morbido e drappeggiato" },
+          "tags": ["silhouette"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.asymmetric",
+          "label": { "en": "Asymmetric", "it": "Asimmetrica" },
+          "prompt": { "en": "an asymmetric cut", "it": "un taglio asimmetrico" },
+          "tags": ["silhouette"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.ruched",
+          "label": { "en": "Ruched", "it": "Ruched" },
+          "prompt": { "en": "gathered ruched fabric", "it": "tessuto raccolto e ruched" },
+          "tags": ["silhouette"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.pleated",
+          "label": { "en": "Pleated", "it": "Pince" },
+          "prompt": { "en": "sharp knife pleats", "it": "pinces a lancia affilate" },
+          "tags": ["silhouette"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.voluminous",
+          "label": { "en": "Voluminous", "it": "Voluminosa" },
+          "prompt": { "en": "a voluminous silhouette", "it": "una silhouette voluminosa" },
+          "tags": ["silhouette"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.cocoon",
+          "label": { "en": "Cocoon", "it": "A bozzolo" },
+          "prompt": { "en": "a cocoon shape", "it": "una forma a bozzolo" },
+          "tags": ["silhouette"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.fluid-drape",
+          "label": { "en": "Fluid drape", "it": "Caduta fluida" },
+          "prompt": { "en": "fluid draping", "it": "caduta fluida" },
+          "tags": ["silhouette"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.layered",
+          "label": { "en": "Layered", "it": "A strati" },
+          "prompt": { "en": "layered pieces worn over each other", "it": "strati indossati uno sull'altro" },
+          "tags": ["layering"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.rolled-sleeves",
+          "label": { "en": "Rolled sleeves", "it": "Maniche arrotolate" },
+          "prompt": { "en": "sleeves rolled to the elbow", "it": "maniche arrotolate fino al gomito" },
+          "tags": ["styling"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.shirt-tucked",
+          "label": { "en": "Shirt tucked in", "it": "Camicia infilata" },
+          "prompt": { "en": "a shirt tucked in", "it": "una camicia infilata nei pantaloni" },
+          "tags": ["styling"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.shirt-half-tucked",
+          "label": { "en": "Half tucked", "it": "Mezzo infilata" },
+          "prompt": { "en": "a half-tucked shirt", "it": "una camicia infilata per metà" },
+          "tags": ["styling"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.jacket-open",
+          "label": { "en": "Jacket worn open", "it": "Giacca indossata aperta" },
+          "prompt": { "en": "a jacket worn open", "it": "una giacca indossata aperta" },
+          "tags": ["styling"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.strong-shoulders",
+          "label": { "en": "Strong shoulders", "it": "Spalle marcate" },
+          "prompt": { "en": "defined strong shoulders", "it": "spalle definite e marcate" },
+          "tags": ["tailoring"],
+          "status": "evergreen"
+        },
+        {
+          "id": "wardrobe.fit.wide-sleeves",
+          "label": { "en": "Wide sleeves", "it": "Maniche larghe" },
+          "prompt": { "en": "wide flowing sleeves", "it": "maniche larghe e morbide" },
+          "tags": ["silhouette"],
+          "status": "evergreen"
+        }
+      ]
+    }
+  ]
+}

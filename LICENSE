@@ -1,0 +1,36 @@
+AI Image Prompt Studio
+Copyright (c) 2026 the AI Image Prompt Studio contributors
+
+NO LICENSE HAS BEEN GRANTED YET
+================================
+
+This repository is published for evaluation and contribution purposes only.
+No open source license has been selected by the maintainer, so no permission to
+use, copy, modify, merge, publish, distribute, sublicense or sell this software
+is granted, other than the permissions that the applicable law provides by
+default.
+
+Until the maintainer chooses a license, the software is protected by the
+"all rights reserved" default of copyright law.
+
+The maintainer is expected to replace this file with the full text of the
+chosen license (MIT is the recommended default for a project of this kind) and
+to update the "License" section of README.md and README.it.md accordingly.
+The `license` field in package.json is set to `UNLICENSED` for the same reason.
+
+Third-party components
+----------------------
+
+This project depends on the following packages, each distributed under its own
+license by its own authors:
+
+  React, React-DOM          MIT
+  Vite, Vitest              MIT
+  TypeScript                Apache-2.0
+  ESLint, typescript-eslint MIT
+  @vitejs/plugin-react      MIT
+
+The catalog content describes general, descriptive vocabulary of fashion,
+footwear, photography and lighting. It is not copied from any publication and
+does not reproduce protected texts. See docs/research/model-profiles.md for the
+sources used for the model profiles.

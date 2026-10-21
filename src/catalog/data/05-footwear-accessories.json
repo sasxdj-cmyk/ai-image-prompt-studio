@@ -1,0 +1,739 @@
+{
+  "categories": [
+    {
+      "id": "footwear.style",
+      "entries": [
+        {
+          "id": "footwear.style.low-top-sneakers",
+          "label": { "en": "Low-top sneakers", "it": "Sneaker basse" },
+          "prompt": { "en": "low-top sneakers", "it": "sneaker basse" },
+          "tags": ["sneakers"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.mid-top-sneakers",
+          "label": { "en": "Mid-top sneakers", "it": "Sneaker mid" },
+          "prompt": { "en": "mid-top sneakers", "it": "sneaker mid" },
+          "tags": ["sneakers"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.high-top-sneakers",
+          "label": { "en": "High-top sneakers", "it": "Sneaker alte" },
+          "prompt": { "en": "high-top sneakers", "it": "sneaker alte" },
+          "tags": ["sneakers"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.chunky-sneakers",
+          "label": { "en": "Chunky sneakers", "it": "Sneaker chunky" },
+          "prompt": { "en": "chunky dad sneakers", "it": "sneaker chunky" },
+          "tags": ["sneakers"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.retro-court-sneakers",
+          "label": { "en": "Retro court sneakers", "it": "Sneaker da tennis retrò" },
+          "prompt": { "en": "retro court sneakers", "it": "sneaker da tennis retrò" },
+          "tags": ["sneakers"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.skate-shoes",
+          "label": { "en": "Skate shoes", "it": "Scarpe da skateboard" },
+          "prompt": { "en": "flat vulcanised skate shoes", "it": "scarpe da skate basse vulcanizzate" },
+          "tags": ["sneakers"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.running-shoes",
+          "label": { "en": "Running shoes", "it": "Scarpe da running" },
+          "prompt": { "en": "modern running shoes", "it": "scarpe da running moderne" },
+          "tags": ["sport"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.training-shoes",
+          "label": { "en": "Training shoes", "it": "Scarpe da allenamento" },
+          "prompt": { "en": "flat training shoes", "it": "scarpe da allenamento piatte" },
+          "tags": ["sport"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.basketball-shoes",
+          "label": { "en": "Basketball shoes", "it": "Scarpe da basket" },
+          "prompt": { "en": "high-performance basketball shoes", "it": "scarpe da basket ad alte prestazioni" },
+          "tags": ["sport"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.football-boots",
+          "label": { "en": "Football boots", "it": "Scarpe da calcio" },
+          "prompt": { "en": "soccer cleats with studs", "it": "scarpini da calcio con tacchetti" },
+          "tags": ["sport"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.trail-shoes",
+          "label": { "en": "Trail shoes", "it": "Scarpe da trail" },
+          "prompt": { "en": "aggressive trail running shoes", "it": "scarpe da trail aggressive" },
+          "tags": ["sport", "technical"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.hiking-boots",
+          "label": { "en": "Hiking boots", "it": "Scarpe da trekking" },
+          "prompt": { "en": "sturdy hiking boots", "it": "scarpe da trekking robuste" },
+          "tags": ["technical"],
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.chelsea-boots",
+          "label": { "en": "Chelsea boots", "it": "Stivali Chelsea" },
+          "prompt": { "en": "chelsea boots with elastic sides", "it": "stivali Chelsea con elastici laterali" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.combat-boots",
+          "label": { "en": "Combat boots", "it": "Stivali da combattimento" },
+          "prompt": { "en": "black lace-up combat boots", "it": "stivali da combattimento neri con lacci" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.ankle-boots",
+          "label": { "en": "Ankle boots", "it": "Stivali al polpaccio" },
+          "prompt": { "en": "sleek ankle boots", "it": "stivali al polpaccio dal design snello" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.knee-high-boots",
+          "label": { "en": "Knee-high boots", "it": "Stivali al ginocchio" },
+          "prompt": { "en": "knee-high boots", "it": "stivali al ginocchio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.cowboy-boots",
+          "label": { "en": "Cowboy boots", "it": "Stivali da cowboy" },
+          "prompt": { "en": "pointed cowboy boots", "it": "stivali da cowboy con punta affilata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.penny-loafers",
+          "label": { "en": "Penny loafers", "it": "Loafer con barramento" },
+          "prompt": { "en": "leather penny loafers", "it": "loafer in pelle con barramento" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.tassel-loafers",
+          "label": { "en": "Tassel loafers", "it": "Loafer con nappe" },
+          "prompt": { "en": "tassel loafers", "it": "loafer con nappe" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.derby",
+          "label": { "en": "Derby shoes", "it": "Scarpe derby" },
+          "prompt": { "en": "open-lace derby shoes", "it": "scarpe derby con lacci aperti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.oxford",
+          "label": { "en": "Oxford shoes", "it": "Scarpe oxford" },
+          "prompt": { "en": "closed-lace oxford shoes", "it": "scarpe oxford con lacci chiusi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.brogues",
+          "label": { "en": "Brogues", "it": "Brogue" },
+          "prompt": { "en": "full brogue leather shoes", "it": "scarpe in pelle brogue traforate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.boat-shoes",
+          "label": { "en": "Boat shoes", "it": "Mocassini da barca" },
+          "prompt": { "en": "suede boat shoes with laces", "it": "mocassini da barca in scamosciato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.slide-sandals",
+          "label": { "en": "Slide sandals", "it": "Slipper" },
+          "prompt": { "en": "open slide sandals", "it": "slipper aperte" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.strappy-sandals",
+          "label": { "en": "Strappy sandals", "it": "Sandali a cinghie" },
+          "prompt": { "en": "thin strappy sandals", "it": "sandali sottili a cinghie" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.gladiator-sandals",
+          "label": { "en": "Gladiator sandals", "it": "Sandali gladiatore" },
+          "prompt": { "en": "gladiator sandals", "it": "sandali gladiatore" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.stilettos",
+          "label": { "en": "Stilettos", "it": "Tacco a spillo" },
+          "prompt": { "en": "pointed stiletto heels", "it": "tacchi a spillo appuntiti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.kitten-heels",
+          "label": { "en": "Kitten heels", "it": "Tacco kitten" },
+          "prompt": { "en": "low kitten heels", "it": "tacchi kitten bassi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.block-heels",
+          "label": { "en": "Block heels", "it": "Tacco a blocco" },
+          "prompt": { "en": "chunky block heels", "it": "tacchi a blocco larghi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.wedge",
+          "label": { "en": "Wedges", "it": "Zoccoli" },
+          "prompt": { "en": "wedge sandals", "it": "sandali a zoccolo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.platform",
+          "label": { "en": "Platform shoes", "it": "Scarpe con pianale" },
+          "prompt": { "en": "thick platform shoes", "it": "scarpe con pianale spesso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.mules",
+          "label": { "en": "Mules", "it": "Mule" },
+          "prompt": { "en": "backless leather mules", "it": "mule in pelle senza tallone" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.pumps",
+          "label": { "en": "Pumps", "it": "Décolleté" },
+          "prompt": { "en": "classic pointed pumps", "it": "décolleté classici con punta affilata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.style.espadrilles",
+          "label": { "en": "Espadrilles", "it": "Espadrilles" },
+          "prompt": { "en": "espadrilles with a rope sole", "it": "espadrilles con suola di corda" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "footwear.silhouette",
+      "entries": [
+        {
+          "id": "footwear.silhouette.chunky-sole",
+          "label": { "en": "Chunky sole", "it": "Suola chunky" },
+          "prompt": { "en": "a chunky thick sole", "it": "una suola spessa e chunky" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.cupsole",
+          "label": { "en": "Cupsole", "it": "Suola a tazza" },
+          "prompt": { "en": "a vulcanised cupsole", "it": "una suola vulcanizzata a tazza" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.lugged-sole",
+          "label": { "en": "Lugged sole", "it": "Suola a tasselli" },
+          "prompt": { "en": "a deeply lugged rubber sole", "it": "una suola in gomma a tasselli profondi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.crepe-sole",
+          "label": { "en": "Crepe sole", "it": "Suola in crepe" },
+          "prompt": { "en": "a crepe rubber sole", "it": "una suola in gomma crepe" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.platform-sole",
+          "label": { "en": "Platform sole", "it": "Suola a pianale" },
+          "prompt": { "en": "a thick platform sole", "it": "una suola a pianale spesso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.thin-sole",
+          "label": { "en": "Thin sole", "it": "Suola sottile" },
+          "prompt": { "en": "a thin minimal sole", "it": "una suola sottile e minimale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.square-toe",
+          "label": { "en": "Square toe", "it": "Punta squadrata" },
+          "prompt": { "en": "a square toe", "it": "una punta squadrata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.pointed-toe",
+          "label": { "en": "Pointed toe", "it": "Punta affilata" },
+          "prompt": { "en": "a sharply pointed toe", "it": "una punta affilata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.round-toe",
+          "label": { "en": "Round toe", "it": "Punta tonda" },
+          "prompt": { "en": "a rounded toe", "it": "una punta tondeggiante" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.cut-out",
+          "label": { "en": "Cut-out / perforated", "it": "Traforata" },
+          "prompt": { "en": "cut-out perforated panels", "it": "pannelli traforati" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.silhouette.low-profile",
+          "label": { "en": "Low profile", "it": "Profilo basso" },
+          "prompt": { "en": "a low-profile silhouette", "it": "una silhouette a profilo basso" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "footwear.material",
+      "entries": [
+        {
+          "id": "footwear.material.leather",
+          "label": { "en": "Leather", "it": "Pelle" },
+          "prompt": { "en": "smooth leather", "it": "pelle liscia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.suede",
+          "label": { "en": "Suede", "it": "Scamosciato" },
+          "prompt": { "en": "brushed suede", "it": "scamosciato spazzolato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.canvas",
+          "label": { "en": "Canvas", "it": "Tela" },
+          "prompt": { "en": "cotton canvas", "it": "tela di cotone" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.mesh",
+          "label": { "en": "Mesh", "it": "Mesh" },
+          "prompt": { "en": "engineered mesh uppers", "it": "upper in mesh ingegnerizzato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.knit",
+          "label": { "en": "Knit", "it": "Maglia" },
+          "prompt": { "en": "knitted uppers", "it": "upper in maglia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.patent",
+          "label": { "en": "Patent", "it": "Patent" },
+          "prompt": { "en": "glossy patent leather", "it": "pelle patent lucida" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.croc-embossed",
+          "label": { "en": "Croc-embossed", "it": "Stampa coccodrillo" },
+          "prompt": { "en": "croc-embossed leather", "it": "pelle con stampa coccodrillo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.nylon",
+          "label": { "en": "Technical nylon", "it": "Nylon tecnico" },
+          "prompt": { "en": "technical nylon", "it": "nylon tecnico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.rubber",
+          "label": { "en": "Rubber", "it": "Gomma" },
+          "prompt": { "en": "moulded rubber", "it": "gomma stampata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "footwear.material.distressed",
+          "label": { "en": "Distressed / worn", "it": "Consumata" },
+          "prompt": { "en": "worn and distressed leather", "it": "pelle consumata e vissuta" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "accessories.eyewear",
+      "entries": [
+        {
+          "id": "accessories.eyewear.aviator",
+          "label": { "en": "Aviators", "it": "Aviator" },
+          "prompt": { "en": "aviator sunglasses", "it": "occhiali da sole aviator" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.wayfarer",
+          "label": { "en": "Wayfarer", "it": "Wayfarer" },
+          "prompt": { "en": "wayfarer sunglasses", "it": "occhiali da sole wayfarer" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.round",
+          "label": { "en": "Round frames", "it": "Montature tonde" },
+          "prompt": { "en": "round metal frames", "it": "montature tonde in metallo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.cat-eye",
+          "label": { "en": "Cat-eye", "it": "Cat-eye" },
+          "prompt": { "en": "cat-eye sunglasses", "it": "occhiali da sole cat-eye" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.oversized",
+          "label": { "en": "Oversized frames", "it": "Montature oversize" },
+          "prompt": { "en": "oversized sunglasses", "it": "occhiali da sole oversize" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.sport-wrap",
+          "label": { "en": "Sport wrap", "it": "Wrap sportivo" },
+          "prompt": { "en": "wrap-around sport sunglasses", "it": "occhiali sportivi avvolgenti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.rimless",
+          "label": { "en": "Rimless", "it": "A montatura invisibile" },
+          "prompt": { "en": "rimless eyeglasses", "it": "occhiali a montatura invisibile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.browline",
+          "label": { "en": "Browline", "it": "Browline" },
+          "prompt": { "en": "browline eyeglasses", "it": "occhiali browline" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.clear-lenses",
+          "label": { "en": "Clear lenses", "it": "Lenti trasparenti" },
+          "prompt": { "en": "clear eyeglass lenses", "it": "occhiali con lenti trasparenti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.eyewear.tinted",
+          "label": { "en": "Tinted lenses", "it": "Lenti fumé" },
+          "prompt": { "en": "tinted lenses", "it": "lenti fumé" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "accessories.hats",
+      "entries": [
+        {
+          "id": "accessories.hats.baseball-cap",
+          "label": { "en": "Baseball cap", "it": "Cappellino da baseball" },
+          "prompt": { "en": "a baseball cap", "it": "un cappellino da baseball" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.trucker-cap",
+          "label": { "en": "Mesh trucker cap", "it": "Cappellino trucker in mesh" },
+          "prompt": { "en": "a mesh trucker cap", "it": "un cappellino trucker in mesh" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.beanie",
+          "label": { "en": "Beanie", "it": "Berretto" },
+          "prompt": { "en": "a knitted beanie", "it": "un berretto in maglia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.bucket-hat",
+          "label": { "en": "Bucket hat", "it": "Bucket hat" },
+          "prompt": { "en": "a bucket hat", "it": "un bucket hat" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.fedora",
+          "label": { "en": "Fedora", "it": "Fedora" },
+          "prompt": { "en": "a felt fedora hat", "it": "un cappello fedora in feltro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.wide-brim",
+          "label": { "en": "Wide-brim hat", "it": "Cappello a tesa larga" },
+          "prompt": { "en": "a wide-brim sun hat", "it": "un cappello da sole a tesa larga" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.beret",
+          "label": { "en": "Beret", "it": "Béret" },
+          "prompt": { "en": "a wool beret", "it": "un béret in lana" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.cowboy-hat",
+          "label": { "en": "Cowboy hat", "it": "Cappello da cowboy" },
+          "prompt": { "en": "a cowboy hat", "it": "un cappello da cowboy" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.newsboy",
+          "label": { "en": "Newsboy cap", "it": "Cappellino da giornale" },
+          "prompt": { "en": "a tweed newsboy cap", "it": "un cappellino da giornale in tweed" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hats.visor",
+          "label": { "en": "Visor", "it": "Visiera" },
+          "prompt": { "en": "a sport visor", "it": "una visiera sportiva" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "accessories.bags",
+      "entries": [
+        {
+          "id": "accessories.bags.tote",
+          "label": { "en": "Tote bag", "it": "Tote bag" },
+          "prompt": { "en": "a structured tote bag", "it": "una tote bag strutturata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.crossbody",
+          "label": { "en": "Crossbody bag", "it": "Borsa crossbody" },
+          "prompt": { "en": "a small crossbody bag", "it": "una borsa crossbody piccola" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.shoulder-bag",
+          "label": { "en": "Shoulder bag", "it": "Borsa a spalla" },
+          "prompt": { "en": "a shoulder bag with a chain strap", "it": "una borsa a spalla con catena" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.clutch",
+          "label": { "en": "Clutch", "it": "Clutch" },
+          "prompt": { "en": "a slim evening clutch", "it": "un clutch da sera slim" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.mini-bag",
+          "label": { "en": "Mini bag", "it": "Mini bag" },
+          "prompt": { "en": "a tiny mini bag", "it": "una mini bag minuscola" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.bucket-bag",
+          "label": { "en": "Bucket bag", "it": "Borsa secchiello" },
+          "prompt": { "en": "a drawstring bucket bag", "it": "una borsa secchiello con cordoncino" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.weekender",
+          "label": { "en": "Weekender bag", "it": "Borsa da viaggio" },
+          "prompt": { "en": "a leather weekender bag", "it": "una borsa da viaggio in pelle" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.backpack",
+          "label": { "en": "Backpack", "it": "Zaino" },
+          "prompt": { "en": "a worn leather backpack", "it": "uno zaino in pelle consumata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.belt-bag",
+          "label": { "en": "Belt bag", "it": "Borsa a cintura" },
+          "prompt": { "en": "a belt bag worn at the waist", "it": "una borsa a cintura portata in vita" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.bags.duffel",
+          "label": { "en": "Duffel bag", "it": "Borsa sportiva" },
+          "prompt": { "en": "a canvas duffel bag", "it": "una borsa sportiva in tela" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "accessories.jewellery",
+      "entries": [
+        {
+          "id": "accessories.jewellery.stud-earrings",
+          "label": { "en": "Stud earrings", "it": "Orecchini a perno" },
+          "prompt": { "en": "small stud earrings", "it": "piccoli orecchini a perno" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.hoop-earrings",
+          "label": { "en": "Hoop earrings", "it": "Orecchini a cerchio" },
+          "prompt": { "en": "slim hoop earrings", "it": "orecchini a cerchio sottili" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.drop-earrings",
+          "label": { "en": "Drop earrings", "it": "Orecchini a goccia" },
+          "prompt": { "en": "long drop earrings", "it": "orecchini a goccia lunghi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.chain-necklace",
+          "label": { "en": "Chain necklace", "it": "Collana a catena" },
+          "prompt": { "en": "a fine chain necklace", "it": "una collana a catena sottile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.pendant",
+          "label": { "en": "Pendant", "it": "Pendente" },
+          "prompt": { "en": "a delicate pendant necklace", "it": "una collana con pendente delicato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.layered-necklaces",
+          "label": { "en": "Layered necklaces", "it": "Collane a strati" },
+          "prompt": { "en": "layered necklaces of different lengths", "it": "collane a strati di diverse lunghezze" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.choker",
+          "label": { "en": "Choker", "it": "Choker" },
+          "prompt": { "en": "a close-fitting choker", "it": "un choker aderente" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.signet-ring",
+          "label": { "en": "Signet ring", "it": "Anello con sigillo" },
+          "prompt": { "en": "a heavy signet ring", "it": "un anello con sigillo massiccio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.stacking-rings",
+          "label": { "en": "Stacking rings", "it": "Anelli impilabili" },
+          "prompt": { "en": "stacked rings on the fingers", "it": "anelli impilati sulle dita" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.cuff-bracelet",
+          "label": { "en": "Cuff bracelet", "it": "Bracciale rigido" },
+          "prompt": { "en": "a wide cuff bracelet", "it": "un bracciale rigido largo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.beaded-bracelet",
+          "label": { "en": "Beaded bracelet", "it": "Bracciale di perle" },
+          "prompt": { "en": "a beaded bracelet", "it": "un bracciale di perle" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.dress-watch",
+          "label": { "en": "Dress watch", "it": "Orologio elegante" },
+          "prompt": { "en": "a slim dress watch", "it": "un orologio elegante e sottile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.chronograph",
+          "label": { "en": "Chronograph watch", "it": "Cronografo" },
+          "prompt": { "en": "a steel chronograph watch", "it": "un cronografo in acciaio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.jewellery.dive-watch",
+          "label": { "en": "Dive watch", "it": "Orologio subacqueo" },
+          "prompt": { "en": "a dive watch with a rotating bezel", "it": "un orologio subacqueo con ghiera girevole" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "accessories.belts",
+      "entries": [
+        {
+          "id": "accessories.belts.leather-belt",
+          "label": { "en": "Leather belt", "it": "Cintura in pelle" },
+          "prompt": { "en": "a slim leather belt", "it": "una cintura in pelle sottile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.belts.woven-belt",
+          "label": { "en": "Woven belt", "it": "Cintura intrecciata" },
+          "prompt": { "en": "a woven leather belt", "it": "una cintura in pelle intrecciata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.belts.chain-belt",
+          "label": { "en": "Chain belt", "it": "Cintura a catena" },
+          "prompt": { "en": "a metal chain belt", "it": "una cintura a catena metallica" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.belts.studded-belt",
+          "label": { "en": "Studded belt", "it": "Cintura borchiatta" },
+          "prompt": { "en": "a studded belt", "it": "una cintura borchiatta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.belts.silk-scarf",
+          "label": { "en": "Silk scarf", "it": "Foulard in seta" },
+          "prompt": { "en": "a silk scarf tied at the neck", "it": "un foulard in seta legato al collo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.belts.wool-scarf",
+          "label": { "en": "Wool scarf", "it": "Sciarpa in lana" },
+          "prompt": { "en": "a chunky wool scarf", "it": "una sciarpa in lana spessa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.belts.bandana",
+          "label": { "en": "Bandana", "it": "Bandana" },
+          "prompt": { "en": "a printed bandana", "it": "una bandana stampata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.belts.gloves",
+          "label": { "en": "Gloves", "it": "Guanti" },
+          "prompt": { "en": "leather gloves", "it": "guanti in pelle" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "accessories.hair",
+      "entries": [
+        {
+          "id": "accessories.hair.scrunchie",
+          "label": { "en": "Scrunchie", "it": "Scrunchie" },
+          "prompt": { "en": "a scrunchie holding the hair", "it": "uno scrunchie che raccoglie i capelli" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hair.clips",
+          "label": { "en": "Hair clips", "it": "Fermacappelli" },
+          "prompt": { "en": "hair clips holding back the hair", "it": "fermacappelli che raccolgono i capelli" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hair.pins",
+          "label": { "en": "Bobby pins", "it": "Forbici per capelli" },
+          "prompt": { "en": "bobby pins in the hair", "it": "forbici per capelli tra i capelli" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hair.headband",
+          "label": { "en": "Headband", "it": "Fascia per capelli" },
+          "prompt": { "en": "a padded headband", "it": "una fascia imbottita per capelli" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hair.barrettes",
+          "label": { "en": "Barrettes", "it": "Fermacapelli" },
+          "prompt": { "en": "a decorative barrette", "it": "un fermacapelli decorativo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "accessories.hair.ribbon",
+          "label": { "en": "Silk ribbon", "it": "Nastro in seta" },
+          "prompt": { "en": "a silk ribbon tied in the hair", "it": "un nastro in seta legato tra i capelli" },
+          "status": "evergreen"
+        }
+      ]
+    }
+  ]
+}

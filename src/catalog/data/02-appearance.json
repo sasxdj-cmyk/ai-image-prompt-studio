@@ -1,0 +1,745 @@
+{
+  "categories": [
+    {
+      "id": "appearance.skin.tone",
+      "entries": [
+        {
+          "id": "appearance.skin.tone.very-fair",
+          "label": { "en": "Very fair", "it": "Molto chiara" },
+          "prompt": { "en": "very fair skin", "it": "pelle molto chiara" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.tone.fair",
+          "label": { "en": "Fair", "it": "Chiara" },
+          "prompt": { "en": "fair skin", "it": "pelle chiara" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.tone.light",
+          "label": { "en": "Light", "it": "Chiara-oliva" },
+          "prompt": { "en": "light skin", "it": "pelle chiara e olivastra" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.tone.medium",
+          "label": { "en": "Medium", "it": "Media" },
+          "prompt": { "en": "medium skin tone", "it": "tono di pelle medio" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.tone.olive",
+          "label": { "en": "Olive", "it": "Olivastra" },
+          "prompt": { "en": "olive skin", "it": "pelle olivastra" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.tone.tan",
+          "label": { "en": "Tan", "it": "Abbronzata" },
+          "prompt": { "en": "sun-tanned skin", "it": "pelle abbronzata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.tone.deep",
+          "label": { "en": "Deep", "it": "Profonda" },
+          "prompt": { "en": "deep skin tone", "it": "tono di pelle profondo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.tone.rich-dark",
+          "label": { "en": "Rich dark", "it": "Scura e profonda" },
+          "prompt": { "en": "rich dark skin", "it": "pelle scura e profonda" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.skin.texture",
+      "entries": [
+        {
+          "id": "appearance.skin.texture.smooth",
+          "label": { "en": "Smooth", "it": "Levigata" },
+          "prompt": { "en": "smooth skin", "it": "pelle levigata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.texture.matte",
+          "label": { "en": "Matte", "it": "Opaca" },
+          "prompt": { "en": "matte skin", "it": "pelle opaca" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.texture.dewy",
+          "label": { "en": "Dewy", "it": "Luminosa" },
+          "prompt": { "en": "dewy skin", "it": "pelle luminosa e idratata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.texture.oily",
+          "label": { "en": "Oily / shiny", "it": "Grassa / lucida" },
+          "prompt": { "en": "oily skin with a visible shine", "it": "pelle grassa con lucidità visibile" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.texture.dry",
+          "label": { "en": "Dry", "it": "Secca" },
+          "prompt": { "en": "dry skin", "it": "pelle secca" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.texture.textured",
+          "label": { "en": "Textured", "it": "Porosa" },
+          "prompt": { "en": "textured skin with visible pores", "it": "pelle porosa con pori visibili" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.texture.tanned-lines",
+          "label": { "en": "Sun-worn", "it": "Segnata dal sole" },
+          "prompt": { "en": "sun-worn skin", "it": "pelle segnata dal sole" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.skin.features",
+      "entries": [
+        {
+          "id": "appearance.skin.features.freckles",
+          "label": { "en": "Freckles", "it": "Lentiggini" },
+          "prompt": { "en": "freckles across the nose and cheeks", "it": "lentiggini su naso e guance" },
+          "tags": ["freckles"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.features.moles",
+          "label": { "en": "Moles", "it": "Nei" },
+          "prompt": { "en": "a few small moles", "it": "alcuni piccoli nei" },
+          "tags": ["moles"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.features.freckles-moles",
+          "label": { "en": "Freckles and moles", "it": "Lentiggini e nei" },
+          "prompt": { "en": "freckles and beauty marks", "it": "lentiggini e nei" },
+          "tags": ["freckles", "moles"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.features.scars",
+          "label": { "en": "Scars", "it": "Cicatrici" },
+          "prompt": { "en": "faint old scars", "it": "faint vecchie cicatrici" },
+          "tags": ["scars"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.features.tattoos",
+          "label": { "en": "Tattoos", "it": "Tatuaggi" },
+          "prompt": { "en": "visible tattoos on the arms", "it": "tatuaggi visibili sulle braccia" },
+          "tags": ["tattoo"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.features.piercings",
+          "label": { "en": "Piercings", "it": "Piercing" },
+          "prompt": { "en": "small piercings", "it": "piccoli piercing" },
+          "tags": ["piercing"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.features.birthmark",
+          "label": { "en": "Birthmark", "it": "Nevo" },
+          "prompt": { "en": "a small birthmark", "it": "un piccolo nevo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.skin.features.dimples",
+          "label": { "en": "Dimples", "it": "Punte di dimensione" },
+          "prompt": { "en": "dimples in the cheeks", "it": "punte di dimensione sulle guance" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.face.shape",
+      "entries": [
+        {
+          "id": "appearance.face.shape.oval",
+          "label": { "en": "Oval", "it": "Ovale" },
+          "prompt": { "en": "an oval face", "it": "un viso ovale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.shape.round",
+          "label": { "en": "Round", "it": "Tondo" },
+          "prompt": { "en": "a round face", "it": "un viso tondo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.shape.square",
+          "label": { "en": "Square", "it": "Squadrato" },
+          "prompt": { "en": "a square jawline and square face", "it": "un viso squadrato con mascella squadrata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.shape.heart",
+          "label": { "en": "Heart shaped", "it": "A cuore" },
+          "prompt": { "en": "a heart-shaped face", "it": "un viso a cuore" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.shape.diamond",
+          "label": { "en": "Diamond", "it": "A diamante" },
+          "prompt": { "en": "a diamond-shaped face", "it": "un viso a diamante" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.shape.long",
+          "label": { "en": "Long", "it": "Lungo" },
+          "prompt": { "en": "a long face", "it": "un viso lungo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.shape.angular",
+          "label": { "en": "Angular", "it": "Angolare" },
+          "prompt": { "en": "an angular face", "it": "un viso angolare" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.shape.soft",
+          "label": { "en": "Soft / round features", "it": "Lineamenti morbidi" },
+          "prompt": { "en": "soft rounded facial features", "it": "lineamenti del viso morbidi e tondeggianti" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.face.features",
+      "entries": [
+        {
+          "id": "appearance.face.features.high-cheekbones",
+          "label": { "en": "High cheekbones", "it": "Zigomi pronunciati" },
+          "prompt": { "en": "high cheekbones", "it": "zigomi pronunciati" },
+          "tags": ["cheekbones"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.soft-cheekbones",
+          "label": { "en": "Soft cheekbones", "it": "Zigomi morbidi" },
+          "prompt": { "en": "soft cheekbones", "it": "zigomi morbidi" },
+          "tags": ["cheekbones"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.strong-jaw",
+          "label": { "en": "Defined jaw", "it": "Mascella definita" },
+          "prompt": { "en": "a defined jawline", "it": "una mascella definita" },
+          "tags": ["jaw"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.soft-jaw",
+          "label": { "en": "Soft jaw", "it": "Mascella morbida" },
+          "prompt": { "en": "a soft jawline", "it": "una mascella morbida" },
+          "tags": ["jaw"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.straight-nose",
+          "label": { "en": "Straight nose", "it": "Naso dritto" },
+          "prompt": { "en": "a straight nose", "it": "un naso dritto" },
+          "tags": ["nose"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.defined-nose",
+          "label": { "en": "Defined nose", "it": "Naso definito" },
+          "prompt": { "en": "a defined nose bridge", "it": "un ponte nasale definito" },
+          "tags": ["nose"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.button-nose",
+          "label": { "en": "Button nose", "it": "Naso a bottone" },
+          "prompt": { "en": "a small button nose", "it": "un piccolo naso a bottone" },
+          "tags": ["nose"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.full-lips",
+          "label": { "en": "Full lips", "it": "Labbra piene" },
+          "prompt": { "en": "full lips", "it": "labbra piene" },
+          "tags": ["lips"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.thin-lips",
+          "label": { "en": "Thin lips", "it": "Labbra sottili" },
+          "prompt": { "en": "thin lips", "it": "labbra sottili" },
+          "tags": ["lips"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.bowed-lips",
+          "label": { "en": "Bowed lips", "it": "Labbra a cuore" },
+          "prompt": { "en": "bowed lips", "it": "labbra a cuore" },
+          "tags": ["lips"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.thick-brows",
+          "label": { "en": "Thick brows", "it": "Sopracciglia spesse" },
+          "prompt": { "en": "thick dark eyebrows", "it": "sopracciglia spesse e scure" },
+          "tags": ["brows"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.fine-brows",
+          "label": { "en": "Fine brows", "it": "Sopracciglia sottili" },
+          "prompt": { "en": "fine arched eyebrows", "it": "sopracciglia sottili e arcuate" },
+          "tags": ["brows"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.features.strong-brows",
+          "label": { "en": "Strong brows", "it": "Sopracciglia marcate" },
+          "prompt": { "en": "strong defined eyebrows", "it": "sopracciglia marcate e definite" },
+          "tags": ["brows"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.face.expression",
+      "entries": [
+        {
+          "id": "appearance.face.expression.neutral",
+          "label": { "en": "Neutral", "it": "Neutra" },
+          "prompt": { "en": "a neutral expression", "it": "un'espressione neutra" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.expression.serene",
+          "label": { "en": "Serene", "it": "Serena" },
+          "prompt": { "en": "a serene expression", "it": "un'espressione serena" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.expression.soft-smile",
+          "label": { "en": "Soft smile", "it": "Sorriso discreto" },
+          "prompt": { "en": "a soft closed-mouth smile", "it": "un sorriso discreto a bocca chiusa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.expression.open-smile",
+          "label": { "en": "Open smile", "it": "Sorriso aperto" },
+          "prompt": { "en": "an open smile showing teeth", "it": "un sorriso aperto con i denti visibili" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.expression.intense",
+          "label": { "en": "Intense", "it": "Intensa" },
+          "prompt": { "en": "an intense gaze and expression", "it": "uno sguardo e un'espressione intensi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.expression.pensive",
+          "label": { "en": "Pensive", "it": "Pensierosa" },
+          "prompt": { "en": "a pensive expression", "it": "un'espressione pensierosa" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.expression.confident",
+          "label": { "en": "Confident", "it": "Sicura di sé" },
+          "prompt": { "en": "a confident expression", "it": "un'espressione sicura di sé" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.expression.dreamy",
+          "label": { "en": "Dreamy", "it": "Sognante" },
+          "prompt": { "en": "a dreamy distant expression", "it": "un'espressione sognante e distante" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.face.expression.serious",
+          "label": { "en": "Serious", "it": "Seria" },
+          "prompt": { "en": "a serious expression", "it": "un'espressione seria" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.eyes.color",
+      "entries": [
+        {
+          "id": "appearance.eyes.color.dark-brown",
+          "label": { "en": "Dark brown", "it": "Marrone scuro" },
+          "prompt": { "en": "dark brown eyes", "it": "occhi marrone scuro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.color.light-brown",
+          "label": { "en": "Light brown / hazel", "it": "Marrone chiaro / nocciola" },
+          "prompt": { "en": "hazel eyes", "it": "occhi nocciola" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.color.green",
+          "label": { "en": "Green", "it": "Verdi" },
+          "prompt": { "en": "green eyes", "it": "occhi verdi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.color.blue",
+          "label": { "en": "Blue", "it": "Azzurri" },
+          "prompt": { "en": "blue eyes", "it": "occhi azzurri" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.color.grey",
+          "label": { "en": "Grey", "it": "Grigi" },
+          "prompt": { "en": "grey eyes", "it": "occhi grigi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.color.amber",
+          "label": { "en": "Amber", "it": "Ambra" },
+          "prompt": { "en": "amber eyes", "it": "occhi ambrati" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.color.violet",
+          "label": { "en": "Violet", "it": "Viola" },
+          "prompt": { "en": "violet eyes", "it": "occhi viola" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.eyes.shape",
+      "entries": [
+        {
+          "id": "appearance.eyes.shape.round",
+          "label": { "en": "Round", "it": "Rotondi" },
+          "prompt": { "en": "round eyes", "it": "occhi rotondi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.shape.almond",
+          "label": { "en": "Almond", "it": "A mandorla" },
+          "prompt": { "en": "almond-shaped eyes", "it": "occhi a mandorla" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.shape.upturned",
+          "label": { "en": "Upturned", "it": "Dal basso verso l'alto" },
+          "prompt": { "en": "upturned eyes", "it": "occhi con palpebre rivolte verso l'alto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.shape.downturned",
+          "label": { "en": "Downturned", "it": "Rivolt verso il basso" },
+          "prompt": { "en": "downturned eyes", "it": "occhi con palpebre rivolte verso il basso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.shape.elongated",
+          "label": { "en": "Elongated", "it": "Allungati" },
+          "prompt": { "en": "elongated eyes", "it": "occhi allungati" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.shape.deep-set",
+          "label": { "en": "Deep set", "it": "Incassati" },
+          "prompt": { "en": "deep-set eyes", "it": "occhi incassati" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.shape.hooded",
+          "label": { "en": "Hooded", "it": "Coperti" },
+          "prompt": { "en": "hooded eyes", "it": " occhi con palpebra superiore cadente" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.shape.large",
+          "label": { "en": "Large", "it": "Grandi" },
+          "prompt": { "en": "large expressive eyes", "it": "occhi grandi ed espressivi" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.eyes.intensity",
+      "entries": [
+        {
+          "id": "appearance.eyes.intensity.soft",
+          "label": { "en": "Soft", "it": "Morbido" },
+          "prompt": { "en": "a soft gaze", "it": "uno sguardo morbido" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.intensity.bright",
+          "label": { "en": "Bright", "it": "Luminoso" },
+          "prompt": { "en": "bright eyes", "it": "occhi luminosi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.intensity.focused",
+          "label": { "en": "Focused", "it": "Concentrato" },
+          "prompt": { "en": "a focused gaze", "it": "uno sguardo concentrato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.intensity.intense",
+          "label": { "en": "Intense", "it": "Intenso" },
+          "prompt": { "en": "an intense gaze", "it": "uno sguardo intenso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.intensity.dreamy",
+          "label": { "en": "Dreamy", "it": "Sognante" },
+          "prompt": { "en": "a dreamy distant gaze", "it": "uno sguardo sognante e distante" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.intensity.sharp",
+          "label": { "en": "Sharp", "it": "Appuntito" },
+          "prompt": { "en": "a sharp scrutinising gaze", "it": "uno sguardo appuntito e analitico" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.eyes.gaze",
+      "entries": [
+        {
+          "id": "appearance.eyes.gaze.camera",
+          "label": { "en": "Into the camera", "it": "Verso la camera" },
+          "prompt": { "en": "looking straight into the camera", "it": "che guarda direttamente nella camera" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.gaze.off-camera",
+          "label": { "en": "Past the camera", "it": "Oltre la camera" },
+          "prompt": { "en": "looking past the camera", "it": "che guarda oltre la camera" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.gaze.sideways",
+          "label": { "en": "To the side", "it": "Di lato" },
+          "prompt": { "en": "looking to the side", "it": "che guarda di lato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.gaze.up",
+          "label": { "en": "Upward", "it": "In alto" },
+          "prompt": { "en": "looking upward", "it": "che guarda verso l'alto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.gaze.down",
+          "label": { "en": "Downward", "it": "In basso" },
+          "prompt": { "en": "looking downward", "it": "che guarda verso il basso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.gaze.away",
+          "label": { "en": "Away / not in frame", "it": "Fuori inquadratura" },
+          "prompt": { "en": "gazing away out of frame", "it": "con lo sguardo fuori inquadratura" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.gaze.closed",
+          "label": { "en": "Eyes closed", "it": "Occhi chiusi" },
+          "prompt": { "en": "eyes closed", "it": "occhi chiusi" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.eyes.makeup",
+      "entries": [
+        {
+          "id": "appearance.eyes.makeup.smokey",
+          "label": { "en": "Smokey eyes", "it": "Occhi smokey" },
+          "prompt": { "en": "smokey eye makeup", "it": "trucco occhi smokey" },
+          "tags": ["smokey", "eyeshadow"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.makeup.winged-liner",
+          "label": { "en": "Winged eyeliner", "it": "Eyeliner a freccia" },
+          "prompt": { "en": "winged black eyeliner", "it": "eyeliner nero a freccia" },
+          "tags": ["eyeliner"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.makeup.thin-liner",
+          "label": { "en": "Thin liner", "it": "Eyeliner sottile" },
+          "prompt": { "en": "a thin line of eyeliner", "it": "una linea sottile di eyeliner" },
+          "tags": ["eyeliner"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.makeup.graphic",
+          "label": { "en": "Graphic eye makeup", "it": "Trucco grafico agli occhi" },
+          "prompt": { "en": "graphic eye makeup", "it": "trucco occhi grafico" },
+          "tags": ["graphic"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.makeup.monochrome",
+          "label": { "en": "Monochrome eyes", "it": "Occhi monocromatici" },
+          "prompt": { "en": "monochrome eye makeup", "it": "trucco occhi monocromatico" },
+          "tags": ["eyeshadow"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.makeup.bare",
+          "label": { "en": "Bare eyes", "it": "Occhi naturali" },
+          "prompt": { "en": "bare eyes with no visible eye makeup", "it": "occhi naturali senza trucco visibile" },
+          "tags": ["bare"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.eyes.makeup.tightlined",
+          "label": { "en": "Tightlined eyes", "it": "Occhi a linea serrata" },
+          "prompt": { "en": "tightlined eyes", "it": "occhi con liner a filo" },
+          "tags": ["eyeliner"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.makeup.base",
+      "entries": [
+        {
+          "id": "appearance.makeup.base.natural",
+          "label": { "en": "Natural", "it": "Naturale" },
+          "prompt": { "en": "natural makeup", "it": "trucco naturale" },
+          "tags": ["natural"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.base.no-makeup",
+          "label": { "en": "No makeup", "it": "Senza trucco" },
+          "prompt": { "en": "no makeup, bare face", "it": "senza trucco, viso naturale" },
+          "tags": ["natural", "bare"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.base.editorial",
+          "label": { "en": "Beauty editorial", "it": "Beauty editoriale" },
+          "prompt": { "en": "beauty editorial makeup", "it": "trucco beauty editoriale" },
+          "tags": ["editorial"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.base.fashion",
+          "label": { "en": "Fashion", "it": "Fashion" },
+          "prompt": { "en": "fashion makeup", "it": "trucco fashion" },
+          "tags": ["fashion"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.base.glamour",
+          "label": { "en": "Glamour", "it": "Glamour" },
+          "prompt": { "en": "glamour makeup", "it": "trucco glamour" },
+          "tags": ["glamour"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.base.luminous",
+          "label": { "en": "Luminous", "it": "Luminosa" },
+          "prompt": { "en": "luminous makeup", "it": "trucco luminoso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.base.sculpted",
+          "label": { "en": "Sculpted / contoured", "it": "Scultorea" },
+          "prompt": { "en": "sculpted contour makeup", "it": "trucco contour scultoreo" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.makeup.lips",
+      "entries": [
+        {
+          "id": "appearance.makeup.lips.nude",
+          "label": { "en": "Nude", "it": "Nude" },
+          "prompt": { "en": "nude lips", "it": "labbra nude" },
+          "tags": ["nude"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.lips.red",
+          "label": { "en": "Red", "it": "Rosso" },
+          "prompt": { "en": "red lips", "it": "labbra rosse" },
+          "tags": ["red"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.lips.deep-red",
+          "label": { "en": "Deep red", "it": "Rosso profondo" },
+          "prompt": { "en": "deep red lips", "it": "labbra rosso profondo" },
+          "tags": ["red"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.lips.brick",
+          "label": { "en": "Brick", "it": "Mattone" },
+          "prompt": { "en": "brick red lips", "it": "labbra rosso mattone" },
+          "tags": ["red"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.lips.glossy",
+          "label": { "en": "Glossy finish", "it": "Finitura lucida" },
+          "prompt": { "en": "glossy lips", "it": "labbra lucide" },
+          "tags": ["finish"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.lips.matte",
+          "label": { "en": "Matte finish", "it": "Finitura opaca" },
+          "prompt": { "en": "matte lips", "it": "labbra opache" },
+          "tags": ["finish"],
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "appearance.makeup.cheeks",
+      "entries": [
+        {
+          "id": "appearance.makeup.cheeks.blush",
+          "label": { "en": "Blush", "it": "Blush" },
+          "prompt": { "en": "soft blush on the cheeks", "it": "blush morbido sulle guance" },
+          "tags": ["blush"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.cheeks.highlight",
+          "label": { "en": "Highlight", "it": "Highlight" },
+          "prompt": { "en": "highlight on the cheekbones", "it": "highlight sugli zigomi" },
+          "tags": ["highlight"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.cheeks.bronzer",
+          "label": { "en": "Bronzer", "it": "Bronzer" },
+          "prompt": { "en": "bronzed cheeks", "it": "guance abbronzate" },
+          "tags": ["blush"],
+          "status": "evergreen"
+        },
+        {
+          "id": "appearance.makeup.cheeks.no-blush",
+          "label": { "en": "No blush", "it": "Senza blush" },
+          "prompt": { "en": "no blush on the cheeks", "it": "senza blush sulle guance" },
+          "tags": ["bare"],
+          "status": "evergreen"
+        }
+      ]
+    }
+  ]
+}

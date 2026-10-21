@@ -1,0 +1,576 @@
+{
+  "categories": [
+    {
+      "id": "pose.body",
+      "entries": [
+        {
+          "id": "pose.body.standing",
+          "label": { "en": "Standing", "it": "In piedi" },
+          "prompt": { "en": "standing", "it": "in piedi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.seated-stool",
+          "label": { "en": "Seated on a stool", "it": "Seduto su uno sgabello" },
+          "prompt": { "en": "seated on a stool", "it": "seduto su uno sgabello" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.seated-chair",
+          "label": { "en": "Seated on a chair", "it": "Seduto su una sedia" },
+          "prompt": { "en": "seated on a chair", "it": "seduto su una sedia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.seated-floor",
+          "label": { "en": "Seated on the floor", "it": "Seduto a terra" },
+          "prompt": { "en": "seated on the floor", "it": "seduto a terra" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.seated-stairs",
+          "label": { "en": "Seated on steps", "it": "Seduto sui gradini" },
+          "prompt": { "en": "seated on concrete steps", "it": "seduto su gradini in cemento" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.crouching",
+          "label": { "en": "Crouching", "it": "Accovacciato" },
+          "prompt": { "en": "crouching low", "it": "accovacciato in basso" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.kneeling",
+          "label": { "en": "Kneeling", "it": "In ginocchio" },
+          "prompt": { "en": "kneeling on one knee", "it": "in ginocchio su un piede" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.lying",
+          "label": { "en": "Lying down", "it": "Sdraiato" },
+          "prompt": { "en": "lying down", "it": "sdraiato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.walking",
+          "label": { "en": "Walking", "it": "Camminata" },
+          "prompt": { "en": "walking", "it": "che cammina" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.mid-stride",
+          "label": { "en": "Mid stride", "it": "A metà passo" },
+          "prompt": { "en": "caught mid-stride", "it": "colto a metà passo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.running",
+          "label": { "en": "Running", "it": "In corsa" },
+          "prompt": { "en": "running", "it": "che corre" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.leaning",
+          "label": { "en": "Leaning", "it": "Appoggiato" },
+          "prompt": { "en": "leaning against a wall", "it": "appoggiato a un muro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.turned-away",
+          "label": { "en": "Turned away", "it": "Di spalle" },
+          "prompt": { "en": "turned away from the camera", "it": "girato di spalle alla camera" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.body.dynamic-movement",
+          "label": { "en": "Dynamic movement", "it": "Movimento dinamico" },
+          "prompt": { "en": "in dynamic motion", "it": "in un movimento dinamico" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "pose.arms",
+      "entries": [
+        {
+          "id": "pose.arms.crossed",
+          "label": { "en": "Arms crossed", "it": "Braccia incrociate" },
+          "prompt": { "en": "arms crossed", "it": "braccia incrociate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.arms.in-pockets",
+          "label": { "en": "Hands in pockets", "it": "Mani in tasca" },
+          "prompt": { "en": "hands in the pockets", "it": "mani nelle tasche" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.arms.on-hips",
+          "label": { "en": "Hands on hips", "it": "Mani sui fianchi" },
+          "prompt": { "en": "hands on the hips", "it": "mani sui fianchi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.arms.behind-back",
+          "label": { "en": "Arms behind the back", "it": "Braccia dietro la schiena" },
+          "prompt": { "en": "arms held behind the back", "it": "braccia tenute dietro la schiena" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.arms.hanging",
+          "label": { "en": "Arms relaxed", "it": "Braccia rilassate" },
+          "prompt": { "en": "arms hanging relaxed at the sides", "it": "braccia rilassate lungo i fianchi" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.arms.one-raised",
+          "label": { "en": "One arm raised", "it": "Un braccio alzato" },
+          "prompt": { "en": "one arm raised", "it": "un braccio alzato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.arms.arms-out",
+          "label": { "en": "Arms open", "it": "Braccia aperte" },
+          "prompt": { "en": "arms open wide", "it": "braccia aperte" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.arms.hand-on-chest",
+          "label": { "en": "Hand on chest", "it": "Mano sul petto" },
+          "prompt": { "en": "a hand resting on the chest", "it": "una mano appoggiata al petto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.arms.hand-on-neck",
+          "label": { "en": "Hand on neck", "it": "Mano al collo" },
+          "prompt": { "en": "a hand touching the neck", "it": "una mano che tocca il collo" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "pose.hands",
+      "entries": [
+        {
+          "id": "pose.hands.open",
+          "label": { "en": "Open hands", "it": "Mani aperte" },
+          "prompt": { "en": "open relaxed hands", "it": "mani aperte e rilassate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.hands.clasped",
+          "label": { "en": "Clasped hands", "it": "Mani giunte" },
+          "prompt": { "en": "hands clasped together", "it": "mani giunte tra loro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.hands.one-hand",
+          "label": { "en": "One visible hand", "it": "Una sola mano visibile" },
+          "prompt": { "en": "one hand visible in frame", "it": "una sola mano visibile nell'inquadratura" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.hands.hidden",
+          "label": { "en": "Hands out of frame", "it": "Mani fuori inquadratura" },
+          "prompt": { "en": "hands out of frame", "it": "mani fuori inquadratura" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.hands.gripping",
+          "label": { "en": "Gripping something", "it": "Mano che afferra" },
+          "prompt": { "en": "a hand gripping an object", "it": "una mano che afferra un oggetto" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "pose.legs",
+      "entries": [
+        {
+          "id": "pose.legs.together",
+          "label": { "en": "Legs together", "it": "Gambe accostate" },
+          "prompt": { "en": "legs together", "it": "gambe accostate" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.legs.crossed",
+          "label": { "en": "Crossed legs", "it": "Gambe incrociate" },
+          "prompt": { "en": "legs crossed at the ankle", "it": "gambe incrociate alla caviglia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.legs.one-leg-bent",
+          "label": { "en": "One leg bent", "it": "Una gamba piegata" },
+          "prompt": { "en": "one leg bent and slightly forward", "it": "una gamba piegata e leggermente in avanti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.legs.contrapposto",
+          "label": { "en": "Weight on one leg", "it": "Peso su una gamba" },
+          "prompt": { "en": "weight resting on one leg", "it": "il peso appoggiato su una gamba" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.legs.wide-stance",
+          "label": { "en": "Wide stance", "it": "Appoggio largo" },
+          "prompt": { "en": "a wide confident stance", "it": "un appoggio largo e sicuro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.legs.stepped-forward",
+          "label": { "en": "One foot forward", "it": "Un piede in avanti" },
+          "prompt": { "en": "one foot stepped forward", "it": "un piede in avanti" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "pose.torso",
+      "entries": [
+        {
+          "id": "pose.torso.turned",
+          "label": { "en": "Torso turned", "it": "Busto ruotato" },
+          "prompt": { "en": "the torso turned away from the camera", "it": "il busto ruotato rispetto alla camera" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.torso.arched",
+          "label": { "en": "Back arched", "it": "Schiena inarcata" },
+          "prompt": { "en": "a gently arched back", "it": "la schiena dolcemente inarcata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.torso.leaning",
+          "label": { "en": "Torso leaning", "it": "Busto inclinato" },
+          "prompt": { "en": "the torso leaning forward", "it": "il busto inclinato in avanti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.torso.head-tilt",
+          "label": { "en": "Head tilted", "it": "Testa inclinata" },
+          "prompt": { "en": "the head tilted to one side", "it": "la testa inclinata da un lato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.torso.chin-up",
+          "label": { "en": "Chin raised", "it": "Mento alzato" },
+          "prompt": { "en": "the chin slightly raised", "it": "il mento leggermente alzato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.torso.chin-down",
+          "label": { "en": "Chin lowered", "it": "Mento abbassato" },
+          "prompt": { "en": "the chin lowered", "it": "il mento abbassato" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "pose.view",
+      "entries": [
+        {
+          "id": "pose.view.front",
+          "label": { "en": "Front on", "it": "Di fronte" },
+          "prompt": { "en": "facing the camera straight on", "it": "rivolto di fronte alla camera" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.view.three-quarter",
+          "label": { "en": "Three-quarter", "it": "A tre quarti" },
+          "prompt": { "en": "in a three-quarter view", "it": "a tre quarti di profilo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.view.profile",
+          "label": { "en": "Profile", "it": "Di profilo" },
+          "prompt": { "en": "in full profile", "it": "di profilo completo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.view.back",
+          "label": { "en": "Back view", "it": "Di spalle" },
+          "prompt": { "en": "seen from behind", "it": "visto di spalle" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.view.over-shoulder",
+          "label": { "en": "Over the shoulder", "it": "Sopra la spalla" },
+          "prompt": { "en": "looking over the shoulder", "it": "che guarda sopra la spalla" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "pose.interaction",
+      "entries": [
+        {
+          "id": "pose.interaction.none",
+          "label": { "en": "No interaction", "it": "Nessuna interazione" },
+          "prompt": { "en": "no props, hands free", "it": "nessun accessorio, mani libere" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.interaction.holding-object",
+          "label": { "en": "Holding an object", "it": "Che tiene un oggetto" },
+          "prompt": { "en": "holding a small object", "it": "che tiene un piccolo oggetto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.interaction.holding-bag",
+          "label": { "en": "Holding a bag", "it": "Che tiene una borsa" },
+          "prompt": { "en": "holding a bag by the handle", "it": "che tiene una borsa per il manico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.interaction.touching-wall",
+          "label": { "en": "Touching the wall", "it": "Che tocca il muro" },
+          "prompt": { "en": "a hand touching the wall", "it": "una mano che tocca il muro" },
+          "status": "evergreen"
+        },
+        {
+          "id": "pose.interaction.sitting-on-surface",
+          "label": { "en": "Sitting on a surface", "it": "Seduto su una superficie" },
+          "prompt": { "en": "sitting on the edge of a surface", "it": "seduto sul bordo di una superficie" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "scene.type",
+      "entries": [
+        {
+          "id": "scene.type.studio",
+          "label": { "en": "Photography studio", "it": "Shooting in studio" },
+          "prompt": { "en": "in a photography studio", "it": "in uno studio fotografico" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.seamless-backdrop",
+          "label": { "en": "Seamless backdrop", "it": "Fondale senza giunture" },
+          "prompt": { "en": "against a seamless backdrop", "it": "su un fondale senza giunture" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.modern-interior",
+          "label": { "en": "Modern interior", "it": "Interno moderno" },
+          "prompt": { "en": "in a modern minimal interior", "it": "in un interno moderno e minimale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.home",
+          "label": { "en": "Domestic interior", "it": "Ambiente domestico" },
+          "prompt": { "en": "in a lived-in home interior", "it": "in un ambiente domestico vissuto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.urban-street",
+          "label": { "en": "City street", "it": "Strada cittadina" },
+          "prompt": { "en": "on a busy city street", "it": "su una strada cittadina affollata" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.underpass",
+          "label": { "en": "Concrete underpass", "it": "Sottopasso in cemento" },
+          "prompt": { "en": "under a concrete underpass", "it": "sotto un sottopasso in cemento" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.contemporary-architecture",
+          "label": { "en": "Contemporary architecture", "it": "Architettura contemporanea" },
+          "prompt": { "en": "against contemporary architecture", "it": "davanti a un'architettura contemporanea" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.industrial",
+          "label": { "en": "Industrial space", "it": "Ambiente industriale" },
+          "prompt": { "en": "in an industrial space", "it": "in un ambiente industriale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.nature",
+          "label": { "en": "Nature", "it": "Natura" },
+          "prompt": { "en": "out in nature", "it": "all'aperto in natura" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.beach",
+          "label": { "en": "Beach", "it": "Spiaggia" },
+          "prompt": { "en": "on a beach", "it": "su una spiaggia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.mountains",
+          "label": { "en": "Mountains", "it": "Montagna" },
+          "prompt": { "en": "in a mountain landscape", "it": "in un paesaggio montano" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.night-city",
+          "label": { "en": "Night city", "it": "Città notturna" },
+          "prompt": { "en": "in a city at night", "it": "in una città di notte" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.sports-field",
+          "label": { "en": "Sports field", "it": "Campo sportivo" },
+          "prompt": { "en": "on a sports field", "it": "su un campo sportivo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.gym",
+          "label": { "en": "Gym", "it": "Palestra" },
+          "prompt": { "en": "in a gym", "it": "in una palestra" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.boutique",
+          "label": { "en": "Boutique / retail", "it": "Boutique / retail" },
+          "prompt": { "en": "inside a fashion boutique", "it": "dentro una boutique di moda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.advertising-set",
+          "label": { "en": "Advertising set", "it": "Set pubblicitario" },
+          "prompt": { "en": "on a styled advertising set", "it": "su un set pubblicitario allestito" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.editorial-set",
+          "label": { "en": "Editorial set", "it": "Set editoriale" },
+          "prompt": { "en": "on an editorial set", "it": "su un set editoriale" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.type.minimal-location",
+          "label": { "en": "Minimal location", "it": "Location minimale" },
+          "prompt": { "en": "in a minimal empty location", "it": "in una location vuota e minimale" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "scene.details",
+      "entries": [
+        {
+          "id": "scene.details.plain-wall",
+          "label": { "en": "Plain wall", "it": "Muro semplice" },
+          "prompt": { "en": "a plain wall behind", "it": "un muro semplice sullo sfondo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.window",
+          "label": { "en": "Window", "it": "Finestra" },
+          "prompt": { "en": "a large window beside", "it": "una grande finestra accanto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.graffiti",
+          "label": { "en": "Graffiti wall", "it": "Muro con graffiti" },
+          "prompt": { "en": "a painted graffiti wall", "it": "un muro dipinto con graffiti" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.stairs",
+          "label": { "en": "Steps", "it": "Gradini" },
+          "prompt": { "en": "wide stone steps", "it": "ampi gradini in pietra" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.railing",
+          "label": { "en": "Metal railing", "it": "Ringhiera metallica" },
+          "prompt": { "en": "a metal railing in the foreground", "it": "una ringhiera metallica in primo piano" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.furniture",
+          "label": { "en": "Furniture", "it": "Arredi" },
+          "prompt": { "en": "a few pieces of furniture", "it": "alcuni mobili" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.plants",
+          "label": { "en": "Plants", "it": "Piante" },
+          "prompt": { "en": "indoor plants in the background", "it": "piante d'interno sullo sfondo" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.curtains",
+          "label": { "en": "Curtains", "it": "Tende" },
+          "prompt": { "en": "long curtains beside the frame", "it": "lunghe tende accanto all'inquadratura" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.props",
+          "label": { "en": "Still-life props", "it": "Props" },
+          "prompt": { "en": "a few still-life props nearby", "it": "alcuni props da still life nelle vicinanze" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.details.bokeh-lights",
+          "label": { "en": "Out-of-focus lights", "it": "Luci sfocate" },
+          "prompt": { "en": "out-of-focus lights in the distance", "it": "luci sfocate in lontananza" },
+          "status": "evergreen"
+        }
+      ]
+    },
+    {
+      "id": "scene.atmosphere",
+      "entries": [
+        {
+          "id": "scene.atmosphere.sunny",
+          "label": { "en": "Sunny", "it": "Soleggiato" },
+          "prompt": { "en": "on a sunny day", "it": "in una giornata di sole" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.overcast",
+          "label": { "en": "Overcast", "it": "Coperto" },
+          "prompt": { "en": "on an overcast day", "it": "in una giornata di cielo coperto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.rain",
+          "label": { "en": "Rain", "it": "Pioggia" },
+          "prompt": { "en": "in the rain with wet ground", "it": "sotto la pioggia con il terreno bagnato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.snow",
+          "label": { "en": "Snow", "it": "Neve" },
+          "prompt": { "en": "in the snow", "it": "nella neve" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.fog",
+          "label": { "en": "Fog", "it": "Nebbia" },
+          "prompt": { "en": "in thick fog", "it": "nella nebbia fitta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.windy",
+          "label": { "en": "Windy", "it": "Vento" },
+          "prompt": { "en": "on a windy day", "it": "in una giornata di vento" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.warm",
+          "label": { "en": "Warm atmosphere", "it": "Atmosfera calda" },
+          "prompt": { "en": "a warm atmosphere", "it": "un'atmosfera calda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.cold",
+          "label": { "en": "Cold atmosphere", "it": "Atmosfera fredda" },
+          "prompt": { "en": "a cold atmosphere", "it": "un'atmosfera fredda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.hazy",
+          "label": { "en": "Hazy", "it": "A foschia" },
+          "prompt": { "en": "a hazy atmosphere", "it": "un'atmosfera a foschia" },
+          "status": "evergreen"
+        }
+      ]
+    }
+  ]
+}
