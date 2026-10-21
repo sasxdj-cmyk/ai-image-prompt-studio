@@ -103,6 +103,24 @@ the data files.
   (`npm run verify`, plus a screenshot for interface changes).
 - Reference the issue when there is one.
 
+## Changing the product name
+
+The product name is a working name and is easy to change. It appears in five
+places:
+
+| Where | What to change |
+| --- | --- |
+| `package.json` | `name` and `description` |
+| `index.html` | the `<title>` and the meta description |
+| `src/i18n/en.ts` | `app.name` and `app.tagline` |
+| `src/i18n/it.ts` | `app.name` and `app.tagline` |
+| `README.md`, `README.it.md` | the title and the references |
+
+The name is not used as a key anywhere: the catalog, the presets and the local
+storage use their own identifiers, so renaming the product does not invalidate
+the data of the users. The GitHub repository name and the `package.json`
+`name` have to stay in sync for the deployment to work.
+
 ## Reporting a problem
 
 Open an issue with the steps to reproduce, the browser version and what you
