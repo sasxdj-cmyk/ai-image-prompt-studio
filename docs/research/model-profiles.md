@@ -173,6 +173,9 @@ camera vocabulary) are **descriptive vocabulary**, not quotations. They were
 written from domain knowledge and are marked `evergreen` at category level,
 with `source.kind: "terminology"`.
 
+The sources that were actually consulted, and what was checked against them,
+are listed in [terminology-notes.md](terminology-notes.md).
+
 This is a deliberate decision: the wording is generic descriptive language
 (garment names, fabric names, lighting setups, focal lengths) that is not
 attributable to a single publication, and copying or paraphrasing long

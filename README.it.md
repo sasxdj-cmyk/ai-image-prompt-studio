@@ -166,6 +166,12 @@ randomizzatore, un colore (per le swatch) e una nota di provenienza. Vedi
 [docs/ADDING_CATEGORIES.md](docs/ADDING_CATEGORIES.md) per una guida passo
 passo.
 
+Il vocabolario è linguaggio descrittivo generale, scritto a partire dalla
+conoscenza del settore e verificato rispetto ai riferimenti elencati in
+[docs/research/terminology-notes.md](docs/research/terminology-notes.md), che
+spiega anche cosa è stato lasciato fuori di proposito (nomi di brand, nomi di
+prodotto, affermazioni stagionali) e perché.
+
 ## Profili dei modelli
 
 Un profilo cambia il *modo* in cui il prompt viene assemblato per un modello

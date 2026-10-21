@@ -164,6 +164,12 @@ colour (for swatches) and a provenance note. See
 [docs/CATALOG.md](docs/CATALOG.md) for the full field reference and
 [docs/ADDING_CATEGORIES.md](docs/ADDING_CATEGORIES.md) for a step-by-step guide.
 
+The vocabulary is general descriptive language, written from domain knowledge
+and checked against the references listed in
+[docs/research/terminology-notes.md](docs/research/terminology-notes.md), which
+also explains what was deliberately left out (brand names, product names,
+seasonal claims) and why.
+
 ## Model profiles
 
 A profile changes *how* a prompt is assembled for a specific model. It defines
