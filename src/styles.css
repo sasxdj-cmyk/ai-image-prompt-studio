@@ -502,12 +502,51 @@ input[type='range'] {
 }
 
 .category-grid {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
   gap: 5px;
+}
+
+/* the subgroups of the active category, right below the grid */
+.subgroup-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+
+.subgroup-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  border-radius: 999px;
+  padding: 5px 13px;
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+.subgroup-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.subgroup-chip.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.subgroup-chip.active .badge {
+  background: var(--accent);
+  color: var(--accent-text);
 }
 
 .grid-button {

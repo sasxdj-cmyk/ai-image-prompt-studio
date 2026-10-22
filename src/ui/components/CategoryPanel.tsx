@@ -17,7 +17,16 @@ export function CategoryPanel({ category }: CategoryPanelProps) {
 
   const selected = useMemo(() => new Set(state.selections[category.id] ?? []), [state.selections, category.id]);
 
-  const groups = useMemo(() => groupEntries(category), [category]);
+  /** Only the options of the active subgroup, when one is selected. */
+  const scopedEntries = useMemo(
+    () =>
+      state.ui.activeSubgroupId
+        ? category.entries.filter((entry) => entry.group === state.ui.activeSubgroupId)
+        : category.entries,
+    [category.entries, state.ui.activeSubgroupId],
+  );
+
+  const groups = useMemo(() => groupEntries({ ...category, entries: scopedEntries }), [category, scopedEntries]);
 
   const filterEntry = (entry: CatalogEntry): boolean => {
     const needle = search.trim().toLowerCase();

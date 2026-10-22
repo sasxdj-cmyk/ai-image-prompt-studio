@@ -44,8 +44,9 @@ tuo browser e funziona offline dopo il primo caricamento.
   scrivere nulla a mano.
 - **Le categorie sono una griglia di pulsanti** in alto: nessuna barra da
   spostare, nessuna casella di ricerca, nessuna tendina. Clicchi un pulsante e
-  le sue opzioni si aprono nel pannello principale. La categoria attiva è
-  illuminata e mostra quante opzioni sono attive.
+  **le sue sottocategorie compaiono subito sotto la griglia**, così puoi
+  scendere fino a un solo gruppo di opzioni. La categoria attiva è illuminata e
+  mostra quante opzioni sono attive.
 - **Generazione con un clic**: il prompt viene assemblato in modo deterministico
   dalle selezioni attive, in un ordine logico, senza informazioni duplicate o
   contraddittorie.
@@ -129,9 +130,10 @@ opzioni di qualità in `finish.boost` sono selettive come tutte le altre.
 ## Categorie
 
 Ogni categoria è indipendente e ha il proprio pulsante nella griglia in alto.
-La categoria attiva è illuminata e mostra il numero di opzioni attive; cliccando
-un pulsante la categoria si apre nel pannello principale, con la sua
-descrizione e l'elenco completo delle opzioni raggruppate per sottogruppo.
+Cliccando un pulsante **la categoria si attiva e mostra le sue sottocategorie**
+sotto la griglia: scegliendone una, il pannello principale mostra solo quel
+gruppo di opzioni, e "Tutte le opzioni" riporta l'intera categoria. La categoria
+attiva è illuminata e mostra il numero di opzioni attive.
 
 L'albero delle categorie segue gli undici gruppi del catalogo:
 
@@ -157,7 +159,7 @@ gruppo degli abiti è dichiarato incompatibile con tutti gli altri.
 Le scarpe sono una categoria di primo livello, con tipo, silhouette/suola e
 materiali: non una nota a piè di pagina.
 
-![La categoria abbigliamento nel pannello principale](docs/screenshots/category-panel.png)
+![Le sottocategorie della categoria attiva](docs/screenshots/subcategories.png)
 
 ## Catalogo
 
@@ -328,8 +330,9 @@ La suite contiene **137 test automatici** (12 file) che coprono, tra le altre co
   comportamento offline;
 - **le regole di provenienza del catalogo** (una voce `verified` ha sempre una
   fonte con URL e data di consultazione);
-- **la griglia delle categorie** (10 test di componente in jsdom): i pulsanti, la
-  evidenziazione della categoria attiva, l'apertura delle opzioni nel pannello
+- **la griglia delle categorie e le sue sottocategorie** (15 test di
+  componente in jsdom): i pulsanti, la evidenziazione della categoria attiva, le
+  sottocategorie che compaiono attivando una categoria, il filtro del pannello
   e la rimozione di un tag;
 - **l'interfaccia stessa** (16 test di componente in jsdom): il pannello della
   categoria, il flusso di generazione, il comportamento a selezione singola,

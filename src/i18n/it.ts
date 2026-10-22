@@ -58,6 +58,8 @@ export const it: Dictionary = {
   'category.clearCategory': 'Svuota questa categoria',
   'category.openFull': 'Apri nel pannello',
   'category.search': 'Trova una categoria',
+  'category.subgroups': 'Sottocategorie',
+  'category.allSubgroups': 'Tutte le opzioni',
 
   'summary.title': 'Selezioni',
   'summary.empty': 'Nessuna selezione. Apri una categoria e scegli qualche opzione.',

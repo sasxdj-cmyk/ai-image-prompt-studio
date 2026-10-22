@@ -38,6 +38,8 @@ export interface AppState {
   ui: {
     panel: PanelId;
     activeCategoryId: string | null;
+    /** Subgroup of the active category, null means "all of them". */
+    activeSubgroupId: string | null;
     search: string;
     groupFilter: CatalogGroupId | 'all';
     toast: ToastState | null;
@@ -64,6 +66,7 @@ export type Action =
   | { type: 'add-history'; entry: HistoryEntry }
   | { type: 'set-panel'; panel: PanelId }
   | { type: 'set-active-category'; categoryId: string | null }
+  | { type: 'set-active-subgroup'; categoryId: string; subgroupId: string | null }
   | { type: 'set-search'; search: string }
   | { type: 'set-group-filter'; group: CatalogGroupId | 'all' }
   | { type: 'toast'; message: string; kind?: 'ok' | 'error' }
@@ -87,6 +90,7 @@ export function createInitialState(partial: Partial<AppState> = {}): AppState {
     ui: {
       panel: 'categories',
       activeCategoryId: null,
+      activeSubgroupId: null,
       search: '',
       groupFilter: 'all',
       toast: null,
@@ -211,7 +215,25 @@ export function reducer(state: AppState, action: Action): AppState {
       return { ...state, ui: { ...state.ui, panel: action.panel } };
 
     case 'set-active-category':
-      return { ...state, ui: { ...state.ui, activeCategoryId: action.categoryId } };
+      return {
+        ...state,
+        ui: {
+          ...state.ui,
+          activeCategoryId: action.categoryId,
+          // a new category starts without a subgroup
+          activeSubgroupId: state.ui.activeCategoryId === action.categoryId ? state.ui.activeSubgroupId : null,
+        },
+      };
+
+    case 'set-active-subgroup':
+      return {
+        ...state,
+        ui: {
+          ...state.ui,
+          activeCategoryId: action.categoryId,
+          activeSubgroupId: action.subgroupId,
+        },
+      };
 
     case 'set-search':
       return { ...state, ui: { ...state.ui, search: action.search } };

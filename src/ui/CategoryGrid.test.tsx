@@ -43,8 +43,8 @@ describe('category grid', () => {
   it('shows every category as a button in a grid', () => {
     renderApp();
     const grid = screen.getByRole('navigation', { name: 'Category browser' });
+    expect(grid.className).toContain('category-grid');
     expect(grid.querySelectorAll('.grid-button').length).toBe(72);
-    expect(grid.querySelector('.category-grid')).toBeTruthy();
   });
 
   it('has no search field and no dropdown', () => {
@@ -91,6 +91,59 @@ describe('category grid', () => {
     fireEvent.click(within(panel('Editorial character')).getByRole('button', { name: 'Fashion editorial' }));
     const button = screen.getByRole('button', { name: /Editorial character/ });
     expect(button.textContent).toContain('1');
+  });
+});
+
+describe('subcategories', () => {
+  it('shows the subcategories of the active category', () => {
+    renderApp();
+    expect(screen.queryByRole('group', { name: 'Subcategories' })).toBeNull();
+
+    fireEvent.click(screen.getByRole('button', { name: /^Garments/ }));
+    const bar = screen.getByRole('group', { name: 'Subcategories' });
+    expect(within(bar).getByRole('button', { name: 'Outerwear & coats' })).toBeTruthy();
+    expect(within(bar).getByRole('button', { name: 'All options' })).toBeTruthy();
+  });
+
+  it('does not show subcategories for a category without them', () => {
+    renderApp();
+    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
+    expect(screen.queryByRole('group', { name: 'Subcategories' })).toBeNull();
+  });
+
+  it('filters the options of the panel to the selected subcategory', () => {
+    renderApp();
+    fireEvent.click(screen.getByRole('button', { name: /^Garments/ }));
+    const bar = screen.getByRole('group', { name: 'Subcategories' });
+    fireEvent.click(within(bar).getByRole('button', { name: 'Outerwear & coats' }));
+
+    const panel = screen.getByRole('region', { name: 'Garments' });
+    expect(within(panel).getByRole('button', { name: 'Trench coat' })).toBeTruthy();
+    expect(within(panel).queryByRole('button', { name: 'White poplin shirt' })).toBeNull();
+  });
+
+  it('goes back to all the options when the subcategory is clicked again', () => {
+    renderApp();
+    fireEvent.click(screen.getByRole('button', { name: /^Garments/ }));
+    const bar = screen.getByRole('group', { name: 'Subcategories' });
+    fireEvent.click(within(bar).getByRole('button', { name: 'Outerwear & coats' }));
+    fireEvent.click(within(screen.getByRole('group', { name: 'Subcategories' })).getByRole('button', { name: 'Outerwear & coats' }));
+
+    const panel = screen.getByRole('region', { name: 'Garments' });
+    expect(within(panel).getByRole('button', { name: 'White poplin shirt' })).toBeTruthy();
+  });
+
+  it('resets the subcategory when another category is activated', () => {
+    renderApp();
+    fireEvent.click(screen.getByRole('button', { name: /^Garments/ }));
+    fireEvent.click(
+      within(screen.getByRole('group', { name: 'Subcategories' })).getByRole('button', { name: 'Outerwear & coats' }),
+    );
+    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
+    fireEvent.click(screen.getByRole('button', { name: /^Garments/ }));
+
+    const panel = screen.getByRole('region', { name: 'Garments' });
+    expect(within(panel).getByRole('button', { name: 'White poplin shirt' })).toBeTruthy();
   });
 });
 

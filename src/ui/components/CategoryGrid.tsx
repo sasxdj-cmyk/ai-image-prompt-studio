@@ -10,9 +10,9 @@ interface CategoryGridProps {
 /**
  * The categories as a grid of buttons.
  *
- * Clicking a button selects the category: its options are then shown in the
- * main panel. There is no search and no dropdown, the grid is the whole
- * navigation.
+ * Clicking a button activates the category: its subgroups appear right below
+ * the grid and can be selected one by one. The active category is highlighted
+ * and shows how many options are active.
  */
 export function CategoryGrid({ categories }: CategoryGridProps) {
   const { state, dispatch } = useApp();
@@ -24,28 +24,73 @@ export function CategoryGrid({ categories }: CategoryGridProps) {
     [categories],
   );
 
+  const active = useMemo(
+    () => ordered.find((category) => category.id === state.ui.activeCategoryId),
+    [ordered, state.ui.activeCategoryId],
+  );
+
   return (
-    <nav className="category-grid-wrap" aria-label={t('panel.categories')}>
-      <ul className="category-grid">
+    <div className="category-grid-wrap">
+      <nav className="category-grid" aria-label={t('panel.categories')}>
         {ordered.map((category) => {
           const count = state.selections[category.id]?.length ?? 0;
           const isActive = state.ui.activeCategoryId === category.id;
           return (
-            <li key={category.id}>
-              <button
-                type="button"
-                className={isActive ? 'grid-button active' : 'grid-button'}
-                aria-current={isActive ? 'true' : undefined}
-                title={`${category.name[locale]} — ${category.description[locale]}`}
-                onClick={() => dispatch({ type: 'set-active-category', categoryId: category.id })}
-              >
-                <span className="grid-button-label">{category.name[locale]}</span>
-                {count > 0 && <span className="badge">{count}</span>}
-              </button>
-            </li>
+            <button
+              key={category.id}
+              type="button"
+              className={isActive ? 'grid-button active' : 'grid-button'}
+              aria-current={isActive ? 'true' : undefined}
+              title={`${category.name[locale]} — ${category.description[locale]}`}
+              onClick={() => dispatch({ type: 'set-active-category', categoryId: category.id })}
+            >
+              <span className="grid-button-label">{category.name[locale]}</span>
+              {count > 0 && <span className="badge">{count}</span>}
+            </button>
           );
         })}
-      </ul>
-    </nav>
+      </nav>
+
+      {active && active.subgroups && active.subgroups.length > 0 && (
+        <div className="subgroup-bar" role="group" aria-label={t('category.subgroups')}>
+          <button
+            type="button"
+            className={state.ui.activeSubgroupId === null ? 'subgroup-chip active' : 'subgroup-chip'}
+            aria-pressed={state.ui.activeSubgroupId === null}
+            onClick={() =>
+              dispatch({ type: 'set-active-subgroup', categoryId: active.id, subgroupId: null })
+            }
+          >
+            {t('category.allSubgroups')}
+          </button>
+          {active.subgroups.map((subgroup) => {
+            const isActive = state.ui.activeSubgroupId === subgroup.id;
+            const count = active.entries.filter((entry) => entry.group === subgroup.id).length;
+            const selected = (state.selections[active.id] ?? []).filter((id) =>
+              active.entries.some((entry) => entry.id === id && entry.group === subgroup.id),
+            ).length;
+            return (
+              <button
+                key={subgroup.id}
+                type="button"
+                className={isActive ? 'subgroup-chip active' : 'subgroup-chip'}
+                aria-pressed={isActive}
+                title={`${count} option(s)`}
+                onClick={() =>
+                  dispatch({
+                    type: 'set-active-subgroup',
+                    categoryId: active.id,
+                    subgroupId: isActive ? null : subgroup.id,
+                  })
+                }
+              >
+                {subgroup.name[locale]}
+                {selected > 0 && <span className="badge">{selected}</span>}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 }

@@ -78,6 +78,28 @@ describe('reducer', () => {
     expect(state.selections['subject.look']).toEqual(['a']);
   });
 
+  it('activates a subcategory and resets it with the category', () => {
+    let state = stateWith();
+    state = reducer(state, { type: 'set-active-category', categoryId: 'wardrobe.garments' });
+    expect(state.ui.activeCategoryId).toBe('wardrobe.garments');
+    expect(state.ui.activeSubgroupId).toBeNull();
+
+    state = reducer(state, {
+      type: 'set-active-subgroup',
+      categoryId: 'wardrobe.garments',
+      subgroupId: 'outerwear',
+    });
+    expect(state.ui.activeSubgroupId).toBe('outerwear');
+
+    // activating the same category again keeps the subcategory
+    state = reducer(state, { type: 'set-active-category', categoryId: 'wardrobe.garments' });
+    expect(state.ui.activeSubgroupId).toBe('outerwear');
+
+    // another category starts fresh
+    state = reducer(state, { type: 'set-active-category', categoryId: 'subject.look' });
+    expect(state.ui.activeSubgroupId).toBeNull();
+  });
+
   it('stores and deletes presets', () => {
     const preset = {
       id: 'p1',

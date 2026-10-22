@@ -42,8 +42,9 @@ everything runs in your browser and works offline once loaded.
 - **72 categories, 803 ready-to-use options** shipped with the app — nothing to
   type by hand on the first run.
 - **The categories are a grid of buttons** at the top: no scrollbar, no search
-  box, no dropdown. Click a button and its options open in the main panel.
-  The selected category is highlighted and shows how many options are active.
+  box, no dropdown. Click a button and its **subcategories appear right below**
+  the grid, so you can drill down to a single group of options. The selected
+  category is highlighted and shows how many options are active.
 - **One click generation**: the prompt is assembled deterministically from the
   current selections, in a logical order, with no duplicated or contradictory
   information.
@@ -127,9 +128,10 @@ in `finish.boost` are opt-in like any other category.
 ## Categories
 
 Every category is independent and has its own button in the grid at the top.
-The selected category is highlighted and shows the number of active options;
-clicking a button opens that category in the main panel, with its description
-and the full list of options grouped by subgroup.
+Clicking a button **activates the category and reveals its subcategories**
+under the grid: picking one of them filters the main panel to that group of
+options, and "All options" brings the whole category back. The active
+category is highlighted and shows the number of active options.
 
 The category tree follows the eleven groups of the catalog:
 
@@ -155,7 +157,7 @@ subgroup is declared mutually exclusive with the others.
 Shoes are a first-class category with their own type, silhouette/sole and
 material sub-categories — not an accessory footnote.
 
-![The clothing category in the main panel](docs/screenshots/category-panel.png)
+![The subcategories of the active category](docs/screenshots/subcategories.png)
 
 ## Catalog
 
@@ -323,8 +325,9 @@ The suite has **137 automated tests** (12 files) covering, among others:
 - catalog validation, package import, rollback and offline behaviour;
 - **the catalog provenance rules** (a `verified` entry always has a source with
   a URL and a consultation date);
-- **the category grid** (10 component tests in jsdom): the buttons, the
-  highlight of the selected category, the options opening in the panel and the
+- **the category grid and its subcategories** (15 component tests in jsdom):
+  the buttons, the highlight of the selected category, the subcategories that
+  appear when a category is activated, the filtering of the panel and the
   removal of a selection tag;
 - **the interface itself** (16 component tests in jsdom): the category panel,
   the generation flow, the single-selection behaviour, the manual-edit

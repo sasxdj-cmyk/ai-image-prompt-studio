@@ -56,6 +56,8 @@ export const en = {
   'category.clearCategory': 'Clear this category',
   'category.openFull': 'Open in the panel',
   'category.search': 'Find a category',
+  'category.subgroups': 'Subcategories',
+  'category.allSubgroups': 'All options',
 
   'summary.title': 'Selections',
   'summary.empty': 'Nothing selected yet. Open a category and pick a few options.',
