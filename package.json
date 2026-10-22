@@ -4,7 +4,7 @@
   "private": true,
   "description": "Local-first visual prompt builder for AI image generation: modular categories, curated catalog, deterministic prompt assembly, model profiles, EN/IT.",
   "type": "module",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "engines": {
     "node": ">=20.19"
   },

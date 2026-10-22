@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Donation button**: a "Dona / Donate" button in the header and a link in the
+  footer open the PayPal profile `@SalvaCucca`
+  (`https://paypal.me/SalvaCucca`) in a new tab. The URL lives in a single
+  constant (`src/donation.ts`) and is covered by a test.
 - **Catalog provenance**: six entries are now marked `verified` and carry their
   own source URL and consultation date (melton, gabardine, espadrilles, bokeh,
   deep focus, Rembrandt lighting). A unit test enforces that a `verified`
@@ -24,6 +28,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- **The project is now MIT licensed** (it was previously published without a
+  license). `package.json` declares `"license": "MIT"`.
 - The wording of the Rembrandt lighting entry now matches its source (lit
   triangle under the eye).
 - The test suite grew from 100 to 123 tests.

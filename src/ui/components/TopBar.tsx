@@ -1,5 +1,6 @@
 import { UI_LOCALES } from '../../i18n';
 import { MODEL_PROFILES } from '../../models/profiles';
+import { DONATION_URL } from '../../donation';
 import { useApp } from '../../state/AppProvider';
 import { useT } from '../useT';
 
@@ -117,6 +118,16 @@ export function TopBar() {
             }
           />
         </label>
+
+        <a
+          className="btn donate"
+          href={DONATION_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={t('action.donateHint')}
+        >
+          <span aria-hidden="true">♥</span> {t('action.donate')}
+        </a>
 
         <span
           className={`pill subtle profile-pill ${profile.verification === 'verified' ? 'ok' : ''}`}

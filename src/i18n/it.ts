@@ -42,6 +42,8 @@ export const it: Dictionary = {
   'action.export': 'Esporta',
   'action.apply': 'Applica',
   'action.retry': 'Riprova',
+  'action.donate': 'Dona',
+  'action.donateHint': 'Sostieni il progetto con una donazione PayPal a @SalvaCucca',
 
   'search.placeholder': 'Cerca tra le opzioni',
   'search.noResults': 'Nessuna opzione corrisponde alla ricerca.',

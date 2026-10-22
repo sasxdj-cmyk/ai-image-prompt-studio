@@ -121,6 +121,16 @@ storage use their own identifiers, so renaming the product does not invalidate
 the data of the users. The GitHub repository name and the `package.json`
 `name` have to stay in sync for the deployment to work.
 
+## License
+
+The project is released under the **MIT license**: you can use, modify,
+distribute and sell it, including commercially, as long as the copyright notice
+is kept. Contributions you submit are accepted under the same license.
+
+If the project is useful to you, a [PayPal donation](https://paypal.me/SalvaCucca)
+via the **Dona / Donate** button is welcome — but it is never required, and
+the application works exactly the same without it.
+
 ## Reporting a problem
 
 Open an issue with the steps to reproduce, the browser version and what you

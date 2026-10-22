@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react';
+import { DONATION_URL } from '../donation';
 import { useApp } from '../state/AppProvider';
 import { CategoryNav } from './components/CategoryNav';
 import { CategoryPanel } from './components/CategoryPanel';
@@ -58,6 +59,15 @@ export function App() {
             entries: catalog.categories.reduce((sum, category) => sum + category.entries.length, 0),
           })}
         </span>
+        <a
+          className="footer-donate"
+          href={DONATION_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={t('action.donateHint')}
+        >
+          <span aria-hidden="true">♥</span> {t('action.donate')}
+        </a>
       </footer>
       <Overlays />
     </div>

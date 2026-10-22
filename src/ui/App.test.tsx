@@ -10,6 +10,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { App } from './App';
 import { AppProvider } from '../state/AppProvider';
+import { DONATION_URL } from '../donation';
 import type { KeyValueStorage } from '../state/persistence';
 
 class MemoryStorage implements KeyValueStorage {
@@ -165,6 +166,27 @@ describe('global actions', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Copy prompt' }));
     await waitFor(() => expect(writer).toHaveBeenCalledWith('fashion editorial'));
+  });
+});
+
+describe('donation', () => {
+  it('links to the PayPal profile in a safe new tab', () => {
+    renderApp();
+    const links = screen.getAllByRole('link', { name: /Donate/ });
+    expect(links.length).toBeGreaterThanOrEqual(2);
+    expect(DONATION_URL).toBe('https://paypal.me/SalvaCucca');
+    for (const link of links) {
+      expect(link.getAttribute('href')).toBe(DONATION_URL);
+      expect(link.getAttribute('target')).toBe('_blank');
+      expect(link.getAttribute('rel')).toContain('noopener');
+    }
+  });
+
+  it('translates the donation label', async () => {
+    renderApp();
+    const selects = screen.getAllByRole('combobox');
+    fireEvent.change(selects[0]!, { target: { value: 'it' } });
+    await waitFor(() => expect(screen.getAllByRole('link', { name: /Dona/ }).length).toBeGreaterThan(0));
   });
 });
 

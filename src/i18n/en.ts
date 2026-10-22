@@ -40,6 +40,8 @@ export const en = {
   'action.export': 'Export',
   'action.apply': 'Apply',
   'action.retry': 'Retry',
+  'action.donate': 'Donate',
+  'action.donateHint': 'Support the project with a PayPal donation to @SalvaCucca',
 
   'search.placeholder': 'Search options',
   'search.noResults': 'No option matches the search.',

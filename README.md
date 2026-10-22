@@ -374,6 +374,15 @@ npm run verify
 
 ## License
 
-**No license has been granted yet.** The repository is published for
-evaluation; the maintainer has to pick the license (MIT is the recommended
-default) before the code can be reused. See [LICENSE](LICENSE).
+**MIT** — free and open source. You can use, modify, distribute and sell it,
+including in commercial projects, as long as the copyright notice is kept.
+
+The full text is in [LICENSE](LICENSE).
+
+The project is not funded by ads and does not track anything. If it is useful
+to you, you can support it with a [PayPal donation](https://paypal.me/SalvaCucca)
+using the **Dona / Donate** button in the header — that is the only external
+service the application links to, and clicking it is optional.
+
+Third-party dependencies keep their own licenses: React and Vite (MIT),
+TypeScript (Apache-2.0), ESLint and typescript-eslint (MIT).
