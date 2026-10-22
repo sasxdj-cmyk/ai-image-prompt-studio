@@ -9,6 +9,9 @@ indipendenti; l'app le assembla in un prompt leggibile con un solo clic.
 Nessuna API key, nessun modello da scaricare, nessun account: tutto gira nel
 tuo browser e funziona offline dopo il primo caricamento.
 
+> **Demo online:** <https://sasxdj-cmyk.github.io/ai-image-prompt-studio/>
+> *(si usa nel browser, senza installare nulla — [avvialo in locale](#avvio-rapido) se preferisci)*
+
 ![AI Image Prompt Studio - esplora le categorie, anteprima del prompt e riepilogo delle selezioni](docs/screenshots/app-en.png)
 
 ---

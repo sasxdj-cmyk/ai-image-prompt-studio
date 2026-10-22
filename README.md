@@ -8,6 +8,9 @@ You pick options in independent categories; the app assembles them into a clean
 comma-separated prompt in one click. No API key, no model download, no account —
 everything runs in your browser and works offline once loaded.
 
+> **Live demo:** <https://sasxdj-cmyk.github.io/ai-image-prompt-studio/>
+> *(runs in the browser, no install — [run it locally](#quick-start) if you prefer)*
+
 ![AI Image Prompt Studio - category browser, prompt preview and selection summary](docs/screenshots/app-en.png)
 
 ---
