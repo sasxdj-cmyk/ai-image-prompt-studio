@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Italian UI strings. Must define exactly the same keys as `en.ts`.
  */
 import type { Dictionary } from './en';
@@ -58,8 +58,11 @@ export const it: Dictionary = {
   'category.clearCategory': 'Svuota questa categoria',
   'category.openFull': 'Apri nel pannello',
   'category.search': 'Trova una categoria',
-  'category.subgroups': 'Sottocategorie',
+  'category.subcategories': 'Sottocategorie',
   'category.allSubgroups': 'Tutte le opzioni',
+  'category.subcategoryCount': '{count} sottocategorie',
+  'category.pickSubcategory':
+    'Scegli una sottocategoria qui sopra per vederne le opzioni, poi seleziona quelle che ti servono.',
 
   'summary.title': 'Selezioni',
   'summary.empty': 'Nessuna selezione. Apri una categoria e scegli qualche opzione.',

@@ -37,6 +37,9 @@ export interface AppState {
   catalogSchemaVersion: number;
   ui: {
     panel: PanelId;
+    /** The synthetic category (group) that is open. */
+    activeGroupId: string | null;
+    /** The category of that group, null means "none chosen yet". */
     activeCategoryId: string | null;
     /** Subgroup of the active category, null means "all of them". */
     activeSubgroupId: string | null;
@@ -65,7 +68,8 @@ export type Action =
   | { type: 'clear-history' }
   | { type: 'add-history'; entry: HistoryEntry }
   | { type: 'set-panel'; panel: PanelId }
-  | { type: 'set-active-category'; categoryId: string | null }
+  | { type: 'set-active-group'; groupId: string | null }
+  | { type: 'set-active-category'; categoryId: string | null; groupId?: string | null }
   | { type: 'set-active-subgroup'; categoryId: string; subgroupId: string | null }
   | { type: 'set-search'; search: string }
   | { type: 'set-group-filter'; group: CatalogGroupId | 'all' }
@@ -89,6 +93,7 @@ export function createInitialState(partial: Partial<AppState> = {}): AppState {
     catalogSchemaVersion: 1,
     ui: {
       panel: 'categories',
+      activeGroupId: null,
       activeCategoryId: null,
       activeSubgroupId: null,
       search: '',
@@ -214,12 +219,26 @@ export function reducer(state: AppState, action: Action): AppState {
     case 'set-panel':
       return { ...state, ui: { ...state.ui, panel: action.panel } };
 
+    case 'set-active-group':
+      return {
+        ...state,
+        ui: {
+          ...state.ui,
+          activeGroupId: action.groupId,
+          // a new group starts without a category and without a subgroup
+          activeCategoryId: null,
+          activeSubgroupId: null,
+        },
+      };
+
     case 'set-active-category':
       return {
         ...state,
         ui: {
           ...state.ui,
           activeCategoryId: action.categoryId,
+          activeGroupId:
+            action.groupId === undefined ? state.ui.activeGroupId : action.groupId,
           // a new category starts without a subgroup
           activeSubgroupId: state.ui.activeCategoryId === action.categoryId ? state.ui.activeSubgroupId : null,
         },

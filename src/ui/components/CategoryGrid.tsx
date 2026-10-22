@@ -8,83 +8,89 @@ interface CategoryGridProps {
 }
 
 /**
- * The categories as a grid of buttons.
+ * The synthetic categories: the eleven groups of the catalog.
  *
- * Clicking a button activates the category: its subgroups appear right below
- * the grid and can be selected one by one. The active category is highlighted
- * and shows how many options are active.
+ * Clicking a group reveals its categories underneath, and clicking one of
+ * those opens its options in the main panel.
  */
 export function CategoryGrid({ categories }: CategoryGridProps) {
-  const { state, dispatch } = useApp();
+  const { state, dispatch, catalog } = useApp();
   const t = useT();
   const locale = state.preferences.uiLocale;
 
-  const ordered = useMemo(
-    () => [...categories].sort((a, b) => a.order - b.order || a.id.localeCompare(b.id)),
-    [categories],
+  const groups = useMemo(
+    () => [...catalog.groups].sort((a, b) => a.order - b.order),
+    [catalog.groups],
   );
 
-  const active = useMemo(
-    () => ordered.find((category) => category.id === state.ui.activeCategoryId),
-    [ordered, state.ui.activeCategoryId],
-  );
+  const byGroup = useMemo(() => {
+    const map = new Map<string, CategoryDef[]>();
+    for (const category of categories) {
+      const list = map.get(category.group) ?? [];
+      list.push(category);
+      map.set(category.group, list);
+    }
+    for (const list of map.values()) {
+      list.sort((a, b) => a.order - b.order || a.id.localeCompare(b.id));
+    }
+    return map;
+  }, [categories]);
+
+  const activeGroup = groups.find((group) => group.id === state.ui.activeGroupId);
+  const activeCategories = activeGroup ? byGroup.get(activeGroup.id) ?? [] : [];
+
+  const countIn = (list: CategoryDef[]) =>
+    list.reduce(
+      (sum, category) => sum + (state.selections[category.id]?.length ?? 0),
+      0,
+    );
 
   return (
     <div className="category-grid-wrap">
-      <nav className="category-grid" aria-label={t('panel.categories')}>
-        {ordered.map((category) => {
-          const count = state.selections[category.id]?.length ?? 0;
-          const isActive = state.ui.activeCategoryId === category.id;
+      <nav className="group-grid" aria-label={t('panel.categories')}>
+        {groups.map((group) => {
+          const list = byGroup.get(group.id) ?? [];
+          const selected = countIn(list);
+          const isActive = state.ui.activeGroupId === group.id;
           return (
             <button
-              key={category.id}
+              key={group.id}
               type="button"
-              className={isActive ? 'grid-button active' : 'grid-button'}
+              className={isActive ? 'group-button active' : 'group-button'}
               aria-current={isActive ? 'true' : undefined}
-              title={`${category.name[locale]} — ${category.description[locale]}`}
-              onClick={() => dispatch({ type: 'set-active-category', categoryId: category.id })}
+              onClick={() => dispatch({ type: 'set-active-group', groupId: group.id })}
             >
-              <span className="grid-button-label">{category.name[locale]}</span>
-              {count > 0 && <span className="badge">{count}</span>}
+              <span className="group-button-name">{group.name[locale]}</span>
+              <span className="group-button-meta">
+                {t('category.subcategoryCount', { count: list.length })}
+                {selected > 0 && <span className="badge">{selected}</span>}
+              </span>
             </button>
           );
         })}
       </nav>
 
-      {active && active.subgroups && active.subgroups.length > 0 && (
-        <div className="subgroup-bar" role="group" aria-label={t('category.subgroups')}>
-          <button
-            type="button"
-            className={state.ui.activeSubgroupId === null ? 'subgroup-chip active' : 'subgroup-chip'}
-            aria-pressed={state.ui.activeSubgroupId === null}
-            onClick={() =>
-              dispatch({ type: 'set-active-subgroup', categoryId: active.id, subgroupId: null })
-            }
-          >
-            {t('category.allSubgroups')}
-          </button>
-          {active.subgroups.map((subgroup) => {
-            const isActive = state.ui.activeSubgroupId === subgroup.id;
-            const count = active.entries.filter((entry) => entry.group === subgroup.id).length;
-            const selected = (state.selections[active.id] ?? []).filter((id) =>
-              active.entries.some((entry) => entry.id === id && entry.group === subgroup.id),
-            ).length;
+      {activeGroup && activeCategories.length > 0 && (
+        <div className="subgroup-bar" role="group" aria-label={t('category.subcategories')}>
+          {activeCategories.map((category) => {
+            const isActive = state.ui.activeCategoryId === category.id;
+            const selected = state.selections[category.id]?.length ?? 0;
             return (
               <button
-                key={subgroup.id}
+                key={category.id}
                 type="button"
                 className={isActive ? 'subgroup-chip active' : 'subgroup-chip'}
                 aria-pressed={isActive}
-                title={`${count} option(s)`}
+                title={category.description[locale]}
                 onClick={() =>
                   dispatch({
-                    type: 'set-active-subgroup',
-                    categoryId: active.id,
-                    subgroupId: isActive ? null : subgroup.id,
+                    type: 'set-active-category',
+                    categoryId: category.id,
+                    groupId: activeGroup.id,
                   })
                 }
               >
-                {subgroup.name[locale]}
+                {category.name[locale]}
                 {selected > 0 && <span className="badge">{selected}</span>}
               </button>
             );

@@ -41,10 +41,11 @@ everything runs in your browser and works offline once loaded.
 
 - **72 categories, 803 ready-to-use options** shipped with the app — nothing to
   type by hand on the first run.
-- **The categories are a grid of buttons** at the top: no scrollbar, no search
-  box, no dropdown. Click a button and its **subcategories appear right below**
-  the grid, so you can drill down to a single group of options. The selected
-  category is highlighted and shows how many options are active.
+- **The categories are synthetic ones**: eleven top level categories (subject,
+  body, appearance, hair, clothing, footwear, accessories, pose, scene,
+  photography, style), each one opening its own subcategories. Clicking a
+  subcategory shows its options, and every option is a selection you can undo
+  with a tag.
 - **One click generation**: the prompt is assembled deterministically from the
   current selections, in a logical order, with no duplicated or contradictory
   information.
@@ -127,15 +128,20 @@ in `finish.boost` are opt-in like any other category.
 
 ## Categories
 
-Every category is independent and has its own button in the grid at the top.
-Clicking a button **activates the category and reveals its subcategories**
-under the grid: picking one of them filters the main panel to that group of
-options, and "All options" brings the whole category back. The active
-category is highlighted and shows the number of active options.
+The navigation has three levels:
 
-The category tree follows the eleven groups of the catalog:
+1. **The synthetic categories** — the eleven groups of the catalog, as a grid of
+   buttons at the top. Each one shows how many subcategories it holds and how
+   many options are already active in it.
+2. **The subcategories** — clicking a synthetic category lists its
+   subcategories underneath, as chips. Clicking one of them opens its options
+   in the main panel.
+3. **The options** — the panel groups them by their own group and lets you pick
+   them one by one.
 
-| Group | Categories | Options |
+The eleven synthetic categories and how many subcategories each one holds:
+
+| Synthetic category | Subcategories | Options |
 | --- | --- | --- |
 | Subject & character | 5 | 54 |
 | Body & proportions | 6 | 42 |
@@ -149,15 +155,16 @@ The category tree follows the eleven groups of the catalog:
 | Photography & lighting | 14 | 101 |
 | Style & finish | 2 | 17 |
 
-Clothing is the deepest area: `wardrobe.garments` carries 15 subgroups (tops,
-knitwear, shirts, T-shirts, sweats, outerwear, tailoring, dresses, trousers,
-skirts, denim, sportswear, streetwear, business, eveningwear) and the dress
-subgroup is declared mutually exclusive with the others.
+Clothing is the deepest area: its `Garments` subcategory carries 15 groups of
+its own (tops, knitwear, shirts, T-shirts, sweats, outerwear, tailoring,
+dresses, trousers, skirts, denim, sportswear, streetwear, business,
+eveningwear) and the dress group is declared mutually exclusive with the
+others.
 
 Shoes are a first-class category with their own type, silhouette/sole and
 material sub-categories — not an accessory footnote.
 
-![The subcategories of the active category](docs/screenshots/subcategories.png)
+![A synthetic category and its subcategories](docs/screenshots/subcategories.png)
 
 ## Catalog
 

@@ -42,11 +42,11 @@ tuo browser e funziona offline dopo il primo caricamento.
 
 - **72 categorie e 803 opzioni** già pronte all'uso: al primo avvio non devi
   scrivere nulla a mano.
-- **Le categorie sono una griglia di pulsanti** in alto: nessuna barra da
-  spostare, nessuna casella di ricerca, nessuna tendina. Clicchi un pulsante e
-  **le sue sottocategorie compaiono subito sotto la griglia**, così puoi
-  scendere fino a un solo gruppo di opzioni. La categoria attiva è illuminata e
-  mostra quante opzioni sono attive.
+- **Le categorie sono sintetiche**: undici categorie di primo livello (soggetto,
+  corporatura, aspetto, capelli, abbigliamento, calzature, accessori, posa,
+  scena, fotografia, stile), ognuna con le proprie sottocategorie. Clicchi una
+  sottocategoria e vedi le sue opzioni; ogni opzione scelta è una selezione
+  che puoi annullare con un tag.
 - **Generazione con un clic**: il prompt viene assemblato in modo deterministico
   dalle selezioni attive, in un ordine logico, senza informazioni duplicate o
   contraddittorie.
@@ -129,15 +129,20 @@ opzioni di qualità in `finish.boost` sono selettive come tutte le altre.
 
 ## Categorie
 
-Ogni categoria è indipendente e ha il proprio pulsante nella griglia in alto.
-Cliccando un pulsante **la categoria si attiva e mostra le sue sottocategorie**
-sotto la griglia: scegliendone una, il pannello principale mostra solo quel
-gruppo di opzioni, e "Tutte le opzioni" riporta l'intera categoria. La categoria
-attiva è illuminata e mostra il numero di opzioni attive.
+La navigazione ha tre livelli:
 
-L'albero delle categorie segue gli undici gruppi del catalogo:
+1. **Le categorie sintetiche** — gli undici gruppi del catalogo, come griglia
+   di pulsanti in alto. Ognuno mostra quante sottocategorie contiene e quante
+   opzioni sono già attive.
+2. **Le sottocategorie** — cliccando una categoria sintetica, le sue
+   sottocategorie compaiono sotto come chip. Cliccandone una, le sue opzioni
+   si aprono nel pannello principale.
+3. **Le opzioni** — il pannello le raggruppa per gruppo e permette di sceglierle
+   una alla volta.
 
-| Gruppo | Categorie | Opzioni |
+Le undici categorie sintetiche e quante sottocategorie contengono:
+
+| Categoria sintetica | Sottocategorie | Opzioni |
 | --- | --- | --- |
 | Soggetto e personaggio | 5 | 54 |
 | Corporatura e proporzioni | 6 | 42 |
@@ -151,15 +156,15 @@ L'albero delle categorie segue gli undici gruppi del catalogo:
 | Fotografia e illuminazione | 14 | 101 |
 | Stile e resa | 2 | 17 |
 
-L'abbigliamento è l'area più profonda: `wardrobe.garments` contiene 15
-sottogruppi (top, maglieria, camicie, T-shirt, felpe, capispalla, sartoria,
+L'abbigliamento è l'area più profonda: la sua sottocategoria "Capi" contiene
+15 gruppi propri (top, maglieria, camicie, T-shirt, felpe, capispalla, sartoria,
 abiti, pantaloni, gonne, denim, sportswear, streetwear, business, serata) e il
 gruppo degli abiti è dichiarato incompatibile con tutti gli altri.
 
 Le scarpe sono una categoria di primo livello, con tipo, silhouette/suola e
 materiali: non una nota a piè di pagina.
 
-![Le sottocategorie della categoria attiva](docs/screenshots/subcategories.png)
+![Una categoria sintetica e le sue sottocategorie](docs/screenshots/subcategories.png)
 
 ## Catalogo
 

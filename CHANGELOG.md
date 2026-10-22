@@ -9,13 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **Subcategories of the active category**: activating a category in the grid
-  reveals its subgroups right below it, each one selectable and counting the
-  options already active in it. Picking a subgroup filters the main panel to
-  that group, "All options" brings the whole category back, and changing
-  category resets the subgroup.
-- **Category grid at the top**: every category is a button, the selected one is
-  highlighted and the options open in the main panel.
+- **Synthetic categories**: the navigation now starts from the eleven
+  aggregated categories of the catalog (subject, body, appearance, hair,
+  clothing, footwear, accessories, pose, scene, photography, style). Each one
+  shows how many subcategories it holds and how many options are active in it.
+- **Subcategories of the open category**: clicking a synthetic category lists
+  its subcategories underneath, and clicking one of them opens its options in
+  the main panel.
+- **Category grid at the top**: every synthetic category is a button, the
+  selected one is highlighted and the options open in the main panel.
 - **Selections as tags**: every selected option is listed as a tag with an ×
   to remove it, so a change of mind is one click away.
 - **Donation button**: a "Dona / Donate" button in the header and a link in the
@@ -26,8 +28,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   own source URL and consultation date (melton, gabardine, espadrilles, bokeh,
   deep focus, Rembrandt lighting). A unit test enforces that a `verified`
   entry always has a source and that the list stays in sync with the data.
-- **Component tests**: 32 tests of the React layer in jsdom, covering the
-  category grid and its subcategories, the generation flow, the
+- **Component tests**: 29 tests of the React layer in jsdom, covering the
+  synthetic categories, the subcategories, the generation flow, the
   single-selection behaviour, the manual-edit protection, the clear-all
   confirmation, the clipboard, the language switch and the profile switch.
 - **Example files** in `docs/examples`: a valid catalog package and a valid
@@ -39,18 +41,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **The project is now MIT licensed** (it was previously published without a
   license). `package.json` declares `"license": "MIT"`.
-- **The categories are a grid of buttons** at the top of the page: the category
+- **The categories are synthetic ones**: the eleven groups of the catalog are
+  the top level, the former categories are their subcategories. The category
   search and the hover dropdowns are gone, and there is no horizontal
   scrollbar.
 - The wording of the Rembrandt lighting entry now matches its source (lit
   triangle under the eye).
-- The test suite grew from 100 to 142 tests, and the browser end-to-end run
+- The test suite grew from 100 to 141 tests, and the browser end-to-end run
   from 26 to 34 checks.
 
 ### Fixed
 
 - The "Updated {date}" label of the catalog in the settings panel shows the
   date instead of the raw placeholder.
+- A translation key used in the code but missing from the dictionary is now
+  caught by a test: every `t('...')` call in the sources must exist in the
+  English dictionary.
 
 ## [0.1.0] - 2026-10-21
 

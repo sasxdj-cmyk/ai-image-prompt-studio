@@ -38,9 +38,16 @@ function renderApp(storage = new MemoryStorage(), writer = vi.fn(async () => und
   };
 }
 
-/** Select a category in the grid and pick one of its options in the panel. */
-function pickOption(categoryName: string, optionName: string) {
-  fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${categoryName}`) }));
+/** Open a synthetic category and one of its subcategories. */
+function openCategory(groupName: string, categoryName: string) {
+  fireEvent.click(screen.getByRole('button', { name: new RegExp(`^${groupName}`) }));
+  const bar = screen.getByRole('group', { name: 'Subcategories' });
+  fireEvent.click(within(bar).getByRole('button', { name: new RegExp(`^${categoryName}`) }));
+}
+
+/** Open a synthetic category, one of its subcategories and pick an option. */
+function pickOption(groupName: string, categoryName: string, optionName: string) {
+  openCategory(groupName, categoryName);
   const panel = screen.getByRole('region', { name: categoryName });
   fireEvent.click(within(panel).getByRole('button', { name: optionName }));
 }
@@ -61,23 +68,22 @@ describe('interface', () => {
     expect(footer.textContent).toContain('72 categories');
   });
 
-  it('lists the categories in the grid at the top', () => {
+  it('lists the synthetic categories in the grid at the top', () => {
     renderApp();
-    const button = screen.getByRole('button', { name: 'Editorial character' });
-    expect(button.closest('.category-grid')).toBeTruthy();
+    const button = screen.getByRole('button', { name: /^Clothing/ });
+    expect(button.closest('.group-grid')).toBeTruthy();
   });
 
   it('opens a category and shows its options', () => {
     renderApp();
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
+    openCategory('Subject & character', 'Editorial character');
     const panel = screen.getByRole('region', { name: 'Editorial character' });
     expect(within(panel).getByRole('button', { name: 'Fashion editorial' })).toBeTruthy();
   });
 
   it('adds a selection to the summary', () => {
     renderApp();
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
-    pickOption('Editorial character', 'Fashion editorial');
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
     const summary = screen.getByRole('region', { name: 'Selections' });
     expect(summary.textContent).toContain('Fashion editorial');
   });
@@ -86,8 +92,7 @@ describe('interface', () => {
 describe('generation', () => {
   it('fills the prompt with the selected fragments', async () => {
     renderApp();
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
-    pickOption('Editorial character', 'Fashion editorial');
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
     fireEvent.click(screen.getByRole('button', { name: 'Generate prompt' }));
 
     const textarea = screen.getByRole('textbox', { name: 'Prompt' }) as HTMLTextAreaElement;
@@ -96,10 +101,8 @@ describe('generation', () => {
 
   it('joins several categories with commas in the catalog order', async () => {
     renderApp();
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
-    pickOption('Editorial character', 'Fashion editorial');
-    fireEvent.click(screen.getByRole('button', { name: /^Body position/ }));
-    pickOption('Body position', 'Walking');
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
+    pickOption('Pose & composition', 'Body position', 'Walking');
     fireEvent.click(screen.getByRole('button', { name: 'Generate prompt' }));
 
     const textarea = screen.getByRole('textbox', { name: 'Prompt' }) as HTMLTextAreaElement;
@@ -108,8 +111,8 @@ describe('generation', () => {
 
   it('keeps a single selection category to one value', () => {
     renderApp();
-    pickOption('Editorial character', 'Fashion editorial');
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
+    openCategory('Subject & character', 'Editorial character');
     const panel = screen.getByRole('region', { name: 'Editorial character' });
     fireEvent.click(within(panel).getByRole('button', { name: 'Streetwear' }));
     const summary = screen.getByRole('region', { name: 'Selections' });
@@ -144,8 +147,7 @@ describe('manual editing', () => {
 describe('global actions', () => {
   it('asks for a confirmation before clearing everything', async () => {
     renderApp();
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
-    pickOption('Editorial character', 'Fashion editorial');
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
     fireEvent.click(screen.getByRole('button', { name: 'Generate prompt' }));
 
     fireEvent.click(screen.getByRole('button', { name: 'Clear all' }));
@@ -158,8 +160,7 @@ describe('global actions', () => {
 
   it('keeps the catalog and the settings when clearing', async () => {
     const { storage } = renderApp();
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
-    pickOption('Editorial character', 'Fashion editorial');
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
     fireEvent.click(screen.getByRole('button', { name: 'Clear all' }));
     const dialog = await screen.findByRole('dialog');
     fireEvent.click(within(dialog).getByRole('button', { name: 'Clear all' }));
@@ -171,8 +172,7 @@ describe('global actions', () => {
   it('copies the prompt with the injected clipboard writer', async () => {
     const writer = vi.fn(async () => undefined);
     renderApp(new MemoryStorage(), writer);
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
-    pickOption('Editorial character', 'Fashion editorial');
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
     fireEvent.click(screen.getByRole('button', { name: 'Generate prompt' }));
 
     const textarea = screen.getByRole('textbox', { name: 'Prompt' }) as HTMLTextAreaElement;
@@ -207,8 +207,7 @@ describe('donation', () => {
 describe('language and profile', () => {
   it('translates the interface and keeps the selections', async () => {
     renderApp();
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
-    pickOption('Editorial character', 'Fashion editorial');
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
 
     const selects = screen.getAllByRole('combobox');
     fireEvent.change(selects[0]!, { target: { value: 'it' } });
@@ -220,8 +219,7 @@ describe('language and profile', () => {
 
   it('keeps the selections when the model profile changes', async () => {
     renderApp();
-    fireEvent.click(screen.getByRole('button', { name: /^Editorial character/ }));
-    pickOption('Editorial character', 'Fashion editorial');
+    pickOption('Subject & character', 'Editorial character', 'Fashion editorial');
 
     const selects = screen.getAllByRole('combobox');
     const profileSelect = selects[2] as HTMLSelectElement;

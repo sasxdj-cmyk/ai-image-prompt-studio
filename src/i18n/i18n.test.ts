@@ -3,6 +3,22 @@ import { DICTIONARIES, detectLocale, interpolate, missingKeys, translate } from 
 import { en } from './en';
 import { it as italian } from './it';
 
+/**
+ * The raw source of every application file, so the keys used in the code can
+ * be checked against the dictionary.
+ */
+const SOURCES = import.meta.glob('/src/**/*.{ts,tsx}', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+
+function collectSources(): string[] {
+  return Object.entries(SOURCES)
+    .filter(([path]) => !path.includes('.test.') && !path.includes('/data/'))
+    .map(([, content]) => content);
+}
+
 describe('i18n', () => {
   it('translates a known key', () => {
     expect(translate('en', 'action.generate')).toBe('Generate prompt');
@@ -49,5 +65,17 @@ describe('i18n', () => {
 
   it('keeps the Italian dictionary aligned with the reference', () => {
     expect(Object.keys(italian).length).toBe(Object.keys(en).length);
+  });
+
+  it('has a translation for every key used in the code', () => {
+    const known = new Set(Object.keys(en));
+    const missing: string[] = [];
+    for (const content of collectSources()) {
+      for (const match of content.matchAll(/\bt\(\s*'([a-z0-9._-]+)'/gi)) {
+        const key = match[1];
+        if (key && !known.has(key)) missing.push(key);
+      }
+    }
+    expect([...new Set(missing)]).toEqual([]);
   });
 });

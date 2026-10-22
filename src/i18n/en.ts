@@ -1,4 +1,4 @@
-/**
+﻿/**
  * English UI strings. This dictionary is the reference: every other locale
  * must define exactly the same keys (checked by a test).
  */
@@ -56,8 +56,11 @@ export const en = {
   'category.clearCategory': 'Clear this category',
   'category.openFull': 'Open in the panel',
   'category.search': 'Find a category',
-  'category.subgroups': 'Subcategories',
+  'category.subcategories': 'Subcategories',
   'category.allSubgroups': 'All options',
+  'category.subcategoryCount': '{count} subcategories',
+  'category.pickSubcategory':
+    'Pick a subcategory above to see its options, then select the ones you need.',
 
   'summary.title': 'Selections',
   'summary.empty': 'Nothing selected yet. Open a category and pick a few options.',

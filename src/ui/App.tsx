@@ -19,14 +19,14 @@ export function App() {
 
   const activeCategory = useMemo(() => {
     const byId = catalog.categories.find((category) => category.id === state.ui.activeCategoryId);
-    return byId ?? catalog.categories[0];
+    return byId ?? undefined;
   }, [catalog.categories, state.ui.activeCategoryId]);
 
   useEffect(() => {
-    if (!state.ui.activeCategoryId && catalog.categories[0]) {
-      dispatch({ type: 'set-active-category', categoryId: catalog.categories[0].id });
+    if (!state.ui.activeGroupId && catalog.groups[0]) {
+      dispatch({ type: 'set-active-group', groupId: catalog.groups[0].id });
     }
-  }, [state.ui.activeCategoryId, catalog.categories, dispatch]);
+  }, [state.ui.activeGroupId, catalog.groups, dispatch]);
 
   return (
     <div className="app">
@@ -38,7 +38,14 @@ export function App() {
       <main className="layout" id="main">
         {state.ui.panel === 'categories' && (
           <>
-            {activeCategory && <CategoryPanel category={activeCategory} />}
+            {activeCategory ? (
+              <CategoryPanel category={activeCategory} />
+            ) : (
+              <section className="category-panel empty-panel">
+                <h2>{t('panel.categories')}</h2>
+                <p className="muted">{t('category.pickSubcategory')}</p>
+              </section>
+            )}
           </>
         )}
         {state.ui.panel === 'presets' && <PresetsPanel />}
