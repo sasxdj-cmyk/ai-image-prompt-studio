@@ -243,7 +243,13 @@
           "id": "capture.dof.deep",
           "label": { "en": "Deep focus", "it": "Messa a fuoco estesa" },
           "prompt": { "en": "deep focus with everything sharp", "it": "messa a fuoco estesa con tutto nitido" },
-          "status": "evergreen"
+          "status": "verified",
+          "source": {
+            "kind": "terminology",
+            "title": "Wikipedia - Bokeh: the opposite of bokeh is an image in which multiple distances are visible and all are in focus",
+            "url": "https://en.wikipedia.org/wiki/Bokeh",
+            "consulted": "2026-10-21"
+          }
         },
         {
           "id": "capture.dof.focus-on-eyes",
@@ -261,7 +267,13 @@
           "id": "capture.dof.bokeh",
           "label": { "en": "Bokeh", "it": "Bokeh" },
           "prompt": { "en": "creamy bokeh in the background", "it": "bokeh morbido sullo sfondo" },
-          "status": "evergreen"
+          "status": "verified",
+          "source": {
+            "kind": "terminology",
+            "title": "Wikipedia - Bokeh: the aesthetic quality of the blur produced in the out-of-focus parts of an image",
+            "url": "https://en.wikipedia.org/wiki/Bokeh",
+            "consulted": "2026-10-21"
+          }
         },
         {
           "id": "capture.dof.foreground-blur",
@@ -518,8 +530,14 @@
         {
           "id": "capture.lighting.type.rembrandt",
           "label": { "en": "Rembrandt lighting", "it": "Luce di Rembrandt" },
-          "prompt": { "en": "rembrandt lighting with a cheek shadow", "it": "illuminazione di Rembrandt con ombra sullo zigomo" },
-          "status": "evergreen"
+          "prompt": { "en": "rembrandt lighting with a lit triangle under the eye", "it": "illuminazione di Rembrandt con un triangolo luminoso sotto l'occhio" },
+          "status": "verified",
+          "source": {
+            "kind": "terminology",
+            "title": "Wikipedia - Rembrandt lighting: key light high and to one side, fill or reflector opposite, lit triangle under the eye",
+            "url": "https://en.wikipedia.org/wiki/Rembrandt_lighting",
+            "consulted": "2026-10-21"
+          }
         },
         {
           "id": "capture.lighting.type.split",

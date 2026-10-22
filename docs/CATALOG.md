@@ -133,9 +133,23 @@ Nothing is ever added to the prompt that the user did not select.
 `evergreen` (descriptive vocabulary), `verified` (checked against a source),
 `partial` (partly verified) and `unverified`.
 
-The current catalog is descriptive vocabulary written from domain knowledge and
-is marked `evergreen` at category level. The model profiles are the part that
-carries per-item sources, and they list them explicitly.
+The catalog is descriptive vocabulary written from domain knowledge and is
+marked `evergreen` at category level. **Six entries are marked `verified`**
+and carry their own source URL and consultation date:
+
+| Entry | Source |
+| --- | --- |
+| `wardrobe.materials.wool-melton` | Wikipedia - Melton |
+| `wardrobe.materials.wool-gabardine` | Wikipedia - Gabardine |
+| `footwear.style.espadrilles` | Wikipedia - Espadrille |
+| `capture.dof.bokeh` | Wikipedia - Bokeh |
+| `capture.dof.deep` | Wikipedia - Bokeh |
+| `capture.lighting.type.rembrandt` | Wikipedia - Rembrandt lighting |
+
+A unit test fails if a `verified` entry loses its source, if its source has no
+URL or no consultation date, or if the list drifts away from the data. The
+sources and the checks that did **not** succeed are documented in
+[research/terminology-notes.md](research/terminology-notes.md).
 
 ## Files
 

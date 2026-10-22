@@ -107,3 +107,51 @@ describe('built-in catalog', () => {
     expect(report.errors.some((error) => error.message.includes('already used'))).toBe(true);
   });
 });
+
+describe('catalog provenance', () => {
+  const verifiedEntries = () =>
+    getBuiltinCatalog()
+      .categories.flatMap((category) => category.entries)
+      .filter((entry) => entry.status === 'verified');
+
+  it('gives every verified entry a source with a URL and a date', () => {
+    for (const entry of verifiedEntries()) {
+      expect(entry.source, entry.id).toBeDefined();
+      expect(entry.source?.url, entry.id).toMatch(/^https:\/\//);
+      expect(entry.source?.consulted, entry.id).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(entry.source?.title.length, entry.id).toBeGreaterThan(10);
+    }
+  });
+
+  it('does not mark an entry as verified without a source', () => {
+    for (const entry of getBuiltinCatalog().categories.flatMap((category) => category.entries)) {
+      if (entry.status === 'verified') {
+        expect(entry.source, entry.id).toBeDefined();
+      }
+    }
+  });
+
+  it('verifies exactly the entries that were checked against a source', () => {
+    const ids = verifiedEntries()
+      .map((entry) => entry.id)
+      .sort();
+    expect(ids).toEqual([
+      'capture.dof.bokeh',
+      'capture.dof.deep',
+      'capture.lighting.type.rembrandt',
+      'footwear.style.espadrilles',
+      'wardrobe.materials.wool-gabardine',
+      'wardrobe.materials.wool-melton',
+    ]);
+  });
+
+  it('keeps the unverified entries clearly marked', () => {
+    const others = getBuiltinCatalog()
+      .categories.flatMap((category) => category.entries)
+      .filter((entry) => entry.status !== 'verified');
+    expect(others.length).toBeGreaterThan(700);
+    for (const entry of others) {
+      expect(['evergreen', 'unverified', 'partial']).toContain(entry.status);
+    }
+  });
+});

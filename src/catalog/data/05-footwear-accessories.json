@@ -217,7 +217,13 @@
           "id": "footwear.style.espadrilles",
           "label": { "en": "Espadrilles", "it": "Espadrilles" },
           "prompt": { "en": "espadrilles with a rope sole", "it": "espadrilles con suola di corda" },
-          "status": "evergreen"
+          "status": "verified",
+          "source": {
+            "kind": "terminology",
+            "title": "Wikipedia - Espadrille: casual shoes with soles made of esparto rope",
+            "url": "https://en.wikipedia.org/wiki/Espadrille",
+            "consulted": "2026-10-21"
+          }
         }
       ]
     },

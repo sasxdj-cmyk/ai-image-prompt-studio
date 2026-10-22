@@ -172,6 +172,10 @@ conoscenza del settore e verificato rispetto ai riferimenti elencati in
 spiega anche cosa è stato lasciato fuori di proposito (nomi di brand, nomi di
 prodotto, affermazioni stagionali) e perché.
 
+Sei voci sono attualmente marcate `verified`: ognuna riporta la propria URL di
+fonte e la data di consultazione, e un test fallisce se questa provenienza
+manca o non è allineata ai dati.
+
 ## Profili dei modelli
 
 Un profilo cambia il *modo* in cui il prompt viene assemblato per un modello
@@ -293,7 +297,7 @@ motore e catalogo testabili in isolamento.
 
 ## Test
 
-La suite contiene 95 test automatici che coprono, tra le altre cose:
+La suite contiene **123 test automatici** (11 file) che coprono, tra le altre cose:
 
 - generazione senza selezioni, con una sola categoria e con molte categorie;
 - ordine logico e separazione con virgole, senza virgole doppie o finali;
@@ -308,11 +312,22 @@ La suite contiene 95 test automatici che coprono, tra le altre cose:
 - traduzioni mancanti;
 - persistenza locale, recupero dai dati corrotti e gestione delle versioni;
 - validazione del catalogo, importazione dei pacchetti, ripristino e
-  comportamento offline.
+  comportamento offline;
+- **le regole di provenienza del catalogo** (una voce `verified` ha sempre una
+  fonte con URL e data di consultazione);
+- **l'interfaccia stessa** (13 test di componente in jsdom): l'esplorazione
+  delle categorie, il flusso di generazione, il comportamento a selezione
+  singola, la protezione della modifica manuale, la conferma di "cancella
+  tutto", gli appunti, il cambio di lingua e il cambio di profilo;
+- **i file d'esempio** in `docs/examples`, analizzati con i parser reali, così
+  un esempio non può invecchiare in silenzio.
 
 ```bash
 npm test
 ```
+
+In `docs/examples` trovi due file pronti per l'importazione: un pacchetto di
+catalogo e un'esportazione di preset.
 
 L'applicazione è stata verificata anche end-to-end in un browser reale
 (Chromium, 26 controlli automatici): esplorazione delle categorie, flusso di

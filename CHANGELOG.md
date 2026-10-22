@@ -7,7 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Nothing yet.
+### Added
+
+- **Catalog provenance**: six entries are now marked `verified` and carry their
+  own source URL and consultation date (melton, gabardine, espadrilles, bokeh,
+  deep focus, Rembrandt lighting). A unit test enforces that a `verified`
+  entry always has a source and that the list stays in sync with the data.
+- **Component tests**: 13 tests of the React layer in jsdom, covering the
+  category browser, the generation flow, the single-selection behaviour, the
+  manual-edit protection, the clear-all confirmation, the clipboard, the
+  language switch and the profile switch.
+- **Example files** in `docs/examples`: a valid catalog package and a valid
+  preset export, checked by the test suite with the real parsers.
+- The prompt panel shows the contribution of every category, and the settings
+  panel shows the documented examples of the selected model profile.
+
+### Changed
+
+- The wording of the Rembrandt lighting entry now matches its source (lit
+  triangle under the eye).
+- The test suite grew from 100 to 123 tests.
 
 ## [0.1.0] - 2026-10-21
 

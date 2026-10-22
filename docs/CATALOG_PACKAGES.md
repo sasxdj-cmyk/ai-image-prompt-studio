@@ -104,6 +104,11 @@ working. Nothing is cached from a failed request.
 
 ## Publishing a package
 
+A complete, importable example ships in
+[`examples/catalog-package-1.1.0.json`](examples/catalog-package-1.1.0.json);
+see [`examples/README.md`](examples/README.md) for how to import it. The test
+suite parses it with the real parser, so it can never go stale.
+
 1. Copy the entries of the affected categories from the data files.
 2. Edit them, keeping the ids stable.
 3. Bump the catalog version: `minor` for new content, `patch` for corrections.

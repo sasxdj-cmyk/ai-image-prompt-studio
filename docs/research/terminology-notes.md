@@ -70,6 +70,77 @@ collection or a season, and it is not attributed to any article.
 Consulted for the same check, from a second publication. It confirms the term
 is used across the industry press, not only by one title.
 
+### 5. Wikipedia — "Melton"
+
+<https://en.wikipedia.org/wiki/Melton> (fetched on 2026-10-21)
+
+Defines melton as a **twill woven and felted woolen cloth**. The catalog entry
+`wardrobe.materials.wool-melton` ("dense melton wool") is marked `verified`
+with this source.
+
+### 6. Wikipedia — "Gabardine"
+
+<https://en.wikipedia.org/wiki/Gabardine> (fetched on 2026-10-21)
+
+Defines gabardine as a **durable twill worsted wool, tightly woven and
+waterproof**, used for outerwear, suits, topcoats, trousers, uniforms,
+windbreakers and trench coats. The entry `wardrobe.materials.wool-gabardine`
+is marked `verified` with this source.
+
+### 7. Wikipedia — "Bokeh"
+
+<https://en.wikipedia.org/wiki/Bokeh> (fetched on 2026-10-21)
+
+Defines bokeh as **the aesthetic quality of the blur produced in the
+out-of-focus parts of an image**, produced with a wide aperture, and states
+that its opposite — an image in which multiple distances are visible and all
+are in focus — is **deep focus**. Two entries are marked `verified` with this
+source: `capture.dof.bokeh` and `capture.dof.deep`.
+
+### 8. Wikipedia — "Rembrandt lighting"
+
+<https://en.wikipedia.org/wiki/Rembrandt_lighting> (fetched on 2026-10-21)
+
+Defines Rembrandt lighting as a standard technique of studio portrait
+photography, achieved with one light and a reflector or two lights: the key
+light is placed high and to one side in front, the fill or reflector opposite
+at about half the power, and the result is **an illuminated triangle under the
+eye** on the less illuminated side of the face. The entry
+`capture.lighting.type.rembrandt` is marked `verified` with this source, and
+its wording was corrected during the check: the characteristic is the lit
+triangle under the eye, not a shadow on the cheek.
+
+## Verified entries
+
+Six entries of the catalog carry a per-entry source and the status `verified`:
+
+| Entry | Source |
+| --- | --- |
+| `wardrobe.materials.wool-melton` | Wikipedia - Melton |
+| `wardrobe.materials.wool-gabardine` | Wikipedia - Gabardine |
+| `footwear.style.espadrilles` | Wikipedia - Espadrille |
+| `capture.dof.bokeh` | Wikipedia - Bokeh |
+| `capture.dof.deep` | Wikipedia - Bokeh |
+| `capture.lighting.type.rembrandt` | Wikipedia - Rembrandt lighting |
+
+The other 797 entries are descriptive vocabulary marked `evergreen`. A unit
+test enforces that a `verified` entry always has a URL and a consultation
+date, and that the list above stays in sync with the data.
+
+## A check that did not succeed
+
+The portrait lighting pattern usually called **butterfly lighting** could not
+be verified: the page that carries that name
+(<https://en.wikipedia.org/wiki/Butterfly_(lighting)>, fetched on 2026-10-21)
+turns out to describe *cinematographic butterflies* — the large overhead
+structures used to block or diffuse sunlight on a set — and not the portrait
+pattern at all. The Rembrandt article links to it, which is where the
+confusion starts.
+
+The entry `capture.lighting.type.butterfly` therefore stays `evergreen`
+general terminology. It was not marked as verified on the strength of a page
+that does not support it.
+
 ## What was deliberately not used
 
 - **Brand and product names** (for example a specific sneaker model): the

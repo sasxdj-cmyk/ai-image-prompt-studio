@@ -1,0 +1,85 @@
+{
+  "kind": "catalog-package",
+  "schemaVersion": 1,
+  "catalogVersion": "1.1.0",
+  "baseCatalogVersion": "1.0.0",
+  "publishedAt": "2026-10-21",
+  "description": "Example package: adds two atmospheric conditions to the scene category. The entries of the category are replaced, so the full list is included.",
+  "categories": [
+    {
+      "id": "scene.atmosphere",
+      "entries": [
+        {
+          "id": "scene.atmosphere.sunny",
+          "label": { "en": "Sunny", "it": "Soleggiato" },
+          "prompt": { "en": "on a sunny day", "it": "in una giornata di sole" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.overcast",
+          "label": { "en": "Overcast", "it": "Coperto" },
+          "prompt": { "en": "on an overcast day", "it": "in una giornata di cielo coperto" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.rain",
+          "label": { "en": "Rain", "it": "Pioggia" },
+          "prompt": { "en": "in the rain with wet ground", "it": "sotto la pioggia con il terreno bagnato" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.snow",
+          "label": { "en": "Snow", "it": "Neve" },
+          "prompt": { "en": "in the snow", "it": "nella neve" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.fog",
+          "label": { "en": "Fog", "it": "Nebbia" },
+          "prompt": { "en": "in thick fog", "it": "nella nebbia fitta" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.windy",
+          "label": { "en": "Windy", "it": "Vento" },
+          "prompt": { "en": "on a windy day", "it": "in una giornata di vento" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.warm",
+          "label": { "en": "Warm atmosphere", "it": "Atmosfera calda" },
+          "prompt": { "en": "a warm atmosphere", "it": "un'atmosfera calda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.cold",
+          "label": { "en": "Cold atmosphere", "it": "Atmosfera fredda" },
+          "prompt": { "en": "a cold atmosphere", "it": "un'atmosfera fredda" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.hazy",
+          "label": { "en": "Hazy", "it": "A foschia" },
+          "prompt": { "en": "a hazy atmosphere", "it": "un'atmosfera a foschia" },
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.heat-haze",
+          "label": { "en": "Heat haze", "it": "Aria calda" },
+          "prompt": { "en": "heat haze shimmering above the ground", "it": "aria calda che distorce sopra il terreno" },
+          "tags": ["summer", "heat"],
+          "status": "evergreen"
+        },
+        {
+          "id": "scene.atmosphere.dust-motes",
+          "label": { "en": "Dust in the light", "it": "Pulviscolo nella luce" },
+          "prompt": { "en": "dust motes floating in the light beam", "it": "pulviscolo sospeso nel fascio di luce" },
+          "tags": ["atmosphere", "light"],
+          "status": "evergreen"
+        }
+      ]
+    }
+  ],
+  "removedCategoryIds": [],
+  "removedEntryIds": []
+}

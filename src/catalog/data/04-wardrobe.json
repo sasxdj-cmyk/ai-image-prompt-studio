@@ -780,14 +780,26 @@
           "label": { "en": "Melton wool", "it": "Lana Melton" },
           "prompt": { "en": "dense melton wool", "it": "lana Melton compatta" },
           "tags": ["wool"],
-          "status": "evergreen"
+          "status": "verified",
+          "source": {
+            "kind": "terminology",
+            "title": "Wikipedia - Melton: twill woven and felted woolen cloth",
+            "url": "https://en.wikipedia.org/wiki/Melton",
+            "consulted": "2026-10-21"
+          }
         },
         {
           "id": "wardrobe.materials.wool-gabardine",
           "label": { "en": "Wool gabardine", "it": "Gabardine di lana" },
           "prompt": { "en": "wool gabardine", "it": "gabardine di lana" },
           "tags": ["wool"],
-          "status": "evergreen"
+          "status": "verified",
+          "source": {
+            "kind": "terminology",
+            "title": "Wikipedia - Gabardine: durable twill worsted wool, tightly woven and waterproof",
+            "url": "https://en.wikipedia.org/wiki/Gabardine",
+            "consulted": "2026-10-21"
+          }
         },
         {
           "id": "wardrobe.materials.herringbone",

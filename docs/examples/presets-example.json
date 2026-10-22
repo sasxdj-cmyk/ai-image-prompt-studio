@@ -1,0 +1,52 @@
+{
+  "kind": "preset-export",
+  "version": 1,
+  "exportedAt": "2026-10-21T12:00:00.000Z",
+  "presets": [
+    {
+      "id": "example-street-editorial",
+      "name": "Street editorial",
+      "createdAt": "2026-10-21T12:00:00.000Z",
+      "profileId": "general",
+      "selections": {
+        "subject.look": ["subject.look.streetwear"],
+        "body.build": ["body.build.lean"],
+        "appearance.skin.tone": ["appearance.skin.tone.medium"],
+        "styling.hair.style": ["styling.hair.style.down"],
+        "wardrobe.garments": [
+          "wardrobe.garments.outerwear.bomber-jacket",
+          "wardrobe.garments.trousers.straight-trousers"
+        ],
+        "wardrobe.materials": ["wardrobe.materials.wool-flannel"],
+        "wardrobe.colors": ["wardrobe.colors.black"],
+        "footwear.style": ["footwear.style.low-top-sneakers"],
+        "pose.body": ["pose.body.walking"],
+        "scene.type": ["scene.type.urban-street"],
+        "capture.type": ["capture.type.street"],
+        "capture.framing": ["capture.framing.full-body"],
+        "capture.lighting.quality": ["capture.lighting.quality.soft"],
+        "finish.style": ["finish.style.documentary"]
+      }
+    },
+    {
+      "id": "example-studio-beauty",
+      "name": "Studio beauty close-up",
+      "createdAt": "2026-10-21T12:00:00.000Z",
+      "profileId": "z-image-turbo",
+      "selections": {
+        "subject.presentation": ["subject.presentation.beauty"],
+        "appearance.face.shape": ["appearance.face.shape.heart"],
+        "appearance.eyes.makeup": ["appearance.eyes.makeup.winged-liner"],
+        "appearance.makeup.base": ["appearance.makeup.base.editorial"],
+        "appearance.makeup.lips": ["appearance.makeup.lips.nude"],
+        "styling.hair.style": ["styling.hair.style.updo"],
+        "scene.type": ["scene.type.studio"],
+        "capture.type": ["capture.type.beauty"],
+        "capture.framing": ["capture.framing.close-up"],
+        "capture.dof": ["capture.dof.shallow", "capture.dof.bokeh"],
+        "capture.lighting.type": ["capture.lighting.type.beauty-dish"],
+        "capture.lighting.quality": ["capture.lighting.quality.soft"]
+      }
+    }
+  ]
+}

@@ -170,6 +170,10 @@ and checked against the references listed in
 also explains what was deliberately left out (brand names, product names,
 seasonal claims) and why.
 
+Six entries are currently marked `verified`: each one carries its own source
+URL and consultation date, and a test fails if that provenance is missing or
+out of sync with the data.
+
 ## Model profiles
 
 A profile changes *how* a prompt is assembled for a specific model. It defines
@@ -290,7 +294,7 @@ makes the engine and the catalog testable in isolation.
 
 ## Testing
 
-The suite has 95 automated tests covering, among others:
+The suite has **123 automated tests** (11 files) covering, among others:
 
 - generation with no selection, one category and many categories;
 - logical ordering and comma separation, without doubled or trailing separators;
@@ -304,11 +308,22 @@ The suite has 95 automated tests covering, among others:
 - selections surviving a model profile or language change;
 - missing translations;
 - local persistence, recovery from corrupted data and version handling;
-- catalog validation, package import, rollback and offline behaviour.
+- catalog validation, package import, rollback and offline behaviour;
+- **the catalog provenance rules** (a `verified` entry always has a source with
+  a URL and a consultation date);
+- **the interface itself** (13 component tests in jsdom): the category browser,
+  the generation flow, the single-selection behaviour, the manual-edit
+  protection, the clear-all confirmation, the clipboard, the language switch
+  and the profile switch;
+- **the example files** shipped in `docs/examples`, parsed with the real
+  parsers, so an example can never go stale.
 
 ```bash
 npm test
 ```
+
+Two ready-to-import files are shipped in [`docs/examples`](docs/examples): a
+catalog package and a preset export.
 
 The application was additionally verified end-to-end in a real browser
 (Chromium, 26 automated checks) covering the category browser, the generation
