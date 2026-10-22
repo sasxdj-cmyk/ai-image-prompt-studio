@@ -42,11 +42,17 @@ tuo browser e funziona offline dopo il primo caricamento.
 
 - **72 categorie e 803 opzioni** già pronte all'uso: al primo avvio non devi
   scrivere nulla a mano.
+- **Una barra di categorie come i preferiti del browser**: ogni categoria è
+  una scheda in alto, quella attiva è illuminata e al passaggio del mouse si
+  apre una tendina con le sue opzioni, raggruppate per sottogruppo. Si sceglie
+  direttamente dalla tendina.
 - **Generazione con un clic**: il prompt viene assemblato in modo deterministico
   dalle selezioni attive, in un ordine logico, senza informazioni duplicate o
   contraddittorie.
 - **Categorie indipendenti**: cambiare le scarpe non azzera la posa, la luce o
   l'abbigliamento.
+- **Le selezioni diventano tag**: ogni opzione scelta è un tag con una ×, così
+  un cambio di idea è a portata di clic.
 - **Risultato editabile**: il prompt generato è un normale campo di testo. Le
   modifiche manuali sono protette: l'app chiede prima di sostituirle.
 - **Controllo di conflitti e ridondanze**: le combinazioni incompatibili (un
@@ -122,8 +128,13 @@ opzioni di qualità in `finish.boost` sono selettive come tutte le altre.
 
 ## Categorie
 
-Ogni categoria è indipendente e ha il proprio pulsante nella colonna di
-sinistra. L'albero delle categorie segue gli undici gruppi del catalogo:
+Ogni categoria è indipendente e ha la sua scheda nella barra in alto, come i
+preferiti del browser. La categoria attiva è illuminata e al passaggio del
+mouse sulla scheda si apre una tendina con le sue opzioni, raggruppate per
+sottogruppo: si può scegliere direttamente dalla tendina, oppure aprire la
+categoria nel pannello principale per la vista completa con la sua ricerca.
+
+L'albero delle categorie segue gli undici gruppi del catalogo:
 
 | Gruppo | Categorie | Opzioni |
 | --- | --- | --- |
@@ -147,7 +158,7 @@ gruppo degli abiti è dichiarato incompatibile con tutti gli altri.
 Le scarpe sono una categoria di primo livello, con tipo, silhouette/suola e
 materiali: non una nota a piè di pagina.
 
-![La categoria abbigliamento del catalogo](docs/screenshots/catalog-clothing.png)
+![La tendina della categoria abbigliamento](docs/screenshots/category-dropdown.png)
 
 ## Catalogo
 
@@ -300,7 +311,7 @@ motore e catalogo testabili in isolamento.
 
 ## Test
 
-La suite contiene **123 test automatici** (11 file) che coprono, tra le altre cose:
+La suite contiene **137 test automatici** (12 file) che coprono, tra le altre cose:
 
 - generazione senza selezioni, con una sola categoria e con molte categorie;
 - ordine logico e separazione con virgole, senza virgole doppie o finali;
@@ -318,10 +329,13 @@ La suite contiene **123 test automatici** (11 file) che coprono, tra le altre co
   comportamento offline;
 - **le regole di provenienza del catalogo** (una voce `verified` ha sempre una
   fonte con URL e data di consultazione);
-- **l'interfaccia stessa** (13 test di componente in jsdom): l'esplorazione
-  delle categorie, il flusso di generazione, il comportamento a selezione
-  singola, la protezione della modifica manuale, la conferma di "cancella
-  tutto", gli appunti, il cambio di lingua e il cambio di profilo;
+- **la barra delle categorie** (11 test di componente in jsdom): le schede, la
+  evidenziazione della categoria attiva, la tendina che si apre al passaggio
+  del mouse, la scelta di un'opzione dalla tendina e la rimozione di un tag;
+- **l'interfaccia stessa** (16 test di componente in jsdom): il pannello della
+  categoria, il flusso di generazione, il comportamento a selezione singola,
+  la protezione della modifica manuale, la conferma di "cancella tutto", gli
+  appunti, il cambio di lingua e il cambio di profilo;
 - **i file d'esempio** in `docs/examples`, analizzati con i parser reali, così
   un esempio non può invecchiare in silenzio.
 
@@ -333,9 +347,10 @@ In `docs/examples` trovi due file pronti per l'importazione: un pacchetto di
 catalogo e un'esportazione di preset.
 
 L'applicazione è stata verificata anche end-to-end in un browser reale
-(Chromium, 26 controlli automatici): esplorazione delle categorie, flusso di
-generazione, protezione della modifica manuale, randomizzatore, cambio di
-lingua, cambio di profilo, "cancella tutto", preset e assenza di errori in
+(Chromium, 30 controlli automatici): la barra delle categorie, la tendina al
+passaggio del mouse, la rimozione dei tag, il flusso di generazione, la
+protezione della modifica manuale, il randomizzatore, il cambio di lingua, il
+cambio di profilo, "cancella tutto", i preset e l'assenza di errori in
 console.
 
 ## Privacy

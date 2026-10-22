@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Category bar at the top**, built like the favourites bar of a browser:
+  every category is a tab, the selected one is highlighted, and hovering a tab
+  opens a dropdown with the options of that category, grouped by subgroup. The
+  options can be picked straight from the dropdown, or the category can be
+  opened in the main panel.
+- **Selections as tags**: every selected option is listed as a tag with an ×
+  to remove it, so a change of mind is one click away.
 - **Donation button**: a "Dona / Donate" button in the header and a link in the
   footer open the PayPal profile `@SalvaCucca`
   (`https://paypal.me/SalvaCucca`) in a new tab. The URL lives in a single
@@ -17,8 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   own source URL and consultation date (melton, gabardine, espadrilles, bokeh,
   deep focus, Rembrandt lighting). A unit test enforces that a `verified`
   entry always has a source and that the list stays in sync with the data.
-- **Component tests**: 13 tests of the React layer in jsdom, covering the
-  category browser, the generation flow, the single-selection behaviour, the
+- **Component tests**: 27 tests of the React layer in jsdom, covering the
+  category bar, the generation flow, the single-selection behaviour, the
   manual-edit protection, the clear-all confirmation, the clipboard, the
   language switch and the profile switch.
 - **Example files** in `docs/examples`: a valid catalog package and a valid
@@ -30,9 +37,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **The project is now MIT licensed** (it was previously published without a
   license). `package.json` declares `"license": "MIT"`.
+- **The left column is gone**: the categories live in the bar at the top and
+  the main area shows the active category.
 - The wording of the Rembrandt lighting entry now matches its source (lit
   triangle under the eye).
-- The test suite grew from 100 to 123 tests.
+- The test suite grew from 100 to 137 tests, and the browser end-to-end run
+  from 26 to 30 checks.
+
+### Fixed
+
+- The dropdown of a category is no longer clipped by the scrollable bar and
+  no longer jumps around while the bar is scrolled.
+- Clicking a category tab while the hover had just opened its dropdown no
+  longer closes it immediately.
+- The "Updated {date}" label of the catalog in the settings panel shows the
+  date instead of the raw placeholder.
 
 ## [0.1.0] - 2026-10-21
 

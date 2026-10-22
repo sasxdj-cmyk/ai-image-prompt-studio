@@ -56,6 +56,8 @@ export const it: Dictionary = {
   'category.selectHint': 'Seleziona un\'opzione per aggiungerla al prompt.',
   'category.group': 'Gruppo',
   'category.clearCategory': 'Svuota questa categoria',
+  'category.openFull': 'Apri nel pannello',
+  'category.search': 'Trova una categoria',
 
   'summary.title': 'Selezioni',
   'summary.empty': 'Nessuna selezione. Apri una categoria e scegli qualche opzione.',

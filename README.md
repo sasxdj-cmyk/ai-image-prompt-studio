@@ -41,11 +41,16 @@ everything runs in your browser and works offline once loaded.
 
 - **72 categories, 803 ready-to-use options** shipped with the app — nothing to
   type by hand on the first run.
+- **A category bar like the favourites bar of a browser**: every category is a
+  tab at the top, the selected one is highlighted, and hovering opens a dropdown
+  with its options, grouped by subgroup. You pick directly from the dropdown.
 - **One click generation**: the prompt is assembled deterministically from the
   current selections, in a logical order, with no duplicated or contradictory
   information.
 - **Independent categories**: changing the shoes never clears the pose, the
   lighting or the wardrobe.
+- **Selections as tags**: every chosen option becomes a tag with an ×, so a
+  change of mind is one click away.
 - **Editable output**: the generated prompt is a normal text field. Hand-written
   edits are protected — the app asks before replacing them.
 - **Conflict and redundancy detection**: incompatible combinations (a dress with
@@ -121,8 +126,13 @@ in `finish.boost` are opt-in like any other category.
 
 ## Categories
 
-Every category is independent and has its own button in the left column. The
-category tree follows the eleven groups of the catalog:
+Every category is independent and has its own tab in the bar at the top, like
+the favourites bar of a browser. The selected category is highlighted, and
+hovering a tab opens a dropdown with its options, grouped by subgroup: you can
+pick straight from the dropdown, or open the category in the main panel for
+the full view with its own search.
+
+The category tree follows the eleven groups of the catalog:
 
 | Group | Categories | Options |
 | --- | --- | --- |
@@ -146,7 +156,7 @@ subgroup is declared mutually exclusive with the others.
 Shoes are a first-class category with their own type, silhouette/sole and
 material sub-categories — not an accessory footnote.
 
-![The clothing category of the catalog](docs/screenshots/catalog-clothing.png)
+![The dropdown of the clothing category](docs/screenshots/category-dropdown.png)
 
 ## Catalog
 
@@ -297,7 +307,7 @@ makes the engine and the catalog testable in isolation.
 
 ## Testing
 
-The suite has **123 automated tests** (11 files) covering, among others:
+The suite has **137 automated tests** (12 files) covering, among others:
 
 - generation with no selection, one category and many categories;
 - logical ordering and comma separation, without doubled or trailing separators;
@@ -314,7 +324,10 @@ The suite has **123 automated tests** (11 files) covering, among others:
 - catalog validation, package import, rollback and offline behaviour;
 - **the catalog provenance rules** (a `verified` entry always has a source with
   a URL and a consultation date);
-- **the interface itself** (13 component tests in jsdom): the category browser,
+- **the category bar** (11 component tests in jsdom): the tabs, the highlight of
+  the selected category, the dropdown that opens on hover, picking an option
+  from the dropdown and the removal of a selection tag;
+- **the interface itself** (16 component tests in jsdom): the category panel,
   the generation flow, the single-selection behaviour, the manual-edit
   protection, the clear-all confirmation, the clipboard, the language switch
   and the profile switch;
@@ -329,9 +342,10 @@ Two ready-to-import files are shipped in [`docs/examples`](docs/examples): a
 catalog package and a preset export.
 
 The application was additionally verified end-to-end in a real browser
-(Chromium, 26 automated checks) covering the category browser, the generation
-flow, the manual-edit protection, the randomiser, the language switches, the
-profile switch, "clear all", presets and the absence of console errors.
+(Chromium, 30 automated checks) covering the category bar, the hover dropdown,
+the tag removal, the generation flow, the manual-edit protection, the
+randomiser, the language switches, the profile switch, "clear all", presets and
+the absence of console errors.
 
 ## Privacy
 

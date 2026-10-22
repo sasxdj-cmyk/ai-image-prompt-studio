@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import { DONATION_URL } from '../donation';
 import { useApp } from '../state/AppProvider';
-import { CategoryNav } from './components/CategoryNav';
+import { CategoryBar } from './components/CategoryBar';
 import { CategoryPanel } from './components/CategoryPanel';
 import { HistoryPanel } from './components/HistoryPanel';
 import { Overlays } from './components/Overlays';
@@ -34,10 +34,10 @@ export function App() {
         {t('app.skipToContent')}
       </a>
       <TopBar />
+      <CategoryBar categories={catalog.categories} />
       <main className="layout" id="main">
         {state.ui.panel === 'categories' && (
           <>
-            <CategoryNav categories={catalog.categories} />
             {activeCategory && <CategoryPanel category={activeCategory} />}
           </>
         )}

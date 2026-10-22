@@ -212,7 +212,7 @@ export function SettingsPanel() {
             <dd>{catalog.catalogVersion}</dd>
             <dt>{t('settings.catalogSchema')}</dt>
             <dd>{catalog.schemaVersion}</dd>
-            <dt>{t('settings.catalogUpdated')}</dt>
+            <dt>{t('settings.catalogUpdated', { date: catalog.generatedAt })}</dt>
             <dd>{catalog.generatedAt}</dd>
             <dt>{t('panel.resultCount', { count: catalog.categories.length })}</dt>
             <dd>

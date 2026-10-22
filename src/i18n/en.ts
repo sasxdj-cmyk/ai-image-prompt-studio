@@ -54,6 +54,8 @@ export const en = {
   'category.selectHint': 'Select an option to add it to the prompt.',
   'category.group': 'Group',
   'category.clearCategory': 'Clear this category',
+  'category.openFull': 'Open in the panel',
+  'category.search': 'Find a category',
 
   'summary.title': 'Selections',
   'summary.empty': 'Nothing selected yet. Open a category and pick a few options.',
