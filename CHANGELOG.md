@@ -37,19 +37,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **The project is now MIT licensed** (it was previously published without a
   license). `package.json` declares `"license": "MIT"`.
-- **The left column is gone**: the categories live in the bar at the top and
-  the main area shows the active category.
+- **The categories are a grid of buttons** at the top of the page: the category
+  search and the hover dropdowns are gone, and there is no horizontal
+  scrollbar. Clicking a button opens the category in the main panel.
 - The wording of the Rembrandt lighting entry now matches its source (lit
   triangle under the eye).
-- The test suite grew from 100 to 137 tests, and the browser end-to-end run
-  from 26 to 30 checks.
+- The test suite grew from 100 to 136 tests, and the browser end-to-end run
+  from 26 to 31 checks.
 
 ### Fixed
 
-- The dropdown of a category is no longer clipped by the scrollable bar and
-  no longer jumps around while the bar is scrolled.
-- Clicking a category tab while the hover had just opened its dropdown no
-  longer closes it immediately.
 - The "Updated {date}" label of the catalog in the settings panel shows the
   date instead of the raw placeholder.
 

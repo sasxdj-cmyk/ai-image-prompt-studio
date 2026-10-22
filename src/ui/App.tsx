@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import { DONATION_URL } from '../donation';
 import { useApp } from '../state/AppProvider';
-import { CategoryBar } from './components/CategoryBar';
+import { CategoryGrid } from './components/CategoryGrid';
 import { CategoryPanel } from './components/CategoryPanel';
 import { HistoryPanel } from './components/HistoryPanel';
 import { Overlays } from './components/Overlays';
@@ -34,7 +34,7 @@ export function App() {
         {t('app.skipToContent')}
       </a>
       <TopBar />
-      <CategoryBar categories={catalog.categories} />
+      <CategoryGrid categories={catalog.categories} />
       <main className="layout" id="main">
         {state.ui.panel === 'categories' && (
           <>

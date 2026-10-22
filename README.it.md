@@ -42,10 +42,10 @@ tuo browser e funziona offline dopo il primo caricamento.
 
 - **72 categorie e 803 opzioni** già pronte all'uso: al primo avvio non devi
   scrivere nulla a mano.
-- **Una barra di categorie come i preferiti del browser**: ogni categoria è
-  una scheda in alto, quella attiva è illuminata e al passaggio del mouse si
-  apre una tendina con le sue opzioni, raggruppate per sottogruppo. Si sceglie
-  direttamente dalla tendina.
+- **Le categorie sono una griglia di pulsanti** in alto: nessuna barra da
+  spostare, nessuna casella di ricerca, nessuna tendina. Clicchi un pulsante e
+  le sue opzioni si aprono nel pannello principale. La categoria attiva è
+  illuminata e mostra quante opzioni sono attive.
 - **Generazione con un clic**: il prompt viene assemblato in modo deterministico
   dalle selezioni attive, in un ordine logico, senza informazioni duplicate o
   contraddittorie.
@@ -128,11 +128,10 @@ opzioni di qualità in `finish.boost` sono selettive come tutte le altre.
 
 ## Categorie
 
-Ogni categoria è indipendente e ha la sua scheda nella barra in alto, come i
-preferiti del browser. La categoria attiva è illuminata e al passaggio del
-mouse sulla scheda si apre una tendina con le sue opzioni, raggruppate per
-sottogruppo: si può scegliere direttamente dalla tendina, oppure aprire la
-categoria nel pannello principale per la vista completa con la sua ricerca.
+Ogni categoria è indipendente e ha il proprio pulsante nella griglia in alto.
+La categoria attiva è illuminata e mostra il numero di opzioni attive; cliccando
+un pulsante la categoria si apre nel pannello principale, con la sua
+descrizione e l'elenco completo delle opzioni raggruppate per sottogruppo.
 
 L'albero delle categorie segue gli undici gruppi del catalogo:
 
@@ -158,7 +157,7 @@ gruppo degli abiti è dichiarato incompatibile con tutti gli altri.
 Le scarpe sono una categoria di primo livello, con tipo, silhouette/suola e
 materiali: non una nota a piè di pagina.
 
-![La tendina della categoria abbigliamento](docs/screenshots/category-dropdown.png)
+![La categoria abbigliamento nel pannello principale](docs/screenshots/category-panel.png)
 
 ## Catalogo
 
@@ -329,9 +328,9 @@ La suite contiene **137 test automatici** (12 file) che coprono, tra le altre co
   comportamento offline;
 - **le regole di provenienza del catalogo** (una voce `verified` ha sempre una
   fonte con URL e data di consultazione);
-- **la barra delle categorie** (11 test di componente in jsdom): le schede, la
-  evidenziazione della categoria attiva, la tendina che si apre al passaggio
-  del mouse, la scelta di un'opzione dalla tendina e la rimozione di un tag;
+- **la griglia delle categorie** (10 test di componente in jsdom): i pulsanti, la
+  evidenziazione della categoria attiva, l'apertura delle opzioni nel pannello
+  e la rimozione di un tag;
 - **l'interfaccia stessa** (16 test di componente in jsdom): il pannello della
   categoria, il flusso di generazione, il comportamento a selezione singola,
   la protezione della modifica manuale, la conferma di "cancella tutto", gli
@@ -347,11 +346,10 @@ In `docs/examples` trovi due file pronti per l'importazione: un pacchetto di
 catalogo e un'esportazione di preset.
 
 L'applicazione è stata verificata anche end-to-end in un browser reale
-(Chromium, 30 controlli automatici): la barra delle categorie, la tendina al
-passaggio del mouse, la rimozione dei tag, il flusso di generazione, la
-protezione della modifica manuale, il randomizzatore, il cambio di lingua, il
-cambio di profilo, "cancella tutto", i preset e l'assenza di errori in
-console.
+(Chromium, 31 controlli automatici): la griglia delle categorie, la rimozione
+dei tag, il flusso di generazione, la protezione della modifica manuale, il
+randomizzatore, il cambio di lingua, il cambio di profilo, "cancella tutto", i
+preset e l'assenza di errori in console.
 
 ## Privacy
 
